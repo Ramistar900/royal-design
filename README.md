@@ -17,6 +17,10 @@ The v3 preview contains 10 additional icon concepts in SVG and Android VectorDra
 - Android VectorDrawable XML: [icons/v3/android/res/drawable/](./icons/v3/android/res/drawable/)
 - Editable SVG sources: [icons/v3/svg/](./icons/v3/svg/)
 - Automated Android resource compilation: [Validate ROYAL Android Icons v3](./.github/workflows/validate-royal-icons-v3.yml)
+- Package workflow: [Package ROYAL Android Icons v3](./.github/workflows/package-royal-icons-v3.yml)
+- [Open workflow runs to download the v3 ZIP](./actions/workflows/package-royal-icons-v3.yml)
+
+The packaging workflow creates `ROYAL_Android_Icons_v3.zip`, verifies that it contains exactly 10 SVG and 10 Android XML icon files, and uploads it as the `ROYAL_Android_Icons_v3` workflow artifact for 30 days. Open a successful run, scroll to **Artifacts**, and download the ZIP.
 
 The isolated validation project uses Android SDK 35 to compile the v3 vector resources. Passing compilation confirms resource build compatibility; visually review the icons at 24 dp before production use. This is a preview pack, not a published release.
 
