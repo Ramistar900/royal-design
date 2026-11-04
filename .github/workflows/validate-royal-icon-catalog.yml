@@ -1,0 +1,45 @@
+name: Validate ROYAL Design icon catalog
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "preview/v9-icon-catalog/**"
+      - "ROYAL_Android_Icons_v2.zip"
+      - "icons/v3/**"
+      - "icons/v4/**"
+      - "icons/v5/**"
+      - "icons/v6/**"
+      - "icons/v7/**"
+      - "icons/v8/**"
+      - "icons/v9/**"
+      - "scripts/validate-icon-catalog.py"
+      - ".github/workflows/validate-royal-icon-catalog.yml"
+  push:
+    branches: [main]
+    paths:
+      - "preview/v9-icon-catalog/**"
+      - "ROYAL_Android_Icons_v2.zip"
+      - "icons/v3/**"
+      - "icons/v4/**"
+      - "icons/v5/**"
+      - "icons/v6/**"
+      - "icons/v7/**"
+      - "icons/v8/**"
+      - "icons/v9/**"
+      - "scripts/validate-icon-catalog.py"
+      - ".github/workflows/validate-royal-icon-catalog.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate catalog entries and archive
+        run: python scripts/validate-icon-catalog.py
