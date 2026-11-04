@@ -10,7 +10,7 @@ on:
       - "build.gradle.kts"
       - ".github/workflows/validate-royal-icons-v3.yml"
   push:
-    branches: [royal-android-icons-v3]
+    branches: [main]
     paths:
       - "icons/v3/**"
       - "icon-validation/**"
