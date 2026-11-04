@@ -44,3 +44,4 @@ jobs:
       - name: Validate catalog entries and archive
         run: python scripts/validate-icon-catalog.py
 
+
