@@ -1,13 +1,21 @@
 # ROYAL Design v5 — Finance & Shopping
 
-Reusable original SVG icon set for ROYAL applications.
+Reusable original icon set for ROYAL applications.
 
-- 20 icons: money, coins, wallet, card, receipts, cart, basket, shopping bag, plus/minus, discounts, tags, calculator, cash register, transfers, hand-coins, order confirmation, and payment terminal.
-- Format: SVG, 24 × 24 viewBox, outline style, 1.8 stroke, `currentColor` for easy theme tinting.
-- Android usage: import SVGs into Android Studio as Vector Asset where supported, or convert paths to VectorDrawable XML. Keep the `royal_` resource prefix.
-- These assets are authored for ROYAL Design and do not replace existing v2/v3/v4 assets.
+- 20 icons covering money, wallets, payments, shopping, orders, discounts, and quantity controls.
+- SVG source: 24 × 24 viewBox, outline style, 1.8 stroke, `currentColor` tinting.
+- Android resources: matching VectorDrawable XML files in `android/res/drawable/`.
+- Android vectors use a neutral dark stroke; apply `android:tint` or a theme tint when displaying them.
+- Resource names keep the `royal_` prefix and are safe to use as drawable identifiers.
+- The isolated Android validation module compiles v3 and v5 vector resources together.
+- Existing v2, v3, and v4 source assets are not replaced.
 
-## Files
+## Android usage
+
+Copy the XML files from `android/res/drawable/` into an app's `res/drawable/` directory, then reference them by name, for example `R.drawable.royal_wallet`.
+
+## SVG source files
+
 - `royal_coin.svg`
 - `royal_banknote.svg`
 - `royal_wallet.svg`
@@ -28,3 +36,7 @@ Reusable original SVG icon set for ROYAL applications.
 - `royal_hand_coins.svg`
 - `royal_order_check.svg`
 - `royal_payment_terminal.svg`
+
+## Android VectorDrawable files
+
+The Android directory contains one XML resource for each SVG icon, with the same `royal_` resource name.
