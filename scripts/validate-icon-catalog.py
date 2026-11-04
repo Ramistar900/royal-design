@@ -39,4 +39,4 @@ assert 'ROYAL Design' in html and 'id="catalog"' in html, "Catalog page structur
 assert "const androidIds=" in html, "Versioned Android resource map missing"
 assert 'Android Resource: غير متوفر في هذا الإصدار' in html, "Missing explicit fallback for collections without Android resources"
 assert 'const rid=androidIds[g.v]?.[id]' in html, "Resource lookup must be scoped to the icon version"
-\nprint("PASS: 140 standalone SVG entries + 22 archived v2 icons; 22 v2 Android drawables; Android resource-ID display present.")
+print("PASS: 140 standalone SVG entries + 22 archived v2 icons; 22 v2 Android drawables; Android resource-ID display present.")
