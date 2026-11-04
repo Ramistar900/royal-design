@@ -7,7 +7,7 @@ A colorful, animated icon collection for café and restaurant products, order pr
 The starter set now contains 37 icon concepts. Every concept has a static SVG, animated SVG, static Android VectorDrawable, and Android AnimatedVectorDrawable companion.
 
 ### Food and drinks (10)
-- `royal_coffee` — coffee, with gently rising steam
+- `royal_coffee` — coffee, with gently rising steam (Android static resource id: `royal_food_coffee`, avoiding the existing v3 `royal_coffee` resource)
 - `royal_juice` — juice, with floating bubbles
 - `royal_food_shawarma` — shawarma
 - `royal_food_burger` — burger
