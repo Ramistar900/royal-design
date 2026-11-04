@@ -36,4 +36,12 @@ A bright, filled multi-color companion collection with 12 new icons in SVG and A
 - Android VectorDrawable XML: [icons/v6/colorful-finance-shopping/android/res/drawable/](./icons/v6/colorful-finance-shopping/android/res/drawable/)
 - Palette: royal blue, emerald, gold, coral, and violet.
 
-Existing v2, v3, v4, and v5 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
+## Colorful Controls & Media Icons v7
+
+A modern multi-color collection for search, settings, navigation arrows, window actions, back/close/menu, and music playback.
+
+- Guide: [icons/v7/colorful-controls-media/README.md](./icons/v7/colorful-controls-media/README.md)
+- SVG: [icons/v7/colorful-controls-media/svg/](./icons/v7/colorful-controls-media/svg/)
+- Android VectorDrawable: [icons/v7/colorful-controls-media/android/res/drawable/](./icons/v7/colorful-controls-media/android/res/drawable/)
+
+Existing v2, v3, v4, v5, and v6 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
