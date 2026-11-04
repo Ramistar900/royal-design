@@ -4,7 +4,7 @@ A colorful, animated icon collection for café and restaurant products, order pr
 
 ## Collection status
 
-The first 29 icon concepts are now present in both static and motion variants.
+The starter set now contains 37 icon concepts. Every concept has a static SVG, animated SVG, static Android VectorDrawable, and Android AnimatedVectorDrawable companion.
 
 ### Food and drinks (10)
 - `royal_coffee` — coffee, with gently rising steam
@@ -18,8 +18,12 @@ The first 29 icon concepts are now present in both static and motion variants.
 - `royal_food_ice_cream` — ice cream
 - `royal_food_salad` — salad
 
-### Orders and delivery (9)
+### Orders, purchase and delivery (17)
+- `royal_purchase_started` — start purchase
+- `royal_purchase_in_progress` — purchase in progress
+- `royal_purchase_complete` — purchase completed
 - `royal_order_new` — new order
+- `royal_order_in_progress` — order in progress
 - `royal_order_accepted` — order received
 - `royal_order_confirmed` — order confirmed
 - `royal_order_preparing` — preparing
@@ -29,6 +33,9 @@ The first 29 icon concepts are now present in both static and motion variants.
 - `royal_delivery_progress` — delivery in progress
 - `royal_order_delivered` — delivered
 - `royal_order_cancelled` — cancelled
+- `royal_order_cancelled_customer` — cancelled by customer
+- `royal_order_cancelled_restaurant` — cancelled by restaurant
+- `royal_order_reorder` — reorder
 
 ### Bookings (6)
 - `royal_booking_table_available` — table available
@@ -38,12 +45,11 @@ The first 29 icon concepts are now present in both static and motion variants.
 - `royal_booking_waiting` — awaiting confirmation
 - `royal_booking_cancelled` — cancelled booking
 
-### Payments (3)
+### Payments (4)
 - `royal_payment_pending` — payment in progress
 - `royal_payment_success` — payment successful
+- `royal_payment_failed` — payment failed
 - `royal_payment_refund` — refund
-
-> The counts above are grouped by category; there are 29 icons total.
 
 ## Asset formats
 
