@@ -16,7 +16,7 @@ The v3 preview contains 10 additional icon concepts in SVG and Android VectorDra
 - Preview guide: [icons/v3/README.md](./icons/v3/README.md)
 - Android VectorDrawable XML: [icons/v3/android/res/drawable/](./icons/v3/android/res/drawable/)
 - Editable SVG sources: [icons/v3/svg/](./icons/v3/svg/)
-- Automated Android resource compilation: [Validate ROYAL Android Icons v3, v5 and v6](./.github/workflows/validate-royal-icons-v3.yml)
+- Automated Android resource compilation: [Validate ROYAL Android Icons v3–v9](./.github/workflows/validate-royal-icons-v3.yml)
 - Package workflow: [Package ROYAL Android Icons v3](./.github/workflows/package-royal-icons-v3.yml)
 
 ## Finance & Shopping Icons v5
@@ -52,4 +52,16 @@ A colorful collection for Android music/video player controls and product-card b
 - SVG: [icons/v8/colorful-media-product-badges/svg/](./icons/v8/colorful-media-product-badges/svg/)
 - Android VectorDrawable: [icons/v8/colorful-media-product-badges/android/res/drawable/](./icons/v8/colorful-media-product-badges/android/res/drawable/)
 
-Existing v2, v3, v4, v5, v6, and v7 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
+## Café, Restaurant & Order Icons v9 — In progress
+
+The v9 collection is being expanded for food and drink products, order states, delivery, bookings, and payments. Its current starter icons are coffee and juice.
+
+- Guide and status: [icons/v9/cafe-orders/README.md](./icons/v9/cafe-orders/README.md)
+- Static SVG: [icons/v9/cafe-orders/svg/](./icons/v9/cafe-orders/svg/)
+- Static Android VectorDrawable: [icons/v9/cafe-orders/android/res/drawable/](./icons/v9/cafe-orders/android/res/drawable/)
+- Animated SVG companions: [icons/v9/cafe-orders/motion/svg/](./icons/v9/cafe-orders/motion/svg/)
+- Android AnimatedVectorDrawable + animator resources: [icons/v9/cafe-orders/android/res/](./icons/v9/cafe-orders/android/res/)
+
+The first motion companions animate coffee steam and juice bubbles. Static assets remain available as fallbacks. Motion is optional and this repository is not integrated into any application.
+
+Existing v2–v8 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
