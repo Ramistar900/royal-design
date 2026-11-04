@@ -1,4 +1,4 @@
-name: Validate ROYAL Android Icons v3, v5 and v6
+name: Validate ROYAL Android Icons v3, v5, v6 and v7
 
 on:
   pull_request:
@@ -7,6 +7,7 @@ on:
       - "icons/v3/**"
       - "icons/v5/**"
       - "icons/v6/**"
+      - "icons/v7/**"
       - "icon-validation/**"
       - "settings.gradle.kts"
       - "build.gradle.kts"
