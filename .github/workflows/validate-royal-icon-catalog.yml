@@ -43,3 +43,4 @@ jobs:
           python-version: "3.12"
       - name: Validate catalog entries and archive
         run: python scripts/validate-icon-catalog.py
+
