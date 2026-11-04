@@ -52,16 +52,16 @@ A colorful collection for Android music/video player controls and product-card b
 - SVG: [icons/v8/colorful-media-product-badges/svg/](./icons/v8/colorful-media-product-badges/svg/)
 - Android VectorDrawable: [icons/v8/colorful-media-product-badges/android/res/drawable/](./icons/v8/colorful-media-product-badges/android/res/drawable/)
 
-## Café, Restaurant & Order Icons v9 — In progress
+## Café, Restaurant & Order Icons v9 — Expanded, validation pending
 
-The v9 collection is being expanded for food and drink products, order states, delivery, bookings, and payments. Its current starter icons are coffee and juice.
+The v9 starter collection now has 29 food/drink, order/delivery, booking, and payment icon concepts, each with static and animated companions.
 
-- Guide and status: [icons/v9/cafe-orders/README.md](./icons/v9/cafe-orders/README.md)
+- Guide and complete name list: [icons/v9/cafe-orders/README.md](./icons/v9/cafe-orders/README.md)
 - Static SVG: [icons/v9/cafe-orders/svg/](./icons/v9/cafe-orders/svg/)
 - Static Android VectorDrawable: [icons/v9/cafe-orders/android/res/drawable/](./icons/v9/cafe-orders/android/res/drawable/)
-- Animated SVG companions: [icons/v9/cafe-orders/motion/svg/](./icons/v9/cafe-orders/motion/svg/)
-- Android AnimatedVectorDrawable + animator resources: [icons/v9/cafe-orders/android/res/](./icons/v9/cafe-orders/android/res/)
+- Animated SVG: [icons/v9/cafe-orders/motion/svg/](./icons/v9/cafe-orders/motion/svg/)
+- Android AnimatedVectorDrawable and animator resources: [icons/v9/cafe-orders/android/res/](./icons/v9/cafe-orders/android/res/)
 
-The first motion companions animate coffee steam and juice bubbles. Static assets remain available as fallbacks. Motion is optional and this repository is not integrated into any application.
+Motion includes coffee steam, juice bubbles, order-state pulses and transitions, delivery movement, food-icon micro-motion, and booking indicators. Static assets remain available for fallback and reduced-motion settings. The Android resource validator includes v9, but a successful CI build must be confirmed before calling the collection build-verified.
 
 Existing v2–v8 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
