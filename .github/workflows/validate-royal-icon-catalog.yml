@@ -43,6 +43,17 @@ jobs:
           python-version: "3.12"
       - name: Validate catalog entries and archive
         run: python scripts/validate-icon-catalog.py
+      - name: Extract v2 SVG source files
+        run: |
+          mkdir -p /tmp/royal-v2-svg
+          unzip -j ROYAL_Android_Icons_v2.zip 'ROYAL_Android_Icons_v2/svg/*.svg' -d /tmp/royal-v2-svg
+          test "$(find /tmp/royal-v2-svg -maxdepth 1 -name '*.svg' | wc -l)" -eq 22
+      - name: Upload extracted v2 SVGs
+        uses: actions/upload-artifact@v4
+        with:
+          name: royal-v2-svg-assets
+          path: /tmp/royal-v2-svg/*.svg
+          if-no-files-found: error
 
 
 
