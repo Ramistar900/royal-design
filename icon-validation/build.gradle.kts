@@ -12,7 +12,10 @@ android {
 
     sourceSets {
         getByName("main") {
-            res.srcDirs("../icons/v3/android/res")
+            res.srcDirs(
+                "../icons/v3/android/res",
+                "../icons/v5/finance-shopping/android/res"
+            )
         }
     }
 }
