@@ -54,7 +54,7 @@ A colorful collection for Android music/video player controls and product-card b
 
 ## Café, Restaurant & Order Icons v9 — Expanded, validation pending
 
-The v9 starter collection now has 29 food/drink, order/delivery, booking, and payment icon concepts, each with static and animated companions.
+The v9 starter set contains 37 food/drink, purchase/order/delivery, booking, and payment icon concepts. Every icon has static and animated SVG and Android variants.
 
 - Guide and complete name list: [icons/v9/cafe-orders/README.md](./icons/v9/cafe-orders/README.md)
 - Static SVG: [icons/v9/cafe-orders/svg/](./icons/v9/cafe-orders/svg/)
@@ -62,6 +62,6 @@ The v9 starter collection now has 29 food/drink, order/delivery, booking, and pa
 - Animated SVG: [icons/v9/cafe-orders/motion/svg/](./icons/v9/cafe-orders/motion/svg/)
 - Android AnimatedVectorDrawable and animator resources: [icons/v9/cafe-orders/android/res/](./icons/v9/cafe-orders/android/res/)
 
-Motion includes coffee steam, juice bubbles, order-state pulses and transitions, delivery movement, food-icon micro-motion, and booking indicators. Static assets remain available for fallback and reduced-motion settings. The Android resource validator includes v9, but a successful CI build must be confirmed before calling the collection build-verified.
+Motion includes coffee steam, juice bubbles, purchase and order pulses, delivery movement, food-icon micro-motion, booking indicators, and payment states. Static assets remain available for fallback and reduced-motion settings. The Android resource validator includes v9; a successful CI build must be confirmed before calling the collection build-verified.
 
 Existing v2–v8 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
