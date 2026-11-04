@@ -18,10 +18,14 @@ The v3 preview contains 10 additional icon concepts in SVG and Android VectorDra
 - Editable SVG sources: [icons/v3/svg/](./icons/v3/svg/)
 - Automated Android resource compilation: [Validate ROYAL Android Icons v3](./.github/workflows/validate-royal-icons-v3.yml)
 - Package workflow: [Package ROYAL Android Icons v3](./.github/workflows/package-royal-icons-v3.yml)
-- [Open workflow runs to download the v3 ZIP](./actions/workflows/package-royal-icons-v3.yml)
 
-The packaging workflow creates `ROYAL_Android_Icons_v3.zip`, verifies that it contains exactly 10 SVG and 10 Android XML icon files, and uploads it as the `ROYAL_Android_Icons_v3` workflow artifact for 30 days. Open a successful run, scroll to **Artifacts**, and download the ZIP.
+## Finance & Shopping Icons v5
 
-The isolated validation project uses Android SDK 35 to compile the v3 vector resources. Passing compilation confirms resource build compatibility; visually review the icons at 24 dp before production use. This is a preview pack, not a published release.
+A new reusable set of 20 original SVG icons for money, wallets, payments, shopping, orders, discounts, and quantity controls.
+
+- Guide: [icons/v5/finance-shopping/README.md](./icons/v5/finance-shopping/README.md)
+- SVG assets: [icons/v5/finance-shopping/svg/](./icons/v5/finance-shopping/svg/)
+- Format: 24 × 24 SVG, outline style, `currentColor` tinting.
+- Existing v2, v3, and v4 assets remain unchanged.
 
 This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
