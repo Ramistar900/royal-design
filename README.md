@@ -44,4 +44,12 @@ A modern multi-color collection for search, settings, navigation arrows, window 
 - SVG: [icons/v7/colorful-controls-media/svg/](./icons/v7/colorful-controls-media/svg/)
 - Android VectorDrawable: [icons/v7/colorful-controls-media/android/res/drawable/](./icons/v7/colorful-controls-media/android/res/drawable/)
 
-Existing v2, v3, v4, v5, and v6 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
+## Colorful Media & Product Badges v8
+
+A colorful collection for Android music/video player controls and product-card badges such as NEW, special offer, sale, Premium, limited, bestseller, and featured.
+
+- Guide: [icons/v8/colorful-media-product-badges/README.md](./icons/v8/colorful-media-product-badges/README.md)
+- SVG: [icons/v8/colorful-media-product-badges/svg/](./icons/v8/colorful-media-product-badges/svg/)
+- Android VectorDrawable: [icons/v8/colorful-media-product-badges/android/res/drawable/](./icons/v8/colorful-media-product-badges/android/res/drawable/)
+
+Existing v2, v3, v4, v5, v6, and v7 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
