@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -66,4 +67,30 @@ assert "g.archive?v2SourceFiles[id]" in html, "v2 source filenames are not displ
 assert "SVG داخل أرشيف v2" not in html, "v2 cards must show individual SVG previews, not archive placeholders"
 assert "فتح SVG" in html, "Individual SVG open action is missing"
 
-print("PASS: 162 catalog entries; 162 individual SVG previews; 22 original v2 SVGs and 22 Android drawables verified.")
+
+# Verify the machine-readable index and every indexed asset path.
+CATALOG = ROOT / "icons/catalog.json"
+catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+entries = catalog["icons"]
+assert len(entries) == 162, f"expected 162 indexed icon concepts, found {len(entries)}"
+assert len({(item["version"], item["key"]) for item in entries}) == len(entries), "duplicate version/key pair"
+with ZipFile(ARCHIVE) as archive:
+    archive_names = set(archive.namelist())
+    for item in entries:
+        assert (ROOT / item["svg"]).is_file(), f"missing indexed SVG: {item['svg']}"
+        if item["android_drawable"]:
+            assert (ROOT / item["android_drawable"]).is_file(), f"missing Android drawable: {item['android_drawable']}"
+        if item["android_archive_member"]:
+            assert item["android_archive_member"] in archive_names, f"missing V2 Android resource: {item['android_archive_member']}"
+        for key in ("animated_svg", "android_animated_drawable", "motion_base_drawable"):
+            if item[key]:
+                assert (ROOT / item[key]).is_file(), f"missing indexed motion asset: {item[key]}"
+        for path in item["animator_resources"]:
+            assert (ROOT / path).is_file(), f"missing indexed animator: {path}"
+
+expected_versions = {"v2": 22, "v3": 10, "v4": 12, "v5": 20, "v6": 12, "v7": 26, "v8": 23, "v9": 37}
+for version, expected in expected_versions.items():
+    actual = sum(item["version"] == version for item in entries)
+    assert actual == expected, f"{version}: expected {expected} indexed items, found {actual}"
+
+print("PASS: 162 catalog entries; all SVG, Android, animated, animator, and V2 archive paths verified.")
