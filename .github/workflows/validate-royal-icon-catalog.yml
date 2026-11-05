@@ -2,6 +2,7 @@ name: Validate ROYAL Design icon catalog
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, edited]
     branches: [main]
     paths:
       - "preview/v9-icon-catalog/**"
