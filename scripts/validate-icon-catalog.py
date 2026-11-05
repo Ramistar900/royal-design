@@ -39,7 +39,7 @@ for filename in sorted(v2_files):
     source = (v2_dir / filename).read_text(encoding="utf-8")
     assert "<svg" in source and "</svg>" in source, f"v2: invalid SVG content in {filename}"
     assert filename in html, f"v2: source filename {filename} is not indexed by the page"
-    assert f"../../icons/v2/svg/{filename}" in html, f"v2: preview path for {filename} is missing"
+    assert f'"{filename}"' in html, f"v2: source filename {filename} is missing from the map"
 
 with ZipFile(ARCHIVE) as archive:
     names = archive.namelist()
@@ -54,6 +54,8 @@ assert "const androidIds=" in html, "Versioned Android resource map missing"
 assert 'Android Resource: غير متوفر في هذا الإصدار' in html, "Missing explicit fallback for collections without Android resources"
 assert 'const rid=androidIds[g.v]?.[id]' in html, "Resource lookup must be scoped to the icon version"
 assert "const v2SourceFiles=" in html, "v2 source filename mapping is missing"
+assert "img.src='../../icons/v2/svg/'+v2SourceFiles[id]" in html, "v2 cards are not wired to the individual SVG directory"
+assert "g.archive?v2SourceFiles[id]" in html, "v2 source filenames are not displayed on their cards"
 assert "SVG داخل أرشيف v2" not in html, "v2 cards must show individual SVG previews, not archive placeholders"
 assert "فتح SVG" in html, "Individual SVG open action is missing"
 
