@@ -2,6 +2,14 @@
 
 Private shared design and icon library for ROYAL projects.
 
+## الفهرس الشامل للمكتبة
+
+- **[فهرس جميع الأيقونات V2–V9](./icons/README.md)** — الأسماء العربية، مفاتيح الاستخدام، معرّفات Android وروابط SVG وXML والحركة.
+- **[الفهرس الآلي JSON](./icons/catalog.json)** — بيانات منظمة لأدوات المطور والبحث الآلي.
+- **[المعاينة المرئية التفاعلية](./preview/v9-icon-catalog/index.html)** — تصفح وبحث ونسخ معرّفات Android.
+
+الإجمالي: **162 أيقونة أساسية**، و162 مورداً ثابتاً لـAndroid، إضافة إلى 37 نسخة SVG متحركة و37 مورداً Android متحركاً في V9.
+
 ## Android Icons v2
 
 The version 2 archive contains Android VectorDrawable XML and SVG icon assets.
