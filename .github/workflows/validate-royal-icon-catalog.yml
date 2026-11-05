@@ -6,6 +6,7 @@ on:
     paths:
       - "preview/v9-icon-catalog/**"
       - "ROYAL_Android_Icons_v2.zip"
+      - "icons/v2/**"
       - "icons/v3/**"
       - "icons/v4/**"
       - "icons/v5/**"
@@ -20,6 +21,7 @@ on:
     paths:
       - "preview/v9-icon-catalog/**"
       - "ROYAL_Android_Icons_v2.zip"
+      - "icons/v2/**"
       - "icons/v3/**"
       - "icons/v4/**"
       - "icons/v5/**"
