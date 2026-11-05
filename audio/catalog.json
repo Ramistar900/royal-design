@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "library": "ROYAL AUDIO",
+  "library_version": "1.0.0",
+  "defaults": {
+    "human_voice_clips": true,
+    "music": true,
+    "background_music": true,
+    "original_intro_themes": true
+  },
+  "preferred_runtime_format": "ogg",
+  "supported_formats": [
+    "ogg",
+    "wav",
+    "mp3"
+  ],
+  "categories": [
+    {
+      "id": "notifications",
+      "name_ar": "الإشعارات",
+      "name_en": "Notifications",
+      "description": "Message, alert, success, warning, error and update cues."
+    },
+    {
+      "id": "ui",
+      "name_ar": "التفاعل والواجهة",
+      "name_en": "UI interaction",
+      "description": "Tap, select, open, close, back and confirmation effects."
+    },
+    {
+      "id": "commerce",
+      "name_ar": "الطلبات والعمليات",
+      "name_en": "Commerce",
+      "description": "Order received, purchase, payment and cart cues."
+    },
+    {
+      "id": "media",
+      "name_ar": "الوسائط والتلفاز",
+      "name_en": "Media and TV",
+      "description": "Playback, channel, connection and stream status cues."
+    },
+    {
+      "id": "voice",
+      "name_ar": "الأصوات البشرية",
+      "name_en": "Human voice",
+      "description": "Short recorded spoken announcements and confirmations."
+    },
+    {
+      "id": "music",
+      "name_ar": "الموسيقى",
+      "name_en": "Music",
+      "description": "Original intro themes and optional ambient background beds."
+    }
+  ],
+  "tracks": []
+}
