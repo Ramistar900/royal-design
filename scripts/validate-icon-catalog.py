@@ -21,22 +21,40 @@ for version, (folder, expected) in collections.items():
     for file in files:
         assert file.stem in html, f"{version}: {file.name} missing from catalog data"
 
+# v2 is now a first-class catalog collection with individual SVG files.
+v2_files = {
+    "account_circle.svg", "android_device.svg", "apps.svg", "arrow_back.svg",
+    "arrow_forward.svg", "battery_full.svg", "bluetooth.svg", "cast.svg",
+    "download.svg", "folder.svg", "help.svg", "info.svg", "keyboard.svg",
+    "menu.svg", "more_vert.svg", "notifications_active.svg", "qr_code.svg",
+    "refresh.svg", "screen_share.svg", "tune.svg", "warning.svg", "wifi.svg",
+}
+v2_dir = ROOT / "icons/v2/svg"
+actual_v2 = {file.name for file in v2_dir.glob("*.svg")}
+assert actual_v2 == v2_files, (
+    f"v2 SVG files mismatch; missing={sorted(v2_files - actual_v2)}, "
+    f"unexpected={sorted(actual_v2 - v2_files)}"
+)
+for filename in sorted(v2_files):
+    source = (v2_dir / filename).read_text(encoding="utf-8")
+    assert "<svg" in source and "</svg>" in source, f"v2: invalid SVG content in {filename}"
+    assert filename in html, f"v2: source filename {filename} is not indexed by the page"
+    assert f"../../icons/v2/svg/{filename}" in html, f"v2: preview path for {filename} is missing"
+
 with ZipFile(ARCHIVE) as archive:
     names = archive.namelist()
-    svg = [n for n in names if n.startswith("ROYAL_Android_Icons_v2/svg/") and n.endswith(".svg")]
+    archive_svg = [n for n in names if n.startswith("ROYAL_Android_Icons_v2/svg/") and n.endswith(".svg")]
     drawable = [n for n in names if n.startswith("ROYAL_Android_Icons_v2/android/res/drawable/") and n.endswith(".xml")]
-    assert len(svg) == 22, f"v2: expected 22 SVGs, found {len(svg)}"
-    assert len(drawable) == 22, f"v2: expected 22 Android drawables, found {len(drawable)}"
-    for item in svg:
-        icon_id = Path(item).stem
-        assert icon_id in html, f"v2: {icon_id} missing from catalog data"
+    assert len(archive_svg) == 22, f"v2 archive: expected 22 SVGs, found {len(archive_svg)}"
+    assert len(drawable) == 22, f"v2 archive: expected 22 Android drawables, found {len(drawable)}"
 
 assert 'Android: @drawable/' in html, "Android resource ID display missing"
-assert 'تحميل أرشيف v2' in html, "v2 archive download action missing"
 assert 'ROYAL Design' in html and 'id="catalog"' in html, "Catalog page structure missing"
-
-# Resource IDs are indexed by collection to avoid collisions between versions.
 assert "const androidIds=" in html, "Versioned Android resource map missing"
 assert 'Android Resource: غير متوفر في هذا الإصدار' in html, "Missing explicit fallback for collections without Android resources"
 assert 'const rid=androidIds[g.v]?.[id]' in html, "Resource lookup must be scoped to the icon version"
-print("PASS: 140 standalone SVG entries + 22 archived v2 icons; 22 v2 Android drawables; Android resource-ID display present.")
+assert "const v2SourceFiles=" in html, "v2 source filename mapping is missing"
+assert "SVG داخل أرشيف v2" not in html, "v2 cards must show individual SVG previews, not archive placeholders"
+assert "فتح SVG" in html, "Individual SVG open action is missing"
+
+print("PASS: 162 catalog entries; 162 individual SVG previews; 22 original v2 SVGs and 22 Android drawables verified.")
