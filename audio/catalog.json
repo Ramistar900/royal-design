@@ -1,0 +1,670 @@
+{
+  "schema_version": 1,
+  "library": "ROYAL AUDIO",
+  "library_version": "1.0.0",
+  "defaults": {
+    "human_voice_clips": true,
+    "sound_effects": true,
+    "background_music": false
+  },
+  "preferred_runtime_format": "ogg",
+  "supported_formats": [
+    "ogg",
+    "wav"
+  ],
+  "categories": [
+    {
+      "id": "notifications",
+      "name_ar": "الإشعارات",
+      "name_en": "Notifications"
+    },
+    {
+      "id": "ui",
+      "name_ar": "التفاعل والواجهة",
+      "name_en": "UI interaction"
+    },
+    {
+      "id": "commerce",
+      "name_ar": "الطلبات والعمليات",
+      "name_en": "Commerce"
+    },
+    {
+      "id": "media",
+      "name_ar": "الوسائط والتلفاز",
+      "name_en": "Media and TV"
+    },
+    {
+      "id": "system",
+      "name_ar": "النظام والحالة",
+      "name_en": "System status"
+    },
+    {
+      "id": "reminders",
+      "name_ar": "التذكيرات",
+      "name_en": "Reminders"
+    },
+    {
+      "id": "voice",
+      "name_ar": "الأصوات البشرية القصيرة",
+      "name_en": "Short human voice"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "notification.message.new",
+      "category": "notifications",
+      "kind": "effect",
+      "name": {
+        "ar": "وصول رسالة جديدة",
+        "en": "New message"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "notification.alert.general",
+      "category": "notifications",
+      "kind": "effect",
+      "name": {
+        "ar": "تنبيه عام",
+        "en": "General alert"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "notification.success",
+      "category": "notifications",
+      "kind": "effect",
+      "name": {
+        "ar": "نجاح",
+        "en": "Success"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "notification.failure",
+      "category": "notifications",
+      "kind": "effect",
+      "name": {
+        "ar": "تعذر إتمام العملية",
+        "en": "Failure"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "ui.button.tap.soft",
+      "category": "ui",
+      "kind": "effect",
+      "name": {
+        "ar": "نقرة زر خفيفة",
+        "en": "Soft button tap"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "ui.selection.confirm",
+      "category": "ui",
+      "kind": "effect",
+      "name": {
+        "ar": "تأكيد الاختيار",
+        "en": "Selection confirmation"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "ui.panel.open",
+      "category": "ui",
+      "kind": "effect",
+      "name": {
+        "ar": "فتح لوحة",
+        "en": "Panel open"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "ui.panel.close",
+      "category": "ui",
+      "kind": "effect",
+      "name": {
+        "ar": "إغلاق لوحة",
+        "en": "Panel close"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "ui.navigation.back",
+      "category": "ui",
+      "kind": "effect",
+      "name": {
+        "ar": "رجوع",
+        "en": "Back navigation"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "commerce.cart.add",
+      "category": "commerce",
+      "kind": "effect",
+      "name": {
+        "ar": "إضافة للسلة",
+        "en": "Add to cart"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "commerce.order.received",
+      "category": "commerce",
+      "kind": "effect",
+      "name": {
+        "ar": "استلام طلب جديد",
+        "en": "New order"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "commerce.payment.success",
+      "category": "commerce",
+      "kind": "effect",
+      "name": {
+        "ar": "نجاح الدفع",
+        "en": "Payment successful"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "commerce.order.complete",
+      "category": "commerce",
+      "kind": "effect",
+      "name": {
+        "ar": "اكتمال الطلب",
+        "en": "Order complete"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "media.play",
+      "category": "media",
+      "kind": "effect",
+      "name": {
+        "ar": "تشغيل الوسائط",
+        "en": "Media play"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "media.pause",
+      "category": "media",
+      "kind": "effect",
+      "name": {
+        "ar": "إيقاف مؤقت",
+        "en": "Media pause"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "media.channel.changed",
+      "category": "media",
+      "kind": "effect",
+      "name": {
+        "ar": "تغيير القناة",
+        "en": "Channel changed"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "media.channel.connected",
+      "category": "media",
+      "kind": "effect",
+      "name": {
+        "ar": "اتصال البث",
+        "en": "Stream connected"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "media.channel.disconnected",
+      "category": "media",
+      "kind": "effect",
+      "name": {
+        "ar": "انقطاع البث",
+        "en": "Stream disconnected"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "system.update.ready",
+      "category": "system",
+      "kind": "effect",
+      "name": {
+        "ar": "التحديث جاهز",
+        "en": "Update ready"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "system.build.success",
+      "category": "system",
+      "kind": "effect",
+      "name": {
+        "ar": "نجاح البناء",
+        "en": "Build successful"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "system.build.failure",
+      "category": "system",
+      "kind": "effect",
+      "name": {
+        "ar": "فشل البناء",
+        "en": "Build failed"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "reminders.timer.finished",
+      "category": "reminders",
+      "kind": "effect",
+      "name": {
+        "ar": "انتهاء المؤقت",
+        "en": "Timer finished"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "reminders.prayer.alert",
+      "category": "reminders",
+      "kind": "effect",
+      "name": {
+        "ar": "تنبيه وقت الصلاة",
+        "en": "Prayer reminder"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "voice.order.received.ar",
+      "category": "voice",
+      "kind": "voice",
+      "name": {
+        "ar": "لديك طلب جديد",
+        "en": "You have a new order"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": "ar",
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "voice.payment.success.ar",
+      "category": "voice",
+      "kind": "voice",
+      "name": {
+        "ar": "تم الدفع بنجاح",
+        "en": "Payment completed"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": "ar",
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "voice.build.success.ar",
+      "category": "voice",
+      "kind": "voice",
+      "name": {
+        "ar": "اكتمل البناء بنجاح",
+        "en": "Build completed"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": "ar",
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "voice.build.failure.ar",
+      "category": "voice",
+      "kind": "voice",
+      "name": {
+        "ar": "تعذر إكمال البناء",
+        "en": "Build could not be completed"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": "ar",
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    },
+    {
+      "id": "voice.channel.connected.ar",
+      "category": "voice",
+      "kind": "voice",
+      "name": {
+        "ar": "تم الاتصال بالقناة",
+        "en": "Channel connected"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": "ar",
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      }
+    }
+  ]
+}

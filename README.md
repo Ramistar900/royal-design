@@ -10,6 +10,15 @@ Private shared design and icon library for ROYAL projects.
 
 الإجمالي: **162 أيقونة أساسية**، و162 مورداً ثابتاً لـAndroid، إضافة إلى 37 نسخة SVG متحركة و37 مورداً Android متحركاً في V9.
 
+## ROYAL AUDIO — Shared Audio Library
+
+- Guide: [audio/README.md](./audio/README.md)
+- Catalog: [audio/catalog.json](./audio/catalog.json)
+- Recording guide: [audio/recording-guidelines.md](./audio/recording-guidelines.md)
+- Validation workflow: [Validate ROYAL AUDIO](./.github/workflows/validate-royal-audio.yml)
+
+V1 includes short human voice clips and sound effects; background music is excluded. Audio assets remain planned until original recordings and redistribution rights are verified.
+
 ## Android Icons v2
 
 The version 2 archive contains Android VectorDrawable XML and SVG icon assets.

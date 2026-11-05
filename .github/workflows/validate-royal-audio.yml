@@ -1,0 +1,30 @@
+name: Validate ROYAL AUDIO library
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+    branches: [main]
+    paths:
+      - "audio/**"
+      - "scripts/validate-audio-catalog.py"
+      - ".github/workflows/validate-royal-audio.yml"
+  push:
+    branches: [main]
+    paths:
+      - "audio/**"
+      - "scripts/validate-audio-catalog.py"
+      - ".github/workflows/validate-royal-audio.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate ROYAL AUDIO catalog and assets
+        run: python scripts/validate-audio-catalog.py
