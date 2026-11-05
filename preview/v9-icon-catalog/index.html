@@ -24,7 +24,7 @@ function palette(g,id){
  return 'neutral';
 }
 function animatedAvailable(g,id){return g.v==='v9' && ["royal_booking_cancelled","royal_booking_confirmed","royal_booking_new","royal_booking_table_available","royal_booking_table_occupied","royal_booking_waiting","royal_coffee","royal_delivery_out","royal_delivery_progress","royal_food_burger","royal_food_dessert","royal_food_ice_cream","royal_food_pizza","royal_food_salad","royal_food_sandwich","royal_food_shawarma","royal_food_tea","royal_juice","royal_order_accepted","royal_order_cancelled","royal_order_cancelled_customer","royal_order_cancelled_restaurant","royal_order_confirmed","royal_order_delivered","royal_order_in_progress","royal_order_new","royal_order_pickup","royal_order_preparing","royal_order_ready","royal_order_reorder","royal_payment_failed","royal_payment_pending","royal_payment_refund","royal_payment_success","royal_purchase_complete","royal_purchase_in_progress","royal_purchase_started"].includes(id);}
-function makeButton(text,fn){const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=fn;return b}
+function makeButton(text,fn){const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=()=>fn(b);return b}
 async function copyValue(value,b){try{await navigator.clipboard.writeText(value)}catch(e){const x=document.createElement('textarea');x.value=value;document.body.append(x);x.select();document.execCommand('copy');x.remove()}const old=b.textContent;b.textContent='✓';setTimeout(()=>b.textContent=old,900)}
 function draw(){
  root.innerHTML='';let count=0;
