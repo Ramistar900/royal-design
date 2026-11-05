@@ -47,6 +47,13 @@ with ZipFile(ARCHIVE) as archive:
     drawable = [n for n in names if n.startswith("ROYAL_Android_Icons_v2/android/res/drawable/") and n.endswith(".xml")]
     assert len(archive_svg) == 22, f"v2 archive: expected 22 SVGs, found {len(archive_svg)}"
     assert len(drawable) == 22, f"v2 archive: expected 22 Android drawables, found {len(drawable)}"
+    archive_v2_names = {Path(name).name for name in archive_svg}
+    assert archive_v2_names == v2_files, "v2 source filenames do not match the original archive"
+    for member in archive_svg:
+        filename = Path(member).name
+        assert archive.read(member) == (v2_dir / filename).read_bytes(), (
+            f"v2: {filename} differs from the original archived SVG"
+        )
 
 assert 'Android: @drawable/' in html, "Android resource ID display missing"
 assert 'ROYAL Design' in html and 'id="catalog"' in html, "Catalog page structure missing"
