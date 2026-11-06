@@ -1,7 +1,15 @@
 from pathlib import Path
-import json, re
+import hashlib, json, re, wave
 
 ROOT = Path(__file__).resolve().parents[1]
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for block in iter(lambda: source.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
 data = json.loads((ROOT / "audio/catalog.json").read_text(encoding="utf-8"))
 assert data.get("schema_version") == 1 and data.get("library") == "ROYAL AUDIO"
 assert data.get("preferred_runtime_format") == "ogg"
@@ -86,6 +94,23 @@ for track in tracks:
         assert licence["name"] not in {"pending review", "unknown"}
         assert licence["source"] not in {"pending original recording", "unknown"}
         assert isinstance(track.get("duration_ms"), int) and track["duration_ms"] > 0
+        wav_path = ROOT / track["master_path"]
+        ogg_path = ROOT / track["path"]
+        with wave.open(str(wav_path), "rb") as audio:
+            assert audio.getframerate() == 48000, f"{track_id}: WAV must be 48 kHz"
+            assert audio.getsampwidth() == 3, f"{track_id}: WAV master must be 24-bit PCM"
+            assert audio.getnchannels() in {1, 2} and audio.getnframes() > 0
+        with ogg_path.open("rb") as audio:
+            assert audio.read(4) == b"OggS", f"{track_id}: invalid OGG container"
+        hashes = track.get("audio_hashes", {})
+        for key, path in (("wav_sha256", wav_path), ("ogg_sha256", ogg_path)):
+            expected = hashes.get(key, "")
+            assert re.fullmatch(r"[0-9a-f]{64}", expected), f"{track_id}: missing SHA-256 for {key}"
+            assert sha256_file(path) == expected, f"{track_id}: SHA-256 mismatch for {key}"
+        if track["status"] == "built":
+            production = track.get("production", {})
+            assert production.get("automated_validation") == "passed"
+            assert production.get("device_playback_test") == "pending"
         if track["status"] == "ready":
             qa = track.get("quality_check", {})
             assert qa.get("phone") and qa.get("tv"), f"{track_id}: device playback verification is required before ready"
