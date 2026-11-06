@@ -45,60 +45,60 @@ Open each OGG link below on the target device. If the browser downloads it inste
 
 ### الإشعارات
 
-- [وصول رسالة جديدة — notification.message.new](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/notification.message.new.ogg) — 340 ms
-- [تنبيه عام — notification.alert.general](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/notification.alert.general.ogg) — 480 ms
-- [نجاح — notification.success](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/notification.success.ogg) — 430 ms
-- [تعذر إتمام العملية — notification.failure](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/notification.failure.ogg) — 520 ms
+- [وصول رسالة جديدة — notification.message.new](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/notification.message.new.ogg) — 340 ms
+- [تنبيه عام — notification.alert.general](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/notification.alert.general.ogg) — 480 ms
+- [نجاح — notification.success](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/notification.success.ogg) — 430 ms
+- [تعذر إتمام العملية — notification.failure](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/notification.failure.ogg) — 520 ms
 
 ### التفاعل والواجهة
 
-- [نقرة زر خفيفة — ui.button.tap.soft](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/ui.button.tap.soft.ogg) — 75 ms
-- [تأكيد الاختيار — ui.selection.confirm](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/ui.selection.confirm.ogg) — 180 ms
-- [فتح لوحة — ui.panel.open](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/ui.panel.open.ogg) — 160 ms
-- [إغلاق لوحة — ui.panel.close](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/ui.panel.close.ogg) — 140 ms
-- [رجوع — ui.navigation.back](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/ui.navigation.back.ogg) — 120 ms
+- [نقرة زر خفيفة — ui.button.tap.soft](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/ui.button.tap.soft.ogg) — 75 ms
+- [تأكيد الاختيار — ui.selection.confirm](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/ui.selection.confirm.ogg) — 180 ms
+- [فتح لوحة — ui.panel.open](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/ui.panel.open.ogg) — 160 ms
+- [إغلاق لوحة — ui.panel.close](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/ui.panel.close.ogg) — 140 ms
+- [رجوع — ui.navigation.back](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/ui.navigation.back.ogg) — 120 ms
 
 ### الطلبات والعمليات
 
-- [إضافة للسلة — commerce.cart.add](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/commerce.cart.add.ogg) — 220 ms
-- [استلام طلب جديد — commerce.order.received](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/commerce.order.received.ogg) — 500 ms
-- [نجاح الدفع — commerce.payment.success](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/commerce.payment.success.ogg) — 440 ms
-- [اكتمال الطلب — commerce.order.complete](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/commerce.order.complete.ogg) — 480 ms
+- [إضافة للسلة — commerce.cart.add](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/commerce.cart.add.ogg) — 220 ms
+- [استلام طلب جديد — commerce.order.received](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/commerce.order.received.ogg) — 500 ms
+- [نجاح الدفع — commerce.payment.success](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/commerce.payment.success.ogg) — 440 ms
+- [اكتمال الطلب — commerce.order.complete](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/commerce.order.complete.ogg) — 480 ms
 
 ### الوسائط والتلفاز
 
-- [تشغيل الوسائط — media.play](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/media.play.ogg) — 100 ms
-- [إيقاف مؤقت — media.pause](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/media.pause.ogg) — 100 ms
-- [تغيير القناة — media.channel.changed](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/media.channel.changed.ogg) — 180 ms
-- [اتصال البث — media.channel.connected](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/media.channel.connected.ogg) — 340 ms
-- [انقطاع البث — media.channel.disconnected](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/media.channel.disconnected.ogg) — 430 ms
+- [تشغيل الوسائط — media.play](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/media.play.ogg) — 100 ms
+- [إيقاف مؤقت — media.pause](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/media.pause.ogg) — 100 ms
+- [تغيير القناة — media.channel.changed](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/media.channel.changed.ogg) — 180 ms
+- [اتصال البث — media.channel.connected](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/media.channel.connected.ogg) — 340 ms
+- [انقطاع البث — media.channel.disconnected](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/media.channel.disconnected.ogg) — 430 ms
 
 ### النظام والحالة
 
-- [التحديث جاهز — system.update.ready](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/system.update.ready.ogg) — 430 ms
-- [نجاح البناء — system.build.success](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/system.build.success.ogg) — 430 ms
-- [فشل البناء — system.build.failure](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/system.build.failure.ogg) — 560 ms
+- [التحديث جاهز — system.update.ready](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/system.update.ready.ogg) — 430 ms
+- [نجاح البناء — system.build.success](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/system.build.success.ogg) — 430 ms
+- [فشل البناء — system.build.failure](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/system.build.failure.ogg) — 560 ms
 
 ### التذكيرات
 
-- [انتهاء المؤقت — reminders.timer.finished](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/reminders.timer.finished.ogg) — 680 ms
-- [تنبيه وقت الصلاة — reminders.prayer.alert](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/reminders.prayer.alert.ogg) — 490 ms
+- [انتهاء المؤقت — reminders.timer.finished](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/reminders.timer.finished.ogg) — 680 ms
+- [تنبيه وقت الصلاة — reminders.prayer.alert](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/reminders.prayer.alert.ogg) — 490 ms
 
 ### أصوات الطبيعة
 
-- [تغريد الطيور الطبيعي — nature.birds.general](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.birds.general.ogg) — 15300 ms
-- [أمواج البحر الهادئة — nature.ocean.waves](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.ocean.waves.ogg) — 15290 ms
-- [جريان جدول الماء — nature.water.stream](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.water.stream.ogg) — 15300 ms
-- [حفيف أوراق الأشجار — nature.leaves.rustle](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.leaves.rustle.ogg) — 15274 ms
-- [صوت الرياح الطبيعية الهادئة — nature.wind.gentle](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.wind.gentle.ogg) — 15300 ms
-- [أصوات العصافير الصباحية — nature.birds.morning](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.birds.morning.ogg) — 15300 ms
-- [نداء بومة ليلي هادئ — nature.owl.clear_night](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/nature.owl.clear_night.ogg) — 6000 ms
+- [تغريد الطيور الطبيعي — nature.birds.general](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.birds.general.ogg) — 15300 ms
+- [أمواج البحر الهادئة — nature.ocean.waves](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.ocean.waves.ogg) — 15290 ms
+- [جريان جدول الماء — nature.water.stream](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.water.stream.ogg) — 15300 ms
+- [حفيف أوراق الأشجار — nature.leaves.rustle](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.leaves.rustle.ogg) — 15274 ms
+- [صوت الرياح الطبيعية الهادئة — nature.wind.gentle](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.wind.gentle.ogg) — 15300 ms
+- [أصوات العصافير الصباحية — nature.birds.morning](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.birds.morning.ogg) — 15300 ms
+- [نداء بومة ليلي هادئ — nature.owl.clear_night](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/nature.owl.clear_night.ogg) — 6000 ms
 
 ### أصوات الطقس
 
-- [مطر طبيعي هادئ — weather.rain.natural](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/weather.rain.natural.ogg) — 9631 ms
-- [مطر العاصفة الرعدية — weather.thunderstorm.rain](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/weather.thunderstorm.rain.ogg) — 15300 ms
-- [دوي الرعد الطبيعي — weather.thunderstorm.thunder](https://raw.githubusercontent.com/Ramistar900/royal-design/docs/royal-audio-device-test-guide/audio/assets/ogg/weather.thunderstorm.thunder.ogg) — 8000 ms
+- [مطر طبيعي هادئ — weather.rain.natural](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/weather.rain.natural.ogg) — 9631 ms
+- [مطر العاصفة الرعدية — weather.thunderstorm.rain](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/weather.thunderstorm.rain.ogg) — 15300 ms
+- [دوي الرعد الطبيعي — weather.thunderstorm.thunder](https://raw.githubusercontent.com/Ramistar900/royal-design/f79622365c2d1d515d8f3761e5883dcf4a77389f/audio/assets/ogg/weather.thunderstorm.thunder.ogg) — 8000 ms
 
 
 ## Current status
