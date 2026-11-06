@@ -8,6 +8,8 @@ import json
 import math
 import random
 import subprocess
+import time
+import urllib.error
 import urllib.request
 import wave
 from pathlib import Path
@@ -223,13 +225,16 @@ def fetch_source(track_id: str, spec: dict) -> Path:
     WORK_DIR.mkdir(parents=True, exist_ok=True)
     suffix = ".webm" if spec["url"].endswith(".webm") else ".ogg"
     target = WORK_DIR / (track_id.replace(".", "_") + suffix)
-    request = urllib.request.Request(spec["url"], headers={
-        "User-Agent": "ROYAL-AUDIO-asset-builder/1.0 (licensed sound-library production)"
-    })
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; ROYAL-AUDIO-asset-builder/1.0; licensed-library)",
+        "Accept": "audio/ogg, audio/webm, application/octet-stream, */*",
+        "Cache-Control": "no-cache",
+    }
     last_error = None
-    for attempt in range(3):
+    for attempt in range(5):
         try:
-            with urllib.request.urlopen(request, timeout=120) as response, target.open("wb") as out:
+            request = urllib.request.Request(spec["url"], headers=headers)
+            with urllib.request.urlopen(request, timeout=180) as response, target.open("wb") as out:
                 while True:
                     block = response.read(1024 * 1024)
                     if not block:
@@ -237,11 +242,15 @@ def fetch_source(track_id: str, spec: dict) -> Path:
                     out.write(block)
             if target.stat().st_size < 2048:
                 raise RuntimeError("Downloaded file is too small: " + track_id)
+            time.sleep(8)
             return target
         except Exception as exc:
             last_error = exc
             target.unlink(missing_ok=True)
-    raise RuntimeError("Unable to fetch " + track_id + ": " + str(last_error))
+            delay = 30 * (attempt + 1)
+            print("Download retry for " + track_id + " in " + str(delay) + " seconds: " + str(exc), flush=True)
+            time.sleep(delay)
+    raise RuntimeError("Unable to fetch " + track_id + " after backoff retries: " + str(last_error))
 
 def decode_source(track_id: str, spec: dict, source: Path) -> array.array:
     raw = WORK_DIR / (track_id.replace(".", "_") + ".f32le")
