@@ -960,15 +960,19 @@
         "applications": [
           "royalplus_launcher"
         ],
-        "suggested_duration_ms": 1000,
+        "suggested_duration_ms": 8000,
         "asset_paths": {
           "wav_master": "audio/assets/wav/weather.thunderstorm.thunder.wav",
           "ogg_runtime": "audio/assets/ogg/weather.thunderstorm.thunder.ogg"
         },
-        "playback_mode": "loop",
+        "playback_mode": "spaced_random_overlay",
         "activation": "spaced_random_overlay",
         "scene": "thunderstorm",
-        "user_opt_in": false
+        "user_opt_in": false,
+        "spacing_seconds": {
+          "minimum": 420,
+          "maximum": 900
+        }
       }
     },
     {
@@ -1219,7 +1223,7 @@
         "applications": [
           "royalplus_launcher"
         ],
-        "suggested_duration_ms": 1800,
+        "suggested_duration_ms": 6000,
         "asset_paths": {
           "wav_master": "audio/assets/wav/nature.owl.clear_night.wav",
           "ogg_runtime": "audio/assets/ogg/nature.owl.clear_night.ogg"
