@@ -3,9 +3,10 @@
   "library": "ROYAL AUDIO",
   "library_version": "1.0.0",
   "defaults": {
-    "human_voice_clips": true,
+    "human_voice_clips": false,
     "sound_effects": true,
-    "background_music": false
+    "background_music": false,
+    "music_mode": "effects"
   },
   "preferred_runtime_format": "ogg",
   "supported_formats": [
@@ -42,11 +43,6 @@
       "id": "reminders",
       "name_ar": "التذكيرات",
       "name_en": "Reminders"
-    },
-    {
-      "id": "voice",
-      "name_ar": "الأصوات البشرية القصيرة",
-      "name_en": "Short human voice"
     }
   ],
   "tracks": [
@@ -548,116 +544,6 @@
       "master_path": null,
       "duration_ms": null,
       "language": null,
-      "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
-      }
-    },
-    {
-      "id": "voice.order.received.ar",
-      "category": "voice",
-      "kind": "voice",
-      "name": {
-        "ar": "لديك طلب جديد",
-        "en": "You have a new order"
-      },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
-      "language": "ar",
-      "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
-      }
-    },
-    {
-      "id": "voice.payment.success.ar",
-      "category": "voice",
-      "kind": "voice",
-      "name": {
-        "ar": "تم الدفع بنجاح",
-        "en": "Payment completed"
-      },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
-      "language": "ar",
-      "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
-      }
-    },
-    {
-      "id": "voice.build.success.ar",
-      "category": "voice",
-      "kind": "voice",
-      "name": {
-        "ar": "اكتمل البناء بنجاح",
-        "en": "Build completed"
-      },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
-      "language": "ar",
-      "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
-      }
-    },
-    {
-      "id": "voice.build.failure.ar",
-      "category": "voice",
-      "kind": "voice",
-      "name": {
-        "ar": "تعذر إكمال البناء",
-        "en": "Build could not be completed"
-      },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
-      "language": "ar",
-      "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
-      }
-    },
-    {
-      "id": "voice.channel.connected.ar",
-      "category": "voice",
-      "kind": "voice",
-      "name": {
-        "ar": "تم الاتصال بالقناة",
-        "en": "Channel connected"
-      },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
-      "language": "ar",
       "license": {
         "name": "pending review",
         "source": "pending original recording",

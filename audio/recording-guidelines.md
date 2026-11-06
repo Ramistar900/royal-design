@@ -1,12 +1,13 @@
-# ROYAL AUDIO Recording Guidelines
+# ROYAL AUDIO Sound-Effects Production Guidelines
 
-- Record clean, dry WAV masters (PCM, 48 kHz / 24-bit preferred).
+- ROYAL AUDIO V1 contains non-verbal sound effects only; do not add human speech, spoken announcements, voice recordings, or voice clones.
+- Produce clean, dry WAV masters (PCM, 48 kHz / 24-bit preferred).
 - Capture multiple takes and retain the best unprocessed take.
-- Obtain explicit performer consent for intended applications and redistribution scope.
-- Do not imitate identifiable people or use voice clones.
-- Record each Arabic phrase as a separate clip and include an approved transcript.
-- Effects must be original or explicitly licensed for redistribution inside apps.
-- No background music or intro themes in V1.
-- Avoid clipping and keep perceived loudness consistent across the set.
+- Effects must be original or explicitly licensed for redistribution and embedding inside apps.
+- Do not use ripped audio or unlicensed samples.
+- No background music, intro themes, or musical beds in V1.
+- Keep effects concise, recognizable, non-fatiguing, and consistent in perceived loudness.
+- Avoid clipping; leave appropriate headroom and test on phone speakers, headphones, and TV speakers.
 - Export OGG delivery copies; keep WAV masters unchanged.
-- Record duration, sample rate, bit depth, language, source, licence, attribution, and consent in the catalog.
+- Record duration, sample rate, bit depth, source, licence, attribution, and review date in the catalog.
+- Keep notification effects distinct from critical system alerts and respect app mute/volume preferences.
