@@ -30,5 +30,13 @@ Use lowercase stable IDs such as `notification.message.new`, `ui.button.tap.soft
 ## Integration guidance
 Applications reference stable catalog IDs, not guessed filenames. Missing optional audio must never crash app startup. Each app should control effects, notifications, and ambience separately. Rate-limit UI effects and avoid overlapping alerts. Natural ambience is currently allowlisted only for ROYAL+ Launcher; nature scenes require explicit user opt-in, while weather loops require a matching verified weather state. Thunder is a separate, spaced overlay used only with the thunderstorm rain bed. Do not add spoken prompts or music.
 
+
+### Clear-night owl ambience
+- Stable ID: `nature.owl.clear_night`; reserved for ROYAL+ Launcher only.
+- Eligible only from 19:00 until 06:00 on the device's local clock, with a confirmed current weather code of 0 (clear sky) or 1 (mainly clear).
+- Use short one-shot owl calls at randomized intervals of 30–60 minutes; do not loop the same call continuously.
+- Stop immediately when the time window ends, the weather changes, weather data is loading/stale/unavailable, the user mutes ambience, or the launcher leaves the active foreground session.
+- This entry remains `planned`; do not play anything until a real recording, OGG asset, and embedding/redistribution rights evidence are reviewed and committed.
+
 ## Current status
 V1 foundation only: documentation, planned catalog entries, and CI validation. Catalog entries remain planned until real files and rights evidence are checked in. No app integration or playable audio assets are claimed yet.

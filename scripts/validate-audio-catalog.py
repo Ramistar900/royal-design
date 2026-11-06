@@ -32,11 +32,31 @@ for track in tracks:
     if track["kind"] == "ambience":
         assert track.get("category") in {"nature", "weather"}
         ambience_integration = track.get("integration", {})
-        assert ambience_integration.get("playback_mode") == "loop"
+        playback_mode = ambience_integration.get("playback_mode")
+        assert playback_mode in {"loop", "spaced_random_overlay"}
+        if playback_mode == "spaced_random_overlay":
+            assert track_id == "nature.owl.clear_night", f"{track_id}: unexpected spaced one-shot ambience"
         assert ambience_integration.get("applications") == ["royalplus_launcher"]
         assert ambience_integration.get("activation") in {"weather_condition", "spaced_random_overlay", "user_opt_in"}
         if ambience_integration.get("activation") == "spaced_random_overlay":
             assert track["id"] == "weather.thunderstorm.thunder"
+        if track_id == "nature.owl.clear_night":
+            assert track.get("category") == "nature"
+            assert ambience_integration.get("playback_mode") == "spaced_random_overlay"
+            assert ambience_integration.get("activation") == "weather_condition"
+            assert ambience_integration.get("scene") == "clear_night"
+            assert ambience_integration.get("weather_codes") == [0, 1]
+            assert ambience_integration.get("local_time_window") == {
+                "start": "19:00",
+                "end": "06:00",
+                "end_exclusive": True,
+                "timezone": "device_local",
+            }
+            assert ambience_integration.get("spacing_seconds") == {
+                "minimum": 1800,
+                "maximum": 3600,
+            }
+            assert ambience_integration.get("user_opt_in") is False
     integration = track.get("integration", {})
     assert integration.get("event_key") == track_id, f"{track_id}: event_key must match stable ID"
     allowed_apps = {"almalaki", "royal_tv", "rami", "royalplus_launcher", "sinjar_tv_show"}

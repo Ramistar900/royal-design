@@ -1192,6 +1192,57 @@
         "scene": "morning",
         "user_opt_in": true
       }
+    },
+    {
+      "id": "nature.owl.clear_night",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "نداء بومة ليلي هادئ",
+        "en": "Quiet clear-night owl call"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending recording selection and rights verification",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.owl.clear_night",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1800,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.owl.clear_night.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.owl.clear_night.ogg"
+        },
+        "playback_mode": "spaced_random_overlay",
+        "activation": "weather_condition",
+        "scene": "clear_night",
+        "weather_codes": [
+          0,
+          1
+        ],
+        "local_time_window": {
+          "start": "19:00",
+          "end": "06:00",
+          "end_exclusive": true,
+          "timezone": "device_local"
+        },
+        "spacing_seconds": {
+          "minimum": 1800,
+          "maximum": 3600
+        },
+        "user_opt_in": false
+      }
     }
   ],
   "asset_naming": {
