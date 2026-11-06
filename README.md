@@ -14,7 +14,9 @@ Private shared design and icon library for ROYAL projects.
 
 - Guide: [audio/README.md](./audio/README.md)
 - Catalog: [audio/catalog.json](./audio/catalog.json)
+- Recording guide: [audio/recording-guidelines.md](./audio/recording-guidelines.md)
 - Integration contract: [audio/INTEGRATION.md](./audio/INTEGRATION.md)
+- Validation workflow: [Validate ROYAL AUDIO](./.github/workflows/validate-royal-audio.yml)
 - Licence and attribution records: [audio/licenses/ATTRIBUTIONS.md](./audio/licenses/ATTRIBUTIONS.md)
 
 V1 contains 23 original non-verbal effects and 10 licensed natural/weather recordings. All 33 tracks have WAV masters and OGG runtime files (66 files total). Automated validation passes; device playback is still pending, so tracks remain `built`, not `ready`. Human voice clips and background music are excluded.
