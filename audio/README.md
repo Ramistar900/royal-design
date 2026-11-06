@@ -3,9 +3,10 @@
 ROYAL AUDIO is the shared, versioned sound library for the ROYAL application family. It is additive and does not replace or modify the existing icon library.
 
 ## Approved V1 scope
-- Short human voice recordings and confirmations (Arabic-first).
+- Short human voice recordings and confirmations (Arabic-first), with both male and female voice variants.
 - Sound effects for notifications, UI, commerce, media/TV, system status, and reminders.
-- **Background music and intro music are excluded from V1.**
+- Music mode is **effects only**: sound effects are included; background music and intro music are excluded from V1.
+- Human voice mode is **both**: plan and record male and female variants for each approved voice phrase; do not mark a variant ready until its own consent and redistribution rights are verified.
 - WAV (PCM) masters; OGG delivery assets for Android. MP3 only when a real compatibility need is documented.
 
 ## Repository layout
@@ -28,7 +29,7 @@ Use lowercase stable IDs such as `notification.message.new`, `ui.button.tap.soft
 7. Respect Android audio focus, notification-channel settings, accessibility speech, and user mute/volume preferences.
 
 ## Integration guidance
-Applications reference stable catalog IDs, not guessed filenames. Missing optional audio must never crash app startup. Each app should control effects, notifications, and voice separately. Rate-limit UI effects and avoid overlapping alerts.
+Applications reference stable catalog IDs, not guessed filenames. Missing optional audio must never crash app startup. Each app should control effects, notifications, and voice separately. The shared defaults are `human_voice_gender: both` and `music_mode: effects`. Rate-limit UI effects and avoid overlapping alerts.
 
 ## Current status
 V1 foundation only: documentation, planned catalog entries, and CI validation. Catalog entries remain planned until real files and rights evidence are checked in. No app integration or playable audio assets are claimed yet.
