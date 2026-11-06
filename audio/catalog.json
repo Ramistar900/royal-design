@@ -43,6 +43,16 @@
       "id": "reminders",
       "name_ar": "التذكيرات",
       "name_en": "Reminders"
+    },
+    {
+      "id": "nature",
+      "name_ar": "أصوات الطبيعة",
+      "name_en": "Nature ambience"
+    },
+    {
+      "id": "weather",
+      "name_ar": "أصوات الطقس",
+      "name_en": "Weather ambience"
     }
   ],
   "tracks": [
@@ -848,6 +858,339 @@
           "wav_master": "audio/assets/wav/reminders.prayer.alert.wav",
           "ogg_runtime": "audio/assets/ogg/reminders.prayer.alert.ogg"
         }
+      }
+    },
+    {
+      "id": "weather.rain.natural",
+      "category": "weather",
+      "kind": "ambience",
+      "name": {
+        "ar": "مطر طبيعي هادئ",
+        "en": "Natural rain"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "weather.rain.natural",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/weather.rain.natural.wav",
+          "ogg_runtime": "audio/assets/ogg/weather.rain.natural.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "weather_condition",
+        "scene": "rain",
+        "user_opt_in": false
+      }
+    },
+    {
+      "id": "weather.thunderstorm.rain",
+      "category": "weather",
+      "kind": "ambience",
+      "name": {
+        "ar": "مطر العاصفة الرعدية",
+        "en": "Thunderstorm rain bed"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "weather.thunderstorm.rain",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/weather.thunderstorm.rain.wav",
+          "ogg_runtime": "audio/assets/ogg/weather.thunderstorm.rain.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "weather_condition",
+        "scene": "thunderstorm",
+        "user_opt_in": false
+      }
+    },
+    {
+      "id": "weather.thunderstorm.thunder",
+      "category": "weather",
+      "kind": "ambience",
+      "name": {
+        "ar": "دوي الرعد الطبيعي",
+        "en": "Natural thunder"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "weather.thunderstorm.thunder",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/weather.thunderstorm.thunder.wav",
+          "ogg_runtime": "audio/assets/ogg/weather.thunderstorm.thunder.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "spaced_random_overlay",
+        "scene": "thunderstorm",
+        "user_opt_in": false
+      }
+    },
+    {
+      "id": "nature.birds.general",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "تغريد الطيور الطبيعي",
+        "en": "Natural birdsong"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.birds.general",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.birds.general.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.birds.general.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "user_opt_in",
+        "scene": "nature",
+        "user_opt_in": true
+      }
+    },
+    {
+      "id": "nature.ocean.waves",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "أمواج البحر الهادئة",
+        "en": "Gentle ocean waves"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.ocean.waves",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.ocean.waves.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.ocean.waves.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "user_opt_in",
+        "scene": "seaside",
+        "user_opt_in": true
+      }
+    },
+    {
+      "id": "nature.water.stream",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "جريان جدول الماء",
+        "en": "Flowing stream"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.water.stream",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.water.stream.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.water.stream.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "user_opt_in",
+        "scene": "water",
+        "user_opt_in": true
+      }
+    },
+    {
+      "id": "nature.leaves.rustle",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "حفيف أوراق الأشجار",
+        "en": "Rustling leaves"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.leaves.rustle",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.leaves.rustle.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.leaves.rustle.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "user_opt_in",
+        "scene": "nature",
+        "user_opt_in": true
+      }
+    },
+    {
+      "id": "nature.wind.gentle",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "صوت الرياح الطبيعية الهادئة",
+        "en": "Gentle natural wind"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.wind.gentle",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.wind.gentle.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.wind.gentle.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "user_opt_in",
+        "scene": "nature",
+        "user_opt_in": true
+      }
+    },
+    {
+      "id": "nature.birds.morning",
+      "category": "nature",
+      "kind": "ambience",
+      "name": {
+        "ar": "أصوات العصافير الصباحية",
+        "en": "Morning birdsong"
+      },
+      "status": "planned",
+      "format": null,
+      "path": null,
+      "master_path": null,
+      "duration_ms": null,
+      "language": null,
+      "license": {
+        "name": "pending review",
+        "source": "pending original recording",
+        "redistribution_allowed": false,
+        "attribution": null,
+        "performer_consent": null
+      },
+      "integration": {
+        "event_key": "nature.birds.morning",
+        "applications": [
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 1000,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/nature.birds.morning.wav",
+          "ogg_runtime": "audio/assets/ogg/nature.birds.morning.ogg"
+        },
+        "playback_mode": "loop",
+        "activation": "user_opt_in",
+        "scene": "morning",
+        "user_opt_in": true
       }
     }
   ],
