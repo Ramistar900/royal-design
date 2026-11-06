@@ -3,9 +3,10 @@
 ROYAL AUDIO is the shared, versioned sound-effects library for the ROYAL application family. It is additive and does not replace or modify the existing icon library or existing audio assets.
 
 ## Approved V1 scope
-- Sound effects only: notifications, UI interaction, commerce, media/TV, system status, and reminders.
+- Non-verbal effects: notifications, UI interaction, commerce, media/TV, system status, and reminders.
+- Optional natural ambience: weather and nature loops, currently indexed for ROYAL+ Launcher only.
 - Human voice recordings and spoken announcements are excluded.
-- Music and background/intro themes are excluded; only functional sound effects are included.
+- Human speech and music/background themes remain excluded. Natural ambience is not music and is opt-in or weather-condition driven.
 - WAV (PCM) masters; OGG delivery assets for Android. MP3 only when a real compatibility need is documented.
 
 ## Repository layout
@@ -27,7 +28,7 @@ Use lowercase stable IDs such as `notification.message.new`, `ui.button.tap.soft
 6. Respect Android audio focus, notification-channel settings, and user mute/volume preferences.
 
 ## Integration guidance
-Applications reference stable catalog IDs, not guessed filenames. Missing optional audio must never crash app startup. Each app should control effects and notifications separately. Rate-limit UI effects and avoid overlapping alerts. Do not add spoken prompts or background music.
+Applications reference stable catalog IDs, not guessed filenames. Missing optional audio must never crash app startup. Each app should control effects, notifications, and ambience separately. Rate-limit UI effects and avoid overlapping alerts. Natural ambience is currently allowlisted only for ROYAL+ Launcher; nature scenes require explicit user opt-in, while weather loops require a matching verified weather state. Thunder is a separate, spaced overlay used only with the thunderstorm rain bed. Do not add spoken prompts or music.
 
 ## Current status
 V1 foundation only: documentation, planned catalog entries, and CI validation. Catalog entries remain planned until real files and rights evidence are checked in. No app integration or playable audio assets are claimed yet.
