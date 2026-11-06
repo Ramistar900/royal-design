@@ -69,4 +69,4 @@ The exact application allowlist and suggested duration for each event live in th
 
 ## Current status
 
-The catalog includes 23 general effects plus nine planned weather/nature ambience entries. The ambience entries are allowlisted only for ROYAL+ Launcher. All entries remain planned; no playable audio assets or app-side integrations are claimed by this index.
+The catalog contains 33 entries: 23 non-verbal effects and 10 weather/nature ambience assets. Each entry has a WAV master and OGG runtime file, stable event ID, application routing and source/licence metadata. All 33 are marked built after successful automated generation and validation. None is marked ready until actual playback is checked on a phone and TV. Application-side playback integrations remain a later step; missing optional audio must continue to fail silently.

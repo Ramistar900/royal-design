@@ -39,4 +39,7 @@ Applications reference stable catalog IDs, not guessed filenames. Missing option
 - This entry remains `planned`; do not play anything until a real recording, OGG asset, and embedding/redistribution rights evidence are reviewed and committed.
 
 ## Current status
-V1 foundation only: documentation, planned catalog entries, and CI validation. Catalog entries remain planned until real files and rights evidence are checked in. No app integration or playable audio assets are claimed yet.
+- The catalog contains 33 indexed assets: 23 original non-verbal interface/system effects and 10 licensed natural weather/nature recordings.
+- All 33 WAV masters and 33 OGG runtime files are packaged and have passed automated file, format, catalog and licence-metadata checks.
+- Catalog state is built, not ready: playback still needs confirmation on a real phone and TV device.
+- Stable integration IDs and app allowlists are present, but this library change does not yet add playback code to the applications.
