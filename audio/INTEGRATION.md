@@ -24,8 +24,10 @@ Every track has an immutable `id` and a matching `integration.event_key`. Applic
 | Media | `media.*` | ROYAL TV and SİNJAR TV SHOW |
 | System | `system.*` | Update status in apps; build outcomes in RAMİ |
 | Reminders | `reminders.*` | Almalaki, RAMİ and ROYAL+ Launcher as listed per track |
+| Weather ambience | `weather.*` | ROYAL+ Launcher only; only while a verified weather condition matches |
+| Nature ambience | `nature.*` | ROYAL+ Launcher only; explicit user opt-in |
 
-The exact application allowlist and suggested duration for each event live in the corresponding track's `integration` object in `catalog.json`.
+The exact application allowlist and suggested duration for each event live in the corresponding track's `integration` object in `catalog.json`. Ambience entries use `kind: ambience`, loop playback, and separate activation metadata; they are not enabled automatically unless the activation condition or user choice permits it.
 
 ## Asset naming and formats
 
@@ -54,6 +56,8 @@ The exact application allowlist and suggested duration for each event live in th
 - Commerce: play only after the corresponding action is confirmed by the app's business logic.
 - Media: play on actual state changes, not on every buffering or rendering callback.
 - Prayer and timer reminders: user-configurable, independently muteable, and never spoken.
+- Weather: natural rain only for rain/drizzle; thunderstorm uses a continuous rain bed plus a separate, infrequent thunder overlay. Stop playback when the verified condition changes, weather data becomes unavailable, the user mutes it, or the launcher leaves the active lifecycle.
+- Nature scenes: birdsong, morning birds, ocean waves, flowing water, leaf rustle, and gentle wind are optional loops and must never autoplay without user opt-in.
 
 ## Release and compatibility
 
@@ -65,4 +69,4 @@ The exact application allowlist and suggested duration for each event live in th
 
 ## Current status
 
-The 23 catalog entries are indexed for five application keys. All entries are still planned; no playable audio assets or app-side integrations are claimed by this index.
+The catalog includes 23 general effects plus nine planned weather/nature ambience entries. The ambience entries are allowlisted only for ROYAL+ Launcher. All entries remain planned; no playable audio assets or app-side integrations are claimed by this index.
