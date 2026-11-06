@@ -28,7 +28,15 @@ for track in tracks:
     track_id = track["id"]
     assert re.fullmatch(r"[a-z0-9]+(?:[._-][a-z0-9]+)*", track_id), f"invalid ID: {track_id}"
     assert track.get("category") in cat_ids
-    assert track.get("kind") == "effect", "Only non-verbal sound effects are allowed"
+    assert track.get("kind") in {"effect", "ambience"}, "Only non-verbal effects and natural ambience are allowed"
+    if track["kind"] == "ambience":
+        assert track.get("category") in {"nature", "weather"}
+        ambience_integration = track.get("integration", {})
+        assert ambience_integration.get("playback_mode") == "loop"
+        assert ambience_integration.get("applications") == ["royalplus_launcher"]
+        assert ambience_integration.get("activation") in {"weather_condition", "spaced_random_overlay", "user_opt_in"}
+        if ambience_integration.get("activation") == "spaced_random_overlay":
+            assert track["id"] == "weather.thunderstorm.thunder"
     integration = track.get("integration", {})
     assert integration.get("event_key") == track_id, f"{track_id}: event_key must match stable ID"
     allowed_apps = {"almalaki", "royal_tv", "rami", "royalplus_launcher", "sinjar_tv_show"}
@@ -57,4 +65,4 @@ for track in tracks:
         assert licence["source"] not in {"pending original recording", "unknown"}
 
 assert len(tracks) >= 15
-print(f"PASS: {len(categories)} categories and {len(tracks)} effects-only entries; no voice tracks; assets and licence metadata validated.")
+print(f"PASS: {len(categories)} categories and {len(tracks)} entries; no voice tracks; planned assets, ambience routing and licence metadata validated.")
