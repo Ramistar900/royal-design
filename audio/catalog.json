@@ -5,7 +5,9 @@
   "defaults": {
     "human_voice_clips": true,
     "sound_effects": true,
-    "background_music": false
+    "background_music": false,
+    "human_voice_gender": "both",
+    "music_mode": "effects"
   },
   "preferred_runtime_format": "ogg",
   "supported_formats": [
