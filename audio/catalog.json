@@ -64,18 +64,19 @@
         "ar": "وصول رسالة جديدة",
         "en": "New message"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/notification.message.new.ogg",
+      "master_path": "audio/assets/wav/notification.message.new.wav",
+      "duration_ms": 340,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "notification.message.new",
@@ -88,6 +89,15 @@
           "wav_master": "audio/assets/wav/notification.message.new.wav",
           "ogg_runtime": "audio/assets/ogg/notification.message.new.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "57dbf6f4a3ca1c558d922643944722f5cd300d697ef6302c14a7282bc5d4341a",
+        "ogg_sha256": "8a46bdd7c53fe873cd0dce11d3dd52294abb6fee8f13533401b7d4bd9d5a9b9a"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -98,18 +108,19 @@
         "ar": "تنبيه عام",
         "en": "General alert"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/notification.alert.general.ogg",
+      "master_path": "audio/assets/wav/notification.alert.general.wav",
+      "duration_ms": 480,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "notification.alert.general",
@@ -125,6 +136,15 @@
           "wav_master": "audio/assets/wav/notification.alert.general.wav",
           "ogg_runtime": "audio/assets/ogg/notification.alert.general.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "8e7c3d16ec21f91af5b4d54c7432d1b927cfdcb4e84727bc726caf219fa4c890",
+        "ogg_sha256": "b64688ee5930839a1628e69134bd3b2a7556ab59242cecbde0db11e6ecae5fd4"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -135,18 +155,19 @@
         "ar": "نجاح",
         "en": "Success"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/notification.success.ogg",
+      "master_path": "audio/assets/wav/notification.success.wav",
+      "duration_ms": 430,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "notification.success",
@@ -162,6 +183,15 @@
           "wav_master": "audio/assets/wav/notification.success.wav",
           "ogg_runtime": "audio/assets/ogg/notification.success.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "c68daf249324fd4408914d75234722c153b3ed3e767d84cff2155282c6f5d476",
+        "ogg_sha256": "f1fc7a66acd7473edecfdb3e3e05b3c94e1291e64a76de516786c6a8462cf0ca"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -172,18 +202,19 @@
         "ar": "تعذر إتمام العملية",
         "en": "Failure"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/notification.failure.ogg",
+      "master_path": "audio/assets/wav/notification.failure.wav",
+      "duration_ms": 520,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "notification.failure",
@@ -199,6 +230,15 @@
           "wav_master": "audio/assets/wav/notification.failure.wav",
           "ogg_runtime": "audio/assets/ogg/notification.failure.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "4c6ad38262779b22887b64e4fa79a5617e70c8a84f02a50321c76ddedc49bb78",
+        "ogg_sha256": "640694f72e3d785b63992125c597bcdd376a0ed2cad9b9438ded2db102901a2f"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -209,18 +249,19 @@
         "ar": "نقرة زر خفيفة",
         "en": "Soft button tap"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/ui.button.tap.soft.ogg",
+      "master_path": "audio/assets/wav/ui.button.tap.soft.wav",
+      "duration_ms": 75,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "ui.button.tap.soft",
@@ -236,6 +277,15 @@
           "wav_master": "audio/assets/wav/ui.button.tap.soft.wav",
           "ogg_runtime": "audio/assets/ogg/ui.button.tap.soft.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "a43d62c467771bb20ff3600abacbe097847b167a0272dc28d1742e0f5e43fbb5",
+        "ogg_sha256": "4e3b3be3bb3a9ba8e57355335093a3b7d858b60586848ff4894141f6782ffaae"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -246,18 +296,19 @@
         "ar": "تأكيد الاختيار",
         "en": "Selection confirmation"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/ui.selection.confirm.ogg",
+      "master_path": "audio/assets/wav/ui.selection.confirm.wav",
+      "duration_ms": 180,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "ui.selection.confirm",
@@ -273,6 +324,15 @@
           "wav_master": "audio/assets/wav/ui.selection.confirm.wav",
           "ogg_runtime": "audio/assets/ogg/ui.selection.confirm.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "ede25e672dcaee2aaf6a92c30661ce1765435af7c01cf8144a4f2dcc75952f48",
+        "ogg_sha256": "369845bb86e69dd7b0b7243123732e24889ba082aacf3edc1672a0125bf54493"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -283,18 +343,19 @@
         "ar": "فتح لوحة",
         "en": "Panel open"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/ui.panel.open.ogg",
+      "master_path": "audio/assets/wav/ui.panel.open.wav",
+      "duration_ms": 160,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "ui.panel.open",
@@ -310,6 +371,15 @@
           "wav_master": "audio/assets/wav/ui.panel.open.wav",
           "ogg_runtime": "audio/assets/ogg/ui.panel.open.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "68aeac295cd57a7a4ee7edda1d0b90458fb3ac7a59d61d55bd1dc34c1bd65295",
+        "ogg_sha256": "cfbcb4e58a8c4c93b1e99cea6571425fa7ce10bb6565300a6cadf054c708459d"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -320,18 +390,19 @@
         "ar": "إغلاق لوحة",
         "en": "Panel close"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/ui.panel.close.ogg",
+      "master_path": "audio/assets/wav/ui.panel.close.wav",
+      "duration_ms": 140,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "ui.panel.close",
@@ -347,6 +418,15 @@
           "wav_master": "audio/assets/wav/ui.panel.close.wav",
           "ogg_runtime": "audio/assets/ogg/ui.panel.close.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "e1b8773de2255f8380b583a50bee0d1876cf62be75d79635b3b5243229f905f7",
+        "ogg_sha256": "cb1bd61a8f432ade0e2152478a4347d09514edd26f836e61fef2688fe616032d"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -357,18 +437,19 @@
         "ar": "رجوع",
         "en": "Back navigation"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/ui.navigation.back.ogg",
+      "master_path": "audio/assets/wav/ui.navigation.back.wav",
+      "duration_ms": 120,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "ui.navigation.back",
@@ -384,6 +465,15 @@
           "wav_master": "audio/assets/wav/ui.navigation.back.wav",
           "ogg_runtime": "audio/assets/ogg/ui.navigation.back.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "8bfdf344155e2f4c057d494e13078af53288046695713a4cd37ee73838272c60",
+        "ogg_sha256": "2f397e47c60f9ea60fa6f907942af54fe372678c56debed0bc8cbe78c0ba9541"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -394,18 +484,19 @@
         "ar": "إضافة للسلة",
         "en": "Add to cart"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/commerce.cart.add.ogg",
+      "master_path": "audio/assets/wav/commerce.cart.add.wav",
+      "duration_ms": 220,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "commerce.cart.add",
@@ -417,6 +508,15 @@
           "wav_master": "audio/assets/wav/commerce.cart.add.wav",
           "ogg_runtime": "audio/assets/ogg/commerce.cart.add.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "b9708fdf2777030b9e5fe9f546af5a6c14db481c5c8a83b5949f92473b847c7e",
+        "ogg_sha256": "55b001c4b4c037c1563d64ec650b6a0097d2222b55bee492924be82237c025b8"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -427,18 +527,19 @@
         "ar": "استلام طلب جديد",
         "en": "New order"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/commerce.order.received.ogg",
+      "master_path": "audio/assets/wav/commerce.order.received.wav",
+      "duration_ms": 500,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "commerce.order.received",
@@ -450,6 +551,15 @@
           "wav_master": "audio/assets/wav/commerce.order.received.wav",
           "ogg_runtime": "audio/assets/ogg/commerce.order.received.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "29ca176d16269fff9be663d980319c5a38e707e8324cd831af57eb257f783cd6",
+        "ogg_sha256": "c72d52a760c4d51d76f90c0897de650e0dc69495e268041f6d13ceb865b18545"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -460,18 +570,19 @@
         "ar": "نجاح الدفع",
         "en": "Payment successful"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/commerce.payment.success.ogg",
+      "master_path": "audio/assets/wav/commerce.payment.success.wav",
+      "duration_ms": 440,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "commerce.payment.success",
@@ -483,6 +594,15 @@
           "wav_master": "audio/assets/wav/commerce.payment.success.wav",
           "ogg_runtime": "audio/assets/ogg/commerce.payment.success.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "10af1135f93c7142e9d7ea9e246e87c0e985f030dc45233a65308642169b1226",
+        "ogg_sha256": "d0007d3123dd7715f4d2a795d1c5265c473205aedc88e39f1a582fee4cadc05c"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -493,18 +613,19 @@
         "ar": "اكتمال الطلب",
         "en": "Order complete"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/commerce.order.complete.ogg",
+      "master_path": "audio/assets/wav/commerce.order.complete.wav",
+      "duration_ms": 480,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "commerce.order.complete",
@@ -516,6 +637,15 @@
           "wav_master": "audio/assets/wav/commerce.order.complete.wav",
           "ogg_runtime": "audio/assets/ogg/commerce.order.complete.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "74dd7d291b7eb4df85d413a05528ab5b8297b0a75d098875a93e0ef751c99864",
+        "ogg_sha256": "7ec75166b777c52b92d57405d3fc8448d81c5c6913089928139a3452b6b67b05"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -526,18 +656,19 @@
         "ar": "تشغيل الوسائط",
         "en": "Media play"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/media.play.ogg",
+      "master_path": "audio/assets/wav/media.play.wav",
+      "duration_ms": 100,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "media.play",
@@ -550,6 +681,15 @@
           "wav_master": "audio/assets/wav/media.play.wav",
           "ogg_runtime": "audio/assets/ogg/media.play.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "983a264c0266ee35ac4b5725920f959d49c3b50de8c30cb4a6aa8b433dfad6af",
+        "ogg_sha256": "b4383706ed5110104d3490654952ab719e5199b042b108009ce8201dd1170476"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -560,18 +700,19 @@
         "ar": "إيقاف مؤقت",
         "en": "Media pause"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/media.pause.ogg",
+      "master_path": "audio/assets/wav/media.pause.wav",
+      "duration_ms": 100,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "media.pause",
@@ -584,6 +725,15 @@
           "wav_master": "audio/assets/wav/media.pause.wav",
           "ogg_runtime": "audio/assets/ogg/media.pause.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "b7d63a80e4f68bf01e0d3877292a56a271861fc1fd45a55d850259414c86fbe1",
+        "ogg_sha256": "2d023ddcddbe51ff5a6281254a312e0070fe65d6045723f89585c97820cd6a19"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -594,18 +744,19 @@
         "ar": "تغيير القناة",
         "en": "Channel changed"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/media.channel.changed.ogg",
+      "master_path": "audio/assets/wav/media.channel.changed.wav",
+      "duration_ms": 180,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "media.channel.changed",
@@ -618,6 +769,15 @@
           "wav_master": "audio/assets/wav/media.channel.changed.wav",
           "ogg_runtime": "audio/assets/ogg/media.channel.changed.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "73629a65b9d9f3f24e273dd134cff50e29e3fe35b49d703cd250867889ce0255",
+        "ogg_sha256": "bb329490ec3f490cfb968ab0a74cbc4d6a819bf5b5352218a22e2aa83532f0eb"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -628,18 +788,19 @@
         "ar": "اتصال البث",
         "en": "Stream connected"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/media.channel.connected.ogg",
+      "master_path": "audio/assets/wav/media.channel.connected.wav",
+      "duration_ms": 340,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "media.channel.connected",
@@ -652,6 +813,15 @@
           "wav_master": "audio/assets/wav/media.channel.connected.wav",
           "ogg_runtime": "audio/assets/ogg/media.channel.connected.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "57dbf6f4a3ca1c558d922643944722f5cd300d697ef6302c14a7282bc5d4341a",
+        "ogg_sha256": "ea5f3707750fde98c94cbbcf5c36801d75e6fb3d39c6e48d85593866cbd518ea"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -662,18 +832,19 @@
         "ar": "انقطاع البث",
         "en": "Stream disconnected"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/media.channel.disconnected.ogg",
+      "master_path": "audio/assets/wav/media.channel.disconnected.wav",
+      "duration_ms": 430,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "media.channel.disconnected",
@@ -686,6 +857,15 @@
           "wav_master": "audio/assets/wav/media.channel.disconnected.wav",
           "ogg_runtime": "audio/assets/ogg/media.channel.disconnected.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "794e701b422ca9d4dd65ff6475f1272fe2725510d1ac31f1d86989015f8fd1eb",
+        "ogg_sha256": "0d8d12c4c219a0fb158cebabaccda70320ef818bac645c9a066c991aee831b6d"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -696,18 +876,19 @@
         "ar": "التحديث جاهز",
         "en": "Update ready"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/system.update.ready.ogg",
+      "master_path": "audio/assets/wav/system.update.ready.wav",
+      "duration_ms": 430,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "system.update.ready",
@@ -723,6 +904,15 @@
           "wav_master": "audio/assets/wav/system.update.ready.wav",
           "ogg_runtime": "audio/assets/ogg/system.update.ready.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "c68daf249324fd4408914d75234722c153b3ed3e767d84cff2155282c6f5d476",
+        "ogg_sha256": "9225fe44f56abfc2f821b96fa41ebe8b939a4deccb19692f5e1ddffa6b8a3302"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -733,18 +923,19 @@
         "ar": "نجاح البناء",
         "en": "Build successful"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/system.build.success.ogg",
+      "master_path": "audio/assets/wav/system.build.success.wav",
+      "duration_ms": 430,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "system.build.success",
@@ -756,6 +947,15 @@
           "wav_master": "audio/assets/wav/system.build.success.wav",
           "ogg_runtime": "audio/assets/ogg/system.build.success.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "538b6875de692f298aff4711c7ce88c4aeb6f79709600ac915abb728eb0fe8cf",
+        "ogg_sha256": "000fd29cd15fc152dd79af501c82fbc538bb0f642bdaca31e57e769b622fc981"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -766,18 +966,19 @@
         "ar": "فشل البناء",
         "en": "Build failed"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/system.build.failure.ogg",
+      "master_path": "audio/assets/wav/system.build.failure.wav",
+      "duration_ms": 560,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "system.build.failure",
@@ -789,6 +990,15 @@
           "wav_master": "audio/assets/wav/system.build.failure.wav",
           "ogg_runtime": "audio/assets/ogg/system.build.failure.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "86238d850ebebe755667940aef9aa89ea42601427944a4004c0dac9f9dd4ee75",
+        "ogg_sha256": "a7a014f1a38d7e07c2e3885ed4690b20a006ef92bd73b4e7f24b704cbc0bb989"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -799,18 +1009,19 @@
         "ar": "انتهاء المؤقت",
         "en": "Timer finished"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/reminders.timer.finished.ogg",
+      "master_path": "audio/assets/wav/reminders.timer.finished.wav",
+      "duration_ms": 680,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "reminders.timer.finished",
@@ -824,6 +1035,15 @@
           "wav_master": "audio/assets/wav/reminders.timer.finished.wav",
           "ogg_runtime": "audio/assets/ogg/reminders.timer.finished.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "94d12e7f3cb5b82d7f11f08975f60c01a9f4cb5a85dae111121a94a77720e2a8",
+        "ogg_sha256": "6a84b1a377e75ba57e21af5e24c8ef9a3dc65455f14542d570cdf372d1118a95"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -834,18 +1054,19 @@
         "ar": "تنبيه وقت الصلاة",
         "en": "Prayer reminder"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/reminders.prayer.alert.ogg",
+      "master_path": "audio/assets/wav/reminders.prayer.alert.wav",
+      "duration_ms": 490,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "Original ROYAL AUDIO sound design",
+        "source": "Created in this repository by scripts/build_royal_audio_assets.py; no third-party samples",
+        "redistribution_allowed": true,
+        "attribution": "ROYAL AUDIO project",
+        "performer_consent": null,
+        "modifications": "Original procedural synthesis; no speech or sampled material."
       },
       "integration": {
         "event_key": "reminders.prayer.alert",
@@ -858,6 +1079,15 @@
           "wav_master": "audio/assets/wav/reminders.prayer.alert.wav",
           "ogg_runtime": "audio/assets/ogg/reminders.prayer.alert.ogg"
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "77ef8f203bff8c2e139709b7eb1a406b2de6f4066824f47399702e20f308f1d8",
+        "ogg_sha256": "58ecdc8b6d60eb90c77295dc0f19a6442e3e8a1838e04638c4c7fae73149783c"
+      },
+      "production": {
+        "method": "original_procedural_sound_design",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -868,18 +1098,21 @@
         "ar": "مطر طبيعي هادئ",
         "en": "Natural rain"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/weather.rain.natural.ogg",
+      "master_path": "audio/assets/wav/weather.rain.natural.wav",
+      "duration_ms": 9631,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rain.ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "ジダネ",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "weather.rain.natural",
@@ -895,6 +1128,15 @@
         "activation": "weather_condition",
         "scene": "rain",
         "user_opt_in": false
+      },
+      "audio_hashes": {
+        "wav_sha256": "9015c0d1ca160e6a2e10f1db2992ade350e190b301f71b64c7f1b593e92f1e27",
+        "ogg_sha256": "06c0bed29683173162e21380ffba58697df3c8d928f33fb1681a96a40ee73240"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -905,18 +1147,21 @@
         "ar": "مطر العاصفة الرعدية",
         "en": "Thunderstorm rain bed"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/weather.thunderstorm.rain.ogg",
+      "master_path": "audio/assets/wav/weather.thunderstorm.rain.wav",
+      "duration_ms": 15300,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rain_(1).ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "ezwa",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "weather.thunderstorm.rain",
@@ -932,6 +1177,15 @@
         "activation": "weather_condition",
         "scene": "thunderstorm",
         "user_opt_in": false
+      },
+      "audio_hashes": {
+        "wav_sha256": "3b21038bb5bef559e9e895752fe9852c71b342b37fc82500a16f9890f14f7b51",
+        "ogg_sha256": "c3c2504c8ef95d5eaeec68bf24d727f22c4528d5e50b08f0013107ed6f3a94ac"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -942,18 +1196,21 @@
         "ar": "دوي الرعد الطبيعي",
         "en": "Natural thunder"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/weather.thunderstorm.thunder.ogg",
+      "master_path": "audio/assets/wav/weather.thunderstorm.thunder.wav",
+      "duration_ms": 8000,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Thunder.ogg",
+        "redistribution_allowed": true,
+        "attribution": "Bidgee",
+        "performer_consent": null,
+        "creator": "Bidgee",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "weather.thunderstorm.thunder",
@@ -973,6 +1230,15 @@
           "minimum": 420,
           "maximum": 900
         }
+      },
+      "audio_hashes": {
+        "wav_sha256": "c63be01cac9713fc04020c030264bb1b6c5456a843dae82e31880bd11ae5639f",
+        "ogg_sha256": "5b761f835d9cb4eb6a6478832e80945104ed76ad3bc678fc85e29cb9190580d9"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -983,18 +1249,21 @@
         "ar": "تغريد الطيور الطبيعي",
         "en": "Natural birdsong"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.birds.general.ogg",
+      "master_path": "audio/assets/wav/nature.birds.general.wav",
+      "duration_ms": 15300,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Birds_singing_in_garden.ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "ezwa",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "nature.birds.general",
@@ -1010,6 +1279,15 @@
         "activation": "user_opt_in",
         "scene": "nature",
         "user_opt_in": true
+      },
+      "audio_hashes": {
+        "wav_sha256": "b88a5513bf23c607497697ef63c136ff52b840577352686773c40aa612ad6b97",
+        "ogg_sha256": "65e2e26ca86c46d538f83fd8c27a63fb0ee481b761b5b432a3c04091bf1738dc"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -1020,18 +1298,21 @@
         "ar": "أمواج البحر الهادئة",
         "en": "Gentle ocean waves"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.ocean.waves.ogg",
+      "master_path": "audio/assets/wav/nature.ocean.waves.wav",
+      "duration_ms": 15290,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Waves.ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "Dsw4",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "nature.ocean.waves",
@@ -1047,6 +1328,15 @@
         "activation": "user_opt_in",
         "scene": "seaside",
         "user_opt_in": true
+      },
+      "audio_hashes": {
+        "wav_sha256": "570d449e833d6844493e34a6ff612da17fa67f7c1d2526c065a6c824e2789a67",
+        "ogg_sha256": "5fdaf31851b6cc7c134fbdb6e08f067efd79462799294282e540a10e387ce3aa"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -1057,18 +1347,21 @@
         "ar": "جريان جدول الماء",
         "en": "Flowing stream"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.water.stream.ogg",
+      "master_path": "audio/assets/wav/nature.water.stream.wav",
+      "duration_ms": 15300,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Flowing-water-100019.ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "Fg2",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "nature.water.stream",
@@ -1084,6 +1377,15 @@
         "activation": "user_opt_in",
         "scene": "water",
         "user_opt_in": true
+      },
+      "audio_hashes": {
+        "wav_sha256": "bc89581c5a305bed250fcdbacb91f9ad4f57c6eb6ae9b29728b8dcf75491134b",
+        "ogg_sha256": "6fa65b4297fd43ff9be493412e4844105d53b6a24317f59ef9358f7c79654245"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -1094,18 +1396,21 @@
         "ar": "حفيف أوراق الأشجار",
         "en": "Rustling leaves"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.leaves.rustle.ogg",
+      "master_path": "audio/assets/wav/nature.leaves.rustle.wav",
+      "duration_ms": 15274,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Leaves_in_summer.webm",
+        "redistribution_allowed": true,
+        "attribution": "Joaquim Baeta",
+        "performer_consent": null,
+        "creator": "Joaquim Baeta",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "nature.leaves.rustle",
@@ -1121,6 +1426,15 @@
         "activation": "user_opt_in",
         "scene": "nature",
         "user_opt_in": true
+      },
+      "audio_hashes": {
+        "wav_sha256": "3b9540a5ad849f9dbe85ae86867f3966657c7074bd469ec35dbbaba61007637e",
+        "ogg_sha256": "2f6a81837ab4d754e76f83daf3e2588bb2e794f9baca17269003e95beb3f9d6d"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -1131,18 +1445,21 @@
         "ar": "صوت الرياح الطبيعية الهادئة",
         "en": "Gentle natural wind"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.wind.gentle.ogg",
+      "master_path": "audio/assets/wav/nature.wind.gentle.wav",
+      "duration_ms": 15300,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "Tvabutzku1234",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "nature.wind.gentle",
@@ -1158,6 +1475,15 @@
         "activation": "user_opt_in",
         "scene": "nature",
         "user_opt_in": true
+      },
+      "audio_hashes": {
+        "wav_sha256": "91f8358402277f2af02f31cf5b5ed067c1e3e75cc35159e1012e5991235c362e",
+        "ogg_sha256": "897530edbbe2f4c2708652340765f11ac14eb2fbac7a93df03eae0da2e2df302"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -1168,18 +1494,21 @@
         "ar": "أصوات العصافير الصباحية",
         "en": "Morning birdsong"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.birds.morning.ogg",
+      "master_path": "audio/assets/wav/nature.birds.morning.wav",
+      "duration_ms": 15300,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending original recording",
-        "redistribution_allowed": false,
+        "name": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Birdsong_mild_sunny_day.ogg",
+        "redistribution_allowed": true,
         "attribution": null,
-        "performer_consent": null
+        "performer_consent": null,
+        "creator": "stephan",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis."
       },
       "integration": {
         "event_key": "nature.birds.morning",
@@ -1195,6 +1524,15 @@
         "activation": "user_opt_in",
         "scene": "morning",
         "user_opt_in": true
+      },
+      "audio_hashes": {
+        "wav_sha256": "873cd57e64127b80d880722f9fd6223df3be90e5096c5d3b31caa04a96ab0b73",
+        "ogg_sha256": "1e0a83675a0c4abc43e0c03aebf60080e15c61abb5ea031cc211eaba3ef0fcef"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     },
     {
@@ -1205,18 +1543,22 @@
         "ar": "نداء بومة ليلي هادئ",
         "en": "Quiet clear-night owl call"
       },
-      "status": "planned",
-      "format": null,
-      "path": null,
-      "master_path": null,
-      "duration_ms": null,
+      "status": "built",
+      "format": "ogg",
+      "path": "audio/assets/ogg/nature.owl.clear_night.ogg",
+      "master_path": "audio/assets/wav/nature.owl.clear_night.wav",
+      "duration_ms": 6000,
       "language": null,
       "license": {
-        "name": "pending review",
-        "source": "pending recording selection and rights verification",
-        "redistribution_allowed": false,
-        "attribution": null,
-        "performer_consent": null
+        "name": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Owlcall.ogg",
+        "redistribution_allowed": true,
+        "attribution": "L. Shyamal",
+        "performer_consent": null,
+        "creator": "L. Shyamal",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Trimmed/loop-crossfaded where applicable, level-adjusted, resampled to 48 kHz stereo PCM 24-bit WAV and exported as OGG Vorbis.",
+        "adapted_asset_license": "CC BY-SA 4.0"
       },
       "integration": {
         "event_key": "nature.owl.clear_night",
@@ -1246,6 +1588,15 @@
           "maximum": 3600
         },
         "user_opt_in": false
+      },
+      "audio_hashes": {
+        "wav_sha256": "a7d78d177ada8143304190ea55f1fcdb2904c72994be437d5945734c1f0a28ce",
+        "ogg_sha256": "3eeaf4ad7c7e94dbac028467a1f4f264cdf693e216adeb0341e3814fd1c83dd6"
+      },
+      "production": {
+        "method": "licensed_natural_field_recording",
+        "automated_validation": "passed",
+        "device_playback_test": "pending"
       }
     }
   ],
