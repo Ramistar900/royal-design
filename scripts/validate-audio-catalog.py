@@ -29,6 +29,17 @@ for track in tracks:
     assert re.fullmatch(r"[a-z0-9]+(?:[._-][a-z0-9]+)*", track_id), f"invalid ID: {track_id}"
     assert track.get("category") in cat_ids
     assert track.get("kind") == "effect", "Only non-verbal sound effects are allowed"
+    integration = track.get("integration", {})
+    assert integration.get("event_key") == track_id, f"{track_id}: event_key must match stable ID"
+    allowed_apps = {"almalaki", "royal_tv", "rami", "royalplus_launcher", "sinjar_tv_show"}
+    app_targets = integration.get("applications", [])
+    assert app_targets and len(app_targets) == len(set(app_targets)), f"{track_id}: missing or duplicate app targets"
+    assert set(app_targets) <= allowed_apps, f"{track_id}: unknown application key"
+    assert isinstance(integration.get("suggested_duration_ms"), int) and 50 <= integration["suggested_duration_ms"] <= 2000
+    expected_wav = f"audio/assets/wav/{track_id}.wav"
+    expected_ogg = f"audio/assets/ogg/{track_id}.ogg"
+    assert integration.get("asset_paths", {}).get("wav_master") == expected_wav
+    assert integration.get("asset_paths", {}).get("ogg_runtime") == expected_ogg
     assert track.get("status") in {"planned", "ready"}
     assert track.get("name", {}).get("ar") and track.get("name", {}).get("en")
     licence = track.get("license", {})
