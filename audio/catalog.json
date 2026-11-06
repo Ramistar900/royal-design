@@ -66,6 +66,18 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "notification.message.new",
+        "applications": [
+          "almalaki",
+          "rami"
+        ],
+        "suggested_duration_ms": 350,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/notification.message.new.wav",
+          "ogg_runtime": "audio/assets/ogg/notification.message.new.ogg"
+        }
       }
     },
     {
@@ -88,6 +100,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "notification.alert.general",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 500,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/notification.alert.general.wav",
+          "ogg_runtime": "audio/assets/ogg/notification.alert.general.ogg"
+        }
       }
     },
     {
@@ -110,6 +137,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "notification.success",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 450,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/notification.success.wav",
+          "ogg_runtime": "audio/assets/ogg/notification.success.ogg"
+        }
       }
     },
     {
@@ -132,6 +174,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "notification.failure",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 550,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/notification.failure.wav",
+          "ogg_runtime": "audio/assets/ogg/notification.failure.ogg"
+        }
       }
     },
     {
@@ -154,6 +211,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "ui.button.tap.soft",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 70,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/ui.button.tap.soft.wav",
+          "ogg_runtime": "audio/assets/ogg/ui.button.tap.soft.ogg"
+        }
       }
     },
     {
@@ -176,6 +248,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "ui.selection.confirm",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 180,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/ui.selection.confirm.wav",
+          "ogg_runtime": "audio/assets/ogg/ui.selection.confirm.ogg"
+        }
       }
     },
     {
@@ -198,6 +285,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "ui.panel.open",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 160,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/ui.panel.open.wav",
+          "ogg_runtime": "audio/assets/ogg/ui.panel.open.ogg"
+        }
       }
     },
     {
@@ -220,6 +322,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "ui.panel.close",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 140,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/ui.panel.close.wav",
+          "ogg_runtime": "audio/assets/ogg/ui.panel.close.ogg"
+        }
       }
     },
     {
@@ -242,6 +359,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "ui.navigation.back",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 120,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/ui.navigation.back.wav",
+          "ogg_runtime": "audio/assets/ogg/ui.navigation.back.ogg"
+        }
       }
     },
     {
@@ -264,6 +396,17 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "commerce.cart.add",
+        "applications": [
+          "almalaki"
+        ],
+        "suggested_duration_ms": 220,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/commerce.cart.add.wav",
+          "ogg_runtime": "audio/assets/ogg/commerce.cart.add.ogg"
+        }
       }
     },
     {
@@ -286,6 +429,17 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "commerce.order.received",
+        "applications": [
+          "almalaki"
+        ],
+        "suggested_duration_ms": 500,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/commerce.order.received.wav",
+          "ogg_runtime": "audio/assets/ogg/commerce.order.received.ogg"
+        }
       }
     },
     {
@@ -308,6 +462,17 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "commerce.payment.success",
+        "applications": [
+          "almalaki"
+        ],
+        "suggested_duration_ms": 450,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/commerce.payment.success.wav",
+          "ogg_runtime": "audio/assets/ogg/commerce.payment.success.ogg"
+        }
       }
     },
     {
@@ -330,6 +495,17 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "commerce.order.complete",
+        "applications": [
+          "almalaki"
+        ],
+        "suggested_duration_ms": 500,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/commerce.order.complete.wav",
+          "ogg_runtime": "audio/assets/ogg/commerce.order.complete.ogg"
+        }
       }
     },
     {
@@ -352,6 +528,18 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "media.play",
+        "applications": [
+          "royal_tv",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 100,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/media.play.wav",
+          "ogg_runtime": "audio/assets/ogg/media.play.ogg"
+        }
       }
     },
     {
@@ -374,6 +562,18 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "media.pause",
+        "applications": [
+          "royal_tv",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 100,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/media.pause.wav",
+          "ogg_runtime": "audio/assets/ogg/media.pause.ogg"
+        }
       }
     },
     {
@@ -396,6 +596,18 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "media.channel.changed",
+        "applications": [
+          "royal_tv",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 180,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/media.channel.changed.wav",
+          "ogg_runtime": "audio/assets/ogg/media.channel.changed.ogg"
+        }
       }
     },
     {
@@ -418,6 +630,18 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "media.channel.connected",
+        "applications": [
+          "royal_tv",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 350,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/media.channel.connected.wav",
+          "ogg_runtime": "audio/assets/ogg/media.channel.connected.ogg"
+        }
       }
     },
     {
@@ -440,6 +664,18 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "media.channel.disconnected",
+        "applications": [
+          "royal_tv",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 450,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/media.channel.disconnected.wav",
+          "ogg_runtime": "audio/assets/ogg/media.channel.disconnected.ogg"
+        }
       }
     },
     {
@@ -462,6 +698,21 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "system.update.ready",
+        "applications": [
+          "almalaki",
+          "royal_tv",
+          "rami",
+          "royalplus_launcher",
+          "sinjar_tv_show"
+        ],
+        "suggested_duration_ms": 450,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/system.update.ready.wav",
+          "ogg_runtime": "audio/assets/ogg/system.update.ready.ogg"
+        }
       }
     },
     {
@@ -484,6 +735,17 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "system.build.success",
+        "applications": [
+          "rami"
+        ],
+        "suggested_duration_ms": 450,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/system.build.success.wav",
+          "ogg_runtime": "audio/assets/ogg/system.build.success.ogg"
+        }
       }
     },
     {
@@ -506,6 +768,17 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "system.build.failure",
+        "applications": [
+          "rami"
+        ],
+        "suggested_duration_ms": 600,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/system.build.failure.wav",
+          "ogg_runtime": "audio/assets/ogg/system.build.failure.ogg"
+        }
       }
     },
     {
@@ -528,6 +801,19 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "reminders.timer.finished",
+        "applications": [
+          "almalaki",
+          "rami",
+          "royalplus_launcher"
+        ],
+        "suggested_duration_ms": 700,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/reminders.timer.finished.wav",
+          "ogg_runtime": "audio/assets/ogg/reminders.timer.finished.ogg"
+        }
       }
     },
     {
@@ -550,7 +836,24 @@
         "redistribution_allowed": false,
         "attribution": null,
         "performer_consent": null
+      },
+      "integration": {
+        "event_key": "reminders.prayer.alert",
+        "applications": [
+          "royalplus_launcher",
+          "almalaki"
+        ],
+        "suggested_duration_ms": 500,
+        "asset_paths": {
+          "wav_master": "audio/assets/wav/reminders.prayer.alert.wav",
+          "ogg_runtime": "audio/assets/ogg/reminders.prayer.alert.ogg"
+        }
       }
     }
-  ]
+  ],
+  "asset_naming": {
+    "wav_master": "audio/assets/wav/{track_id}.wav",
+    "ogg_runtime": "audio/assets/ogg/{track_id}.ogg",
+    "rule": "The stable track ID determines both filenames; do not rename IDs after an app integration ships."
+  }
 }
