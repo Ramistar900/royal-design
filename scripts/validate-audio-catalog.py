@@ -6,6 +6,8 @@ assert data.get("schema_version")==1 and data.get("library")=="ROYAL AUDIO"
 assert data.get("preferred_runtime_format")=="ogg"
 defaults=data.get("defaults",{})
 assert defaults.get("human_voice_clips") is True and defaults.get("sound_effects") is True
+assert defaults.get("human_voice_gender") == "both", "Both male and female human voice variants are required"
+assert defaults.get("music_mode") == "effects", "ROYAL AUDIO V1 uses sound effects only"
 assert defaults.get("background_music") is False, "Background music is excluded from V1"
 formats=set(data.get("supported_formats",[]))
 assert formats <= {"ogg","wav"} and "ogg" in formats
