@@ -47,18 +47,34 @@ jobs:
           ref: feature/royal-audio-production
           persist-credentials: true
 
+      - name: Check whether assets need building
+        id: asset-state
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          with open("audio/catalog.json", encoding="utf-8") as source:
+              catalog = json.load(source)
+          needs_build = any(track.get("status") == "planned" for track in catalog["tracks"])
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write("needs_build=" + ("true" if needs_build else "false") + "\n")
+          PY
+
       - name: Install FFmpeg
+        if: steps.asset-state.outputs.needs_build == 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
 
       - name: Build original effects and licensed natural recordings
+        if: steps.asset-state.outputs.needs_build == 'true'
         run: python3 scripts/build_royal_audio_assets.py
 
       - name: Validate all generated assets
         run: python3 scripts/validate-audio-catalog.py
 
       - name: Commit generated audio assets
+        if: steps.asset-state.outputs.needs_build == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
