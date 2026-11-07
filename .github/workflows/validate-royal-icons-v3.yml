@@ -67,4 +67,12 @@ jobs:
         run: python3 scripts/validate-icon-catalog.py
 
       - name: Compile icon resources
-        run: gradle --no-daemon :icon-validation:assembleDebug
+        run: >-
+          gradle --no-daemon
+          :icon-validation:assembleV3Debug
+          :icon-validation:assembleV4Debug
+          :icon-validation:assembleV5Debug
+          :icon-validation:assembleV6Debug
+          :icon-validation:assembleV7Debug
+          :icon-validation:assembleV8Debug
+          :icon-validation:assembleV9Debug
