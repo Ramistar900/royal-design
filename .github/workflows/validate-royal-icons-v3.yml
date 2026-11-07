@@ -1,16 +1,20 @@
-name: Validate ROYAL Android Icons v3, v5, v6, v7, v8 and v9
+name: Validate ROYAL Android Icons v3, v4, v5, v6, v7, v8 and v9
 
 on:
   pull_request:
     branches: [main]
     paths:
       - "icons/v3/**"
+      - "icons/v4/**"
       - "icons/v5/**"
       - "icons/v6/**"
       - "icons/v7/**"
       - "icons/v8/**"
       - "icons/v9/**"
       - "icon-validation/**"
+      - "scripts/validate-icon-catalog.py"
+      - "icons/catalog.json"
+      - "ROYAL_Android_Icons_v2.zip"
       - "settings.gradle.kts"
       - "build.gradle.kts"
       - ".github/workflows/validate-royal-icons-v3.yml"
@@ -18,12 +22,16 @@ on:
     branches: [main]
     paths:
       - "icons/v3/**"
+      - "icons/v4/**"
       - "icons/v5/**"
       - "icons/v6/**"
       - "icons/v7/**"
       - "icons/v8/**"
       - "icons/v9/**"
       - "icon-validation/**"
+      - "scripts/validate-icon-catalog.py"
+      - "icons/catalog.json"
+      - "ROYAL_Android_Icons_v2.zip"
       - "settings.gradle.kts"
       - "build.gradle.kts"
       - ".github/workflows/validate-royal-icons-v3.yml"
@@ -55,5 +63,16 @@ jobs:
         with:
           packages: "platforms;android-35 build-tools;35.0.0"
 
+      - name: Validate complete icon catalog
+        run: python3 scripts/validate-icon-catalog.py
+
       - name: Compile icon resources
-        run: gradle --no-daemon :icon-validation:assembleDebug
+        run: >-
+          gradle --no-daemon
+          :icon-validation:assembleV3Debug
+          :icon-validation:assembleV4Debug
+          :icon-validation:assembleV5Debug
+          :icon-validation:assembleV6Debug
+          :icon-validation:assembleV7Debug
+          :icon-validation:assembleV8Debug
+          :icon-validation:assembleV9Debug
