@@ -55,7 +55,7 @@ The ROYAL artwork remains the baseline. The links above show all six original sy
 | See **Coffee** in the original ROYAL V10 color study above. | ![3dicons Cup reference](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/cup-dynamic-color.png) ![3dicons Takeaway Cup reference](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/takeaway-cup-dynamic-color.png) |
 | Original ROYAL symbol — unchanged | [3dicons V1 · Cup](https://github.com/realvjy/3dicons) · [Takeaway Cup](https://3dicons.co/) |
 
-**Review note:** Compare the regular cup with takeaway cup against the café identity; neither is selected yet.
+**Review decision:** **Takeaway Cup is the selected external 3D reference direction** for Coffee. The regular cup is not selected. The ROYAL baseline remains unchanged and is not the preferred direction for this symbol. This is a reference selection only; no production icon or source asset has been approved or imported.
 
 ### 6. Shopping Cart / عربة التسوق
 
