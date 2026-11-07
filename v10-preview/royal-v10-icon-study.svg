@@ -1,0 +1,487 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="2268" viewBox="0 0 900 2268"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF0B8"/><stop offset=".42" stop-color="#D8B45D"/><stop offset="1" stop-color="#8D6725"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".42"/><stop offset=".48" stop-color="#B8E8E5" stop-opacity=".12"/><stop offset="1" stop-color="#D6B25E" stop-opacity=".22"/></linearGradient>
+<linearGradient id="deep" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F9E6A7"/><stop offset=".45" stop-color="#D6B25E"/><stop offset="1" stop-color="#72501D"/></linearGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feOffset dy="5"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><rect width="900" height="2268" fill="#080B10"/><text x="450" y="48" text-anchor="middle" fill="#E6C979" font-size="27" font-family="Arial,sans-serif" font-weight="700">ROYAL DESIGN V10 · ICON STUDY</text><text x="450" y="76" text-anchor="middle" fill="#A8B0BC" font-size="13" font-family="Arial,sans-serif">6 symbols · 2 families · 2D / 3D · static / motion</text><g>
+      <rect x="18" y="116" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="123" y="267" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D ثابت</text>
+      <g transform="translate(75 143)" >
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="240" y="116" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="345" y="267" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D متحرك</text>
+      <g transform="translate(297 143)" ><animateTransform attributeName="transform" type="translate" values="297 143;297 140;297 143" dur="3.2s" repeatCount="indefinite"/>>
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="462" y="116" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="567" y="267" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D ثابت</text>
+      <g transform="translate(519 143)" >
+        
+        <path d="<path transform="translate(2 4)" d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path transform="translate(2 4)" d="M39 75V48h26v27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="684" y="116" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="789" y="267" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D متحرك</text>
+      <g transform="translate(741 143)" ><animateTransform attributeName="transform" type="translate" values="741 143;741 140;741 143" dur="3.2s" repeatCount="indefinite"/>>
+        
+        <path d="<path transform="translate(2 4)" d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path transform="translate(2 4)" d="M39 75V48h26v27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="18" y="302" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="20" y="304" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="123" y="453" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D ثابت</text>
+      <g transform="translate(75 329)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="240" y="302" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="242" y="304" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="345" y="453" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D متحرك</text>
+      <g transform="translate(297 329)" ><animateTransform attributeName="transform" type="translate" values="297 329;297 326;297 329" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="462" y="302" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="464" y="304" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="567" y="453" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D ثابت</text>
+      <g transform="translate(519 329)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path transform="translate(2 4)" d="M39 75V48h26v27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="684" y="302" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="686" y="304" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="789" y="453" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D متحرك</text>
+      <g transform="translate(741 329)" ><animateTransform attributeName="transform" type="translate" values="741 329;741 326;741 329" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path transform="translate(2 4)" d="M39 75V48h26v27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M18 31 50 8l32 23v39a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5Z"/><path d="M39 75V48h26v27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="18" y="488" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="123" y="639" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D ثابت</text>
+      <g transform="translate(75 515)" >
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="240" y="488" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="345" y="639" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D متحرك</text>
+      <g transform="translate(297 515)" ><animateTransform attributeName="transform" type="translate" values="297 515;297 512;297 515" dur="3.2s" repeatCount="indefinite"/>>
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="462" y="488" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="567" y="639" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D ثابت</text>
+      <g transform="translate(519 515)" >
+        
+        <path d="<circle cx="50" cy="31" r="15"/><path transform="translate(2 4)" d="M20 83c2-18 14-27 30-27s28 9 30 27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="684" y="488" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="789" y="639" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D متحرك</text>
+      <g transform="translate(741 515)" ><animateTransform attributeName="transform" type="translate" values="741 515;741 512;741 515" dur="3.2s" repeatCount="indefinite"/>>
+        
+        <path d="<circle cx="50" cy="31" r="15"/><path transform="translate(2 4)" d="M20 83c2-18 14-27 30-27s28 9 30 27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="18" y="674" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="20" y="676" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="123" y="825" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D ثابت</text>
+      <g transform="translate(75 701)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="240" y="674" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="242" y="676" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="345" y="825" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D متحرك</text>
+      <g transform="translate(297 701)" ><animateTransform attributeName="transform" type="translate" values="297 701;297 698;297 701" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="462" y="674" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="464" y="676" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="567" y="825" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D ثابت</text>
+      <g transform="translate(519 701)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<circle cx="50" cy="31" r="15"/><path transform="translate(2 4)" d="M20 83c2-18 14-27 30-27s28 9 30 27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="684" y="674" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="686" y="676" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="789" y="825" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D متحرك</text>
+      <g transform="translate(741 701)" ><animateTransform attributeName="transform" type="translate" values="741 701;741 698;741 701" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<circle cx="50" cy="31" r="15"/><path transform="translate(2 4)" d="M20 83c2-18 14-27 30-27s28 9 30 27"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="50" cy="31" r="15"/><path d="M20 83c2-18 14-27 30-27s28 9 30 27"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="18" y="860" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="123" y="1011" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D ثابت</text>
+      <g transform="translate(75 887)" >
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="240" y="860" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="345" y="1011" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D متحرك</text>
+      <g transform="translate(297 887)" ><animateTransform attributeName="transform" type="translate" values="297 887;297 884;297 887" dur="3.2s" repeatCount="indefinite"/>>
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="462" y="860" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="567" y="1011" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D ثابت</text>
+      <g transform="translate(519 887)" >
+        
+        <path d="<path transform="translate(2 4)" d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="684" y="860" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="789" y="1011" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D متحرك</text>
+      <g transform="translate(741 887)" ><animateTransform attributeName="transform" type="translate" values="741 887;741 884;741 887" dur="3.2s" repeatCount="indefinite"/>>
+        
+        <path d="<path transform="translate(2 4)" d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="18" y="1046" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="20" y="1048" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="123" y="1197" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D ثابت</text>
+      <g transform="translate(75 1073)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="240" y="1046" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="242" y="1048" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="345" y="1197" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D متحرك</text>
+      <g transform="translate(297 1073)" ><animateTransform attributeName="transform" type="translate" values="297 1073;297 1070;297 1073" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="462" y="1046" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="464" y="1048" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="567" y="1197" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D ثابت</text>
+      <g transform="translate(519 1073)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="684" y="1046" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="686" y="1048" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="789" y="1197" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D متحرك</text>
+      <g transform="translate(741 1073)" ><animateTransform attributeName="transform" type="translate" values="741 1073;741 1070;741 1073" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="m50 12 7 5 9-1 4 8 8 4-1 9 5 7-5 8 1 9-8 4-4 8-9-1-7 5-8-5-9 1-4-8-8-4 1-9-5-8 5-7-1-9 8-4 4-8 9 1Z"/><circle cx="50" cy="47" r="13"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="18" y="1232" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="123" y="1383" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D ثابت</text>
+      <g transform="translate(75 1259)" >
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="240" y="1232" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="345" y="1383" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D متحرك</text>
+      <g transform="translate(297 1259)" ><animateTransform attributeName="transform" type="translate" values="297 1259;297 1256;297 1259" dur="3.2s" repeatCount="indefinite"/>>
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="462" y="1232" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="567" y="1383" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D ثابت</text>
+      <g transform="translate(519 1259)" >
+        
+        <path d="<circle cx="43" cy="42" r="25"/><path transform="translate(2 4)" d="m61 61 22 22"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="684" y="1232" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="789" y="1383" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D متحرك</text>
+      <g transform="translate(741 1259)" ><animateTransform attributeName="transform" type="translate" values="741 1259;741 1256;741 1259" dur="3.2s" repeatCount="indefinite"/>>
+        
+        <path d="<circle cx="43" cy="42" r="25"/><path transform="translate(2 4)" d="m61 61 22 22"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="18" y="1418" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="20" y="1420" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="123" y="1569" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D ثابت</text>
+      <g transform="translate(75 1445)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="240" y="1418" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="242" y="1420" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="345" y="1569" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D متحرك</text>
+      <g transform="translate(297 1445)" ><animateTransform attributeName="transform" type="translate" values="297 1445;297 1442;297 1445" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="462" y="1418" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="464" y="1420" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="567" y="1569" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D ثابت</text>
+      <g transform="translate(519 1445)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<circle cx="43" cy="42" r="25"/><path transform="translate(2 4)" d="m61 61 22 22"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="684" y="1418" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="686" y="1420" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="789" y="1569" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D متحرك</text>
+      <g transform="translate(741 1445)" ><animateTransform attributeName="transform" type="translate" values="741 1445;741 1442;741 1445" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<circle cx="43" cy="42" r="25"/><path transform="translate(2 4)" d="m61 61 22 22"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><circle cx="43" cy="42" r="25"/><path d="m61 61 22 22"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="18" y="1604" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="123" y="1755" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D ثابت</text>
+      <g transform="translate(75 1631)" >
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="240" y="1604" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="345" y="1755" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D متحرك</text>
+      <g transform="translate(297 1631)" ><animateTransform attributeName="transform" type="translate" values="297 1631;297 1628;297 1631" dur="3.2s" repeatCount="indefinite"/>>
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="462" y="1604" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="567" y="1755" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D ثابت</text>
+      <g transform="translate(519 1631)" >
+        
+        <path d="<path transform="translate(2 4)" d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path transform="translate(2 4)" d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="684" y="1604" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="789" y="1755" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D متحرك</text>
+      <g transform="translate(741 1631)" ><animateTransform attributeName="transform" type="translate" values="741 1631;741 1628;741 1631" dur="3.2s" repeatCount="indefinite"/>>
+        
+        <path d="<path transform="translate(2 4)" d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path transform="translate(2 4)" d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="18" y="1790" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="20" y="1792" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="123" y="1941" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D ثابت</text>
+      <g transform="translate(75 1817)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="240" y="1790" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="242" y="1792" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="345" y="1941" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D متحرك</text>
+      <g transform="translate(297 1817)" ><animateTransform attributeName="transform" type="translate" values="297 1817;297 1814;297 1817" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="462" y="1790" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="464" y="1792" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="567" y="1941" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D ثابت</text>
+      <g transform="translate(519 1817)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path transform="translate(2 4)" d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="684" y="1790" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="686" y="1792" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="789" y="1941" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D متحرك</text>
+      <g transform="translate(741 1817)" ><animateTransform attributeName="transform" type="translate" values="741 1817;741 1814;741 1817" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path transform="translate(2 4)" d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M23 32h48v30a17 17 0 0 1-17 17H40a17 17 0 0 1-17-17Z"/><path d="M71 40h7a12 12 0 0 1 0 24h-8M37 20c-5-7 5-8 0-15M52 20c-5-7 5-8 0-15"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="18" y="1976" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="123" y="2127" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D ثابت</text>
+      <g transform="translate(75 2003)" >
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="240" y="1976" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="345" y="2127" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 2D متحرك</text>
+      <g transform="translate(297 2003)" ><animateTransform attributeName="transform" type="translate" values="297 2003;297 2000;297 2003" dur="3.2s" repeatCount="indefinite"/>>
+        
+        
+        <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="none"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="462" y="1976" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="567" y="2127" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D ثابت</text>
+      <g transform="translate(519 2003)" >
+        
+        <path d="<path transform="translate(2 4)" d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="684" y="1976" width="210" height="174" rx="22" fill="#10151D" stroke="#39414D" stroke-opacity=".65"/>
+      
+      <text x="789" y="2127" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">مسطح 3D متحرك</text>
+      <g transform="translate(741 2003)" ><animateTransform attributeName="transform" type="translate" values="741 2003;741 2000;741 2003" dur="3.2s" repeatCount="indefinite"/>>
+        
+        <path d="<path transform="translate(2 4)" d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        
+      </g>
+    </g><g>
+      <rect x="18" y="2162" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="20" y="2164" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="123" y="2313" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D ثابت</text>
+      <g transform="translate(75 2189)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="240" y="2162" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="242" y="2164" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="345" y="2313" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 2D متحرك</text>
+      <g transform="translate(297 2189)" ><animateTransform attributeName="transform" type="translate" values="297 2189;297 2186;297 2189" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        
+        <g fill="none" stroke="#F3E7C5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="462" y="2162" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="464" y="2164" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="567" y="2313" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D ثابت</text>
+      <g transform="translate(519 2189)" >
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g><g>
+      <rect x="684" y="2162" width="210" height="174" rx="22" fill="#15202A" stroke="#7CCAC5" stroke-opacity=".48"/>
+      <rect x="686" y="2164" width="206" height="170" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".18"/>
+      <text x="789" y="2313" text-anchor="middle" fill="#E9D7A2" font-size="12" font-family="Arial,sans-serif">زجاجي 3D متحرك</text>
+      <g transform="translate(741 2189)" ><animateTransform attributeName="transform" type="translate" values="741 2189;741 2186;741 2189" dur="3.2s" repeatCount="indefinite"/>>
+        <rect x="5" y="5" width="86" height="86" rx="24" fill="url(#glass)" stroke="#D8FFFF" stroke-opacity=".55" stroke-width="1.4"/>
+        <path d="<path transform="translate(2 4)" d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/>" fill="none" stroke="#49391B" stroke-opacity=".9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#F3E7C5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"><path d="M13 18h12l9 47h39l12-33H29"/><circle cx="41" cy="79" r="5"/><circle cx="68" cy="79" r="5"/></g>
+        <path d="M18 13 Q50 2 82 16" fill="none" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+      </g>
+    </g></svg>
