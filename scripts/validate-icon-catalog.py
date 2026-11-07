@@ -56,13 +56,14 @@ with ZipFile(ARCHIVE) as archive:
             f"v2: {filename} differs from the original archived SVG"
         )
 
-assert 'Android: @drawable/' in html, "Android resource ID display missing"
+assert "resText.textContent=rid?'@drawable/'+rid:'لا يوجد مورد Android مسجل'" in html, "Android resource ID display missing"
 assert 'ROYAL Design' in html and 'id="catalog"' in html, "Catalog page structure missing"
 assert "const androidIds=" in html, "Versioned Android resource map missing"
-assert 'Android Resource: غير متوفر في هذا الإصدار' in html, "Missing explicit fallback for collections without Android resources"
+assert "resText.textContent=rid?'@drawable/'+rid:'لا يوجد مورد Android مسجل'" in html, "Missing explicit fallback for collections without Android resources"
 assert 'const rid=androidIds[g.v]?.[id]' in html, "Resource lookup must be scoped to the icon version"
 assert "const v2SourceFiles=" in html, "v2 source filename mapping is missing"
-assert "img.src='../../icons/v2/svg/'+v2SourceFiles[id]" in html, "v2 cards are not wired to the individual SVG directory"
+assert "const svgPath=g.archive?'../../icons/v2/svg/'+v2SourceFiles[id]" in html, "v2 cards are not wired to the individual SVG directory"
+assert "img.src=svgPath" in html, "SVG preview does not use the resolved asset path"
 assert "g.archive?v2SourceFiles[id]" in html, "v2 source filenames are not displayed on their cards"
 assert "SVG داخل أرشيف v2" not in html, "v2 cards must show individual SVG previews, not archive placeholders"
 assert "فتح SVG" in html, "Individual SVG open action is missing"
