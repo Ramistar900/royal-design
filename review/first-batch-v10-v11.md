@@ -1,6 +1,6 @@
 # ROYAL DESIGN — First Visual Review Batch
 
-Status: candidate shortlist only — **not approved and not imported**  
+Status: **APPROVED by the user for library preparation** — source binaries still pending import  
 Prepared: 2026-11-08  
 Target libraries: V10 (2D), V11 (3D)  
 Motion assets are excluded from this review and remain in V12.
@@ -15,7 +15,7 @@ Motion assets are excluded from this review and remain in V12.
 
 ## V10 — 2D candidate set from the current ROYAL catalog
 
-These are existing source files to inspect and potentially refine; this list does not certify their visual quality.
+The user approved all candidates in this review. These existing source files are accepted as V10 starting assets, subject to packaging and technical validation.
 
 | Concept | Current source |
 |---|---|
@@ -55,9 +55,10 @@ All preview links below point to V1 render paths. The three proposed review fini
 | صاروخ | Rocket | [PNG](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/rocket-dynamic-clay.png) | [PNG](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/rocket-dynamic-gradient.png) | [PNG](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/rocket-dynamic-color.png) | — |
 | محادثة | Chat Bubble | [PNG](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/chat-bubble-dynamic-clay.png) | [PNG](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/chat-bubble-dynamic-gradient.png) | [PNG](https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/chat-bubble-dynamic-color.png) | — |
 
-## Decision status
+## Approval and implementation status
 
-- V10 2D: existing candidates identified; visual quality review pending.
-- V11 3D: 12 V1 candidates identified; visual review pending.
-- V12 Motion: not included in this batch; will have its own review and static fallbacks.
-- No source assets have been copied, modified, or added to the catalog by creating this shortlist.
+- User approval: all candidates in this review are approved.
+- V10 2D: the 12 listed existing assets are approved as the starting batch.
+- V11 3D: all 12 concepts and their Clay, Gradient, and Color renders are approved.
+- V12 Motion: not part of this approval; it remains a separate branch with its own review.
+- Approval does not mean binary files have already been copied into the repository. The source renders must be imported and validated before being marked packaged in the production catalog.
