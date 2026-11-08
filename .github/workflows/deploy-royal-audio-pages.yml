@@ -1,0 +1,56 @@
+name: Deploy ROYAL AUDIO Player
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "audio/player.html"
+      - "audio/assets/ogg/**"
+      - ".github/workflows/deploy-royal-audio-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: royal-audio-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare isolated Pages site
+        run: |
+          set -euo pipefail
+          mkdir -p _site/audio
+          cp audio/player.html _site/audio/player.html
+          cp -R audio/assets/ogg _site/audio/assets-ogg-temp
+          mkdir -p _site/audio/assets
+          mv _site/audio/assets-ogg-temp _site/audio/assets/ogg
+          test "$(find _site/audio/assets/ogg -maxdepth 1 -type f -name '*.ogg' | wc -l)" -eq 33
+          find _site -type f -print
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
