@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "library": "ROYAL DESIGN V13",
+  "dimension": "2D",
+  "status": "first_original_batch_authored_pending_visual_review",
+  "policy": "IconScout is inspiration/reference only. No marketplace files or traced compositions are included.",
+  "styles": [
+    "flat",
+    "glass"
+  ],
+  "variant_policy": "Flat and Glass are separate SVG files and distinct visual treatments.",
+  "assets": [
+    {
+      "key": "account",
+      "label": "حساب المستخدم",
+      "meaning": "رأس وكتفان داخل إطار متوازن، مع مساحة سالبة واضحة.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/account.svg",
+        "glass": "icons/v13/2d/glass/account.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "home",
+      "label": "الرئيسية",
+      "meaning": "سقف هندسي واضح وواجهة منزل بباب مركزي ونافذتين.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/home.svg",
+        "glass": "icons/v13/2d/glass/home.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "search",
+      "label": "بحث",
+      "meaning": "عدسة دائرية بمقبض مستقل ولمعة داخلية صغيرة.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/search.svg",
+        "glass": "icons/v13/2d/glass/search.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "settings",
+      "label": "الإعدادات",
+      "meaning": "ترس ثماني الأسنان حول مركز دائري، بتوازن بصري واضح.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/settings.svg",
+        "glass": "icons/v13/2d/glass/settings.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "coffee",
+      "label": "قهوة",
+      "meaning": "فنجان عريض بمقبض جانبي وبخار من ثلاث انحناءات.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/coffee.svg",
+        "glass": "icons/v13/2d/glass/coffee.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "shopping_bag",
+      "label": "حقيبة التسوق",
+      "meaning": "جسم حقيبة ثابت ومقبض مقوس مع علامة نجمة صغيرة.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/shopping_bag.svg",
+        "glass": "icons/v13/2d/glass/shopping_bag.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "delivery",
+      "label": "التوصيل",
+      "meaning": "صندوق شحن ومقصورة سائق وعجلتان منفصلتان.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/delivery.svg",
+        "glass": "icons/v13/2d/glass/delivery.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    },
+    {
+      "key": "wifi",
+      "label": "واي فاي",
+      "meaning": "ثلاث موجات متدرجة ونقطة اتصال مركزية.",
+      "variants": {
+        "flat": "icons/v13/2d/flat/wifi.svg",
+        "glass": "icons/v13/2d/glass/wifi.svg"
+      },
+      "origin": "original_royal",
+      "authoring_note": "Independently authored geometric vector artwork; no IconScout or other third-party source file was copied, traced, recolored, or modified.",
+      "created": "2026-11-08",
+      "license": "ROYAL_ORIGINAL",
+      "status": "original_svg_authored_pending_visual_review"
+    }
+  ]
+}
