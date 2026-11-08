@@ -72,6 +72,24 @@
 | **سجل التنفيذ** | [<img src="../icons/v14/rami-developer/2d/terminal.svg" alt="سجل التنفيذ 2D" width="52">](../icons/v14/rami-developer/2d/terminal.svg) | [<img src="../icons/v14/rami-developer/3d/terminal.svg" alt="سجل التنفيذ 3D" width="52">](../icons/v14/rami-developer/3d/terminal.svg) | `terminal` |
 | **قاعدة البيانات** | [<img src="../icons/v14/rami-developer/2d/database.svg" alt="قاعدة البيانات 2D" width="52">](../icons/v14/rami-developer/2d/database.svg) | [<img src="../icons/v14/rami-developer/3d/database.svg" alt="قاعدة البيانات 3D" width="52">](../icons/v14/rami-developer/3d/database.svg) | `database` |
 
+
+### V15 — ROYAL AUDIO
+
+| المفهوم | 2D | 3D | مفتاح الاستخدام |
+|---|---|---|---|
+| **مشغل الصوت** | [<img src="../icons/v15/royal-audio/2d/player.svg" alt="مشغل الصوت 2D" width="52">](../icons/v15/royal-audio/2d/player.svg) | [<img src="../icons/v15/royal-audio/3d/player.svg" alt="مشغل الصوت 3D" width="52">](../icons/v15/royal-audio/3d/player.svg) | `player` |
+| **المطر** | [<img src="../icons/v15/royal-audio/2d/rain.svg" alt="المطر 2D" width="52">](../icons/v15/royal-audio/2d/rain.svg) | [<img src="../icons/v15/royal-audio/3d/rain.svg" alt="المطر 3D" width="52">](../icons/v15/royal-audio/3d/rain.svg) | `rain` |
+| **الرعد** | [<img src="../icons/v15/royal-audio/2d/thunder.svg" alt="الرعد 2D" width="52">](../icons/v15/royal-audio/2d/thunder.svg) | [<img src="../icons/v15/royal-audio/3d/thunder.svg" alt="الرعد 3D" width="52">](../icons/v15/royal-audio/3d/thunder.svg) | `thunder` |
+| **الرياح** | [<img src="../icons/v15/royal-audio/2d/wind.svg" alt="الرياح 2D" width="52">](../icons/v15/royal-audio/2d/wind.svg) | [<img src="../icons/v15/royal-audio/3d/wind.svg" alt="الرياح 3D" width="52">](../icons/v15/royal-audio/3d/wind.svg) | `wind` |
+| **العصافير** | [<img src="../icons/v15/royal-audio/2d/birds.svg" alt="العصافير 2D" width="52">](../icons/v15/royal-audio/2d/birds.svg) | [<img src="../icons/v15/royal-audio/3d/birds.svg" alt="العصافير 3D" width="52">](../icons/v15/royal-audio/3d/birds.svg) | `birds` |
+| **البومة** | [<img src="../icons/v15/royal-audio/2d/owl.svg" alt="البومة 2D" width="52">](../icons/v15/royal-audio/2d/owl.svg) | [<img src="../icons/v15/royal-audio/3d/owl.svg" alt="البومة 3D" width="52">](../icons/v15/royal-audio/3d/owl.svg) | `owl` |
+| **ماء البحيرة** | [<img src="../icons/v15/royal-audio/2d/lake-water.svg" alt="ماء البحيرة 2D" width="52">](../icons/v15/royal-audio/2d/lake-water.svg) | [<img src="../icons/v15/royal-audio/3d/lake-water.svg" alt="ماء البحيرة 3D" width="52">](../icons/v15/royal-audio/3d/lake-water.svg) | `lake-water` |
+| **النار** | [<img src="../icons/v15/royal-audio/2d/fireplace.svg" alt="النار 2D" width="52">](../icons/v15/royal-audio/2d/fireplace.svg) | [<img src="../icons/v15/royal-audio/3d/fireplace.svg" alt="النار 3D" width="52">](../icons/v15/royal-audio/3d/fireplace.svg) | `fireplace` |
+| **أمواج البحر** | [<img src="../icons/v15/royal-audio/2d/ocean.svg" alt="أمواج البحر 2D" width="52">](../icons/v15/royal-audio/2d/ocean.svg) | [<img src="../icons/v15/royal-audio/3d/ocean.svg" alt="أمواج البحر 3D" width="52">](../icons/v15/royal-audio/3d/ocean.svg) | `ocean` |
+| **كتم الصوت** | [<img src="../icons/v15/royal-audio/2d/mute.svg" alt="كتم الصوت 2D" width="52">](../icons/v15/royal-audio/2d/mute.svg) | [<img src="../icons/v15/royal-audio/3d/mute.svg" alt="كتم الصوت 3D" width="52">](../icons/v15/royal-audio/3d/mute.svg) | `mute` |
+| **تنزيل الصوت** | [<img src="../icons/v15/royal-audio/2d/download.svg" alt="تنزيل الصوت 2D" width="52">](../icons/v15/royal-audio/2d/download.svg) | [<img src="../icons/v15/royal-audio/3d/download.svg" alt="تنزيل الصوت 3D" width="52">](../icons/v15/royal-audio/3d/download.svg) | `download` |
+| **تشغيل الصوت** | [<img src="../icons/v15/royal-audio/2d/playback.svg" alt="تشغيل الصوت 2D" width="52">](../icons/v15/royal-audio/2d/playback.svg) | [<img src="../icons/v15/royal-audio/3d/playback.svg" alt="تشغيل الصوت 3D" width="52">](../icons/v15/royal-audio/3d/playback.svg) | `playback` |
+
 ## الحقوق والمنشأ
 
 الأيقونات الجديدة أصلية ومؤلفة خصيصاً لـROYAL Design. كل ملف يحمل بيان منشأ `original_royal` وترخيص `ROYAL_ORIGINAL`. لا تحتوي المجموعات على أعمال IconScout أو شعارات تجارية منسوخة أو مسارات متتبعة.

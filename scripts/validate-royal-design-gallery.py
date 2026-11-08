@@ -14,6 +14,7 @@ EXPECTED = {
     "V12": ("royal-plus", 8),
     "V13": ("rs-tv", 8),
     "V14": ("rami-developer", 8),
+    "V15": ("royal-audio", 12),
 }
 
 def fail(message: str) -> None:
@@ -21,7 +22,7 @@ def fail(message: str) -> None:
 
 data = json.loads(MANIFEST.read_text(encoding="utf-8"))
 versions = data.get("versions", [])
-if len(versions) != 5:
+if len(versions) != 6:
     fail("the app manifest must contain exactly five application collections")
 seen = set()
 count = 0
