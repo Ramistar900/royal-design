@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "library": "ROYAL DESIGN V10",
+  "dimension": "2D",
+  "styles": [
+    "flat",
+    "glass"
+  ],
+  "status": "initial_source_import",
+  "note": "Approved original SVG source artwork copied unchanged. Flat and Glass redesign variants are not yet claimed as complete.",
+  "assets": [
+    {
+      "key": "account_circle",
+      "label": "حساب المستخدم",
+      "path": "icons/v10/2d/account_circle.svg",
+      "source": "icons/v2/svg/account_circle.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "apps",
+      "label": "التطبيقات",
+      "path": "icons/v10/2d/apps.svg",
+      "source": "icons/v2/svg/apps.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "folder",
+      "label": "مجلد",
+      "path": "icons/v10/2d/folder.svg",
+      "source": "icons/v2/svg/folder.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "wifi",
+      "label": "واي فاي",
+      "path": "icons/v10/2d/wifi.svg",
+      "source": "icons/v2/svg/wifi.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "coffee",
+      "label": "قهوة",
+      "path": "icons/v10/2d/coffee.svg",
+      "source": "icons/v3/svg/royal_coffee.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "wallet",
+      "label": "محفظة",
+      "path": "icons/v10/2d/wallet.svg",
+      "source": "icons/v5/finance-shopping/svg/royal_wallet.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "cart",
+      "label": "عربة التسوق",
+      "path": "icons/v10/2d/cart.svg",
+      "source": "icons/v5/finance-shopping/svg/royal_cart.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "gift_box",
+      "label": "هدية",
+      "path": "icons/v10/2d/gift_box.svg",
+      "source": "icons/v6/colorful-finance-shopping/svg/royal_gift_box.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "settings",
+      "label": "الإعدادات",
+      "path": "icons/v10/2d/settings.svg",
+      "source": "icons/v7/colorful-controls-media/svg/royal_settings.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "search",
+      "label": "بحث",
+      "path": "icons/v10/2d/search.svg",
+      "source": "icons/v7/colorful-controls-media/svg/royal_search.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "delivery_truck",
+      "label": "شاحنة توصيل",
+      "path": "icons/v10/2d/delivery_truck.svg",
+      "source": "icons/v6/colorful-finance-shopping/svg/royal_delivery_truck.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    },
+    {
+      "key": "cafe_coffee",
+      "label": "قهوة المقهى",
+      "path": "icons/v10/2d/cafe_coffee.svg",
+      "source": "icons/v9/cafe-orders/svg/royal_coffee.svg",
+      "format": "svg",
+      "status": "imported_source_copy"
+    }
+  ]
+}
