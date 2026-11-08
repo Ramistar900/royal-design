@@ -36,6 +36,9 @@ jobs:
           test "$(find _site/audio/assets/ogg -maxdepth 1 -type f -name '*.ogg' | wc -l)" -eq 33
           find _site -type f -print
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
