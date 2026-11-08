@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "title": "ROYAL DESIGN approved V10/V11 import manifest",
+  "approval": "User approved all candidates in review/first-batch-v10-v11.md",
+  "updated": "2026-11-08",
+  "v10_2d": {
+    "status": "approved_pending_packaging",
+    "assets": [
+      {
+        "key": "account_circle",
+        "label": "حساب المستخدم",
+        "source": "icons/v2/svg/account_circle.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "apps",
+        "label": "التطبيقات",
+        "source": "icons/v2/svg/apps.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "folder",
+        "label": "مجلد",
+        "source": "icons/v2/svg/folder.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "wifi",
+        "label": "واي فاي",
+        "source": "icons/v2/svg/wifi.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "coffee",
+        "label": "قهوة",
+        "source": "icons/v3/svg/royal_coffee.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "wallet",
+        "label": "محفظة",
+        "source": "icons/v5/finance-shopping/svg/royal_wallet.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "cart",
+        "label": "عربة التسوق",
+        "source": "icons/v5/finance-shopping/svg/royal_cart.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "gift_box",
+        "label": "هدية",
+        "source": "icons/v6/colorful-finance-shopping/svg/royal_gift_box.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "settings",
+        "label": "الإعدادات",
+        "source": "icons/v7/colorful-controls-media/svg/royal_settings.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "search",
+        "label": "بحث",
+        "source": "icons/v7/colorful-controls-media/svg/royal_search.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "delivery_truck",
+        "label": "شاحنة توصيل",
+        "source": "icons/v6/colorful-finance-shopping/svg/royal_delivery_truck.svg",
+        "status": "approved_existing_source"
+      },
+      {
+        "key": "cafe_coffee",
+        "label": "قهوة المقهى",
+        "source": "icons/v9/cafe-orders/svg/royal_coffee.svg",
+        "status": "approved_existing_source"
+      }
+    ]
+  },
+  "v11_3d": {
+    "status": "approved_pending_binary_import",
+    "source_collection": "https://3dicons.co/collection/b68cf8-v1",
+    "license": "CC0-1.0",
+    "assets": [
+      {
+        "slug": "takeaway-cup",
+        "label": "كوب سفري",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/takeaway-cup-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/takeaway-cup-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/takeaway-cup-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "cup",
+        "label": "كوب",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/cup-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/cup-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/cup-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "wallet",
+        "label": "محفظة",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/wallet-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/wallet-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/wallet-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "setting",
+        "label": "إعدادات",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/setting-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/setting-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/setting-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "mobile",
+        "label": "هاتف",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/mobile-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/mobile-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/mobile-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "map-pin",
+        "label": "موقع",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/map-pin-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/map-pin-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/map-pin-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "gift",
+        "label": "هدية",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/gift-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/gift-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/gift-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "sheild",
+        "label": "درع أمان",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/sheild-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/sheild-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/sheild-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "folder",
+        "label": "مجلد",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/folder-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/folder-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/folder-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "computer",
+        "label": "حاسوب",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/computer-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/computer-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/computer-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "rocket",
+        "label": "صاروخ",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/rocket-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/rocket-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/rocket-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      },
+      {
+        "slug": "chat-bubble",
+        "label": "محادثة",
+        "license": "CC0-1.0",
+        "source_repository": "https://github.com/realvjy/3dicons",
+        "renders": [
+          {
+            "style": "clay",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/clay/chat-bubble-dynamic-clay.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "gradient",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/gradient/chat-bubble-dynamic-gradient.png",
+            "status": "approved_pending_import"
+          },
+          {
+            "style": "color",
+            "url": "https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/chat-bubble-dynamic-color.png",
+            "status": "approved_pending_import"
+          }
+        ]
+      }
+    ]
+  },
+  "v12_motion": {
+    "status": "separate_branch_not_included"
+  },
+  "notes": [
+    "This manifest records approval and exact sources; it does not claim source binaries have been imported.",
+    "Do not import premium renders or assets outside the CC0 V1 source collection.",
+    "Keep existing V2-V9 assets unchanged until replacements are packaged and validated."
+  ]
+}
