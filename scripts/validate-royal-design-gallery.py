@@ -1,65 +1,79 @@
 #!/usr/bin/env python3
-"""Validate the private ROYAL Design browser gallery and currently shipped V10/V13 assets."""
+"""Validate app-specific ROYAL Design collections, paired SVG files, and web gallery."""
 import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-HTML = ROOT / "preview/v9-icon-catalog/index.html"
+MANIFEST = ROOT / "icons/app-collections.json"
+GALLERY = ROOT / "preview/royal-design/index.html"
+EXPECTED = {
+    "V10": ("almalaki", 8),
+    "V11": ("royal-tv", 8),
+    "V12": ("royal-plus", 8),
+    "V13": ("rs-tv", 8),
+    "V14": ("rami-developer", 8),
+}
 
 def fail(message: str) -> None:
     raise SystemExit(f"ERROR: {message}")
 
-html = HTML.read_text(encoding="utf-8")
-match = re.search(r"const groups=(.*?),labels=", html, re.S)
-if not match:
-    fail("gallery groups data block is missing")
-groups = json.loads(match.group(1))
-
-for version in [f"v{i}" for i in range(2, 10)]:
-    if not any(group["v"] == version for group in groups):
-        fail(f"gallery is missing {version.upper()}")
-
-v10 = [g for g in groups if g["v"] == "v10"]
-if len(v10) != 1 or len(v10[0]["items"]) != 12:
-    fail("V10 gallery must expose the 12 imported source SVGs")
-for item in v10[0]["items"]:
-    path = ROOT / v10[0]["path"] / f"{item}.svg"
-    if not path.is_file():
-        fail(f"missing V10 SVG: {path.relative_to(ROOT)}")
-
-v13 = [g for g in groups if g["v"] == "v13"]
-if len(v13) != 2 or {g["title"].rsplit(" ", 1)[-1] for g in v13} != {"Flat", "Glass"}:
-    fail("V13 must expose separate Flat and Glass gallery groups")
-if any(len(group["items"]) != 8 for group in v13):
-    fail("each V13 style must contain 8 concepts")
-for group in v13:
-    for item in group["items"]:
-        path = ROOT / group["path"] / f"{item}.svg"
-        if not path.is_file():
-            fail(f"missing V13 SVG: {path.relative_to(ROOT)}")
-
-for catalog_path, expected in [
-    ("icons/v10/2d/catalog.json", 12),
-    ("icons/v13/2d/catalog.json", 8),
-]:
-    catalog = json.loads((ROOT / catalog_path).read_text(encoding="utf-8"))
-    if len(catalog.get("assets", [])) != expected:
-        fail(f"{catalog_path} must contain {expected} assets")
-
-for svg in list((ROOT / "icons/v10/2d").glob("*.svg")) + list((ROOT / "icons/v13/2d/flat").glob("*.svg")) + list((ROOT / "icons/v13/2d/glass").glob("*.svg")):
-    try:
-        node = ET.parse(svg).getroot()
-    except ET.ParseError as exc:
-        fail(f"invalid SVG XML in {svg.relative_to(ROOT)}: {exc}")
-    if not node.tag.endswith("svg"):
-        fail(f"unexpected root element in {svg.relative_to(ROOT)}")
-
-for version in ("V11", "V12", "V14"):
-    if version not in html or "قيد الإكمال" not in html:
-        fail(f"gallery roadmap is missing {version}")
-if 'value="v10"' not in html or 'value="v13"' not in html:
-    fail("version filter must include V10 and V13")
-
-print("ROYAL Design gallery validation passed: V2–V10 and V13 assets/paths verified; V11/V12/V14 are explicitly marked in progress.")
+data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+versions = data.get("versions", [])
+if len(versions) != 5:
+    fail("the app manifest must contain exactly five application collections")
+seen = set()
+count = 0
+for app in versions:
+    version = app.get("version")
+    if version not in EXPECTED:
+        fail(f"unexpected application version: {version}")
+    slug, expected_count = EXPECTED[version]
+    if app.get("slug") != slug:
+        fail(f"{version} has the wrong application slug")
+    icons = app.get("icons", [])
+    if len(icons) != expected_count:
+        fail(f"{version} must contain {expected_count} concepts")
+    keys = set()
+    for icon in icons:
+        key = icon.get("key", "")
+        if not re.fullmatch(r"[a-z0-9-]+", key) or key in keys:
+            fail(f"{version}: invalid or duplicate icon key {key!r}")
+        keys.add(key)
+        if not icon.get("label_ar") or not icon.get("label_en"):
+            fail(f"{version}/{key}: both Arabic and English labels are required")
+        if icon.get("rights", {}).get("origin") != "original_royal":
+            fail(f"{version}/{key}: missing original-work provenance")
+        if icon.get("rights", {}).get("license") != "ROYAL_ORIGINAL":
+            fail(f"{version}/{key}: missing ROYAL_ORIGINAL license")
+        variants = icon.get("variants", {})
+        if set(variants) != {"2d", "3d"}:
+            fail(f"{version}/{key}: the 2D and 3D pair is incomplete")
+        for style, relative in variants.items():
+            path = (ROOT / relative).resolve()
+            if ROOT not in path.parents or not path.is_file():
+                fail(f"missing or unsafe asset path: {relative}")
+            try:
+                node = ET.parse(path).getroot()
+            except ET.ParseError as exc:
+                fail(f"invalid SVG XML in {relative}: {exc}")
+            if not node.tag.endswith("svg"):
+                fail(f"unexpected SVG root in {relative}")
+            view_box = node.attrib.get("viewBox")
+            if not view_box:
+                fail(f"missing viewBox in {relative}")
+        count += 1
+    if app.get("dimension_styles") != ["2d", "3d"]:
+        fail(f"{version}: dimension style declaration is inconsistent")
+if set(a["version"] for a in versions) != set(EXPECTED):
+    fail("one or more app-specific versions are missing")
+if data.get("totals", {}).get("concepts") != count:
+    fail("manifest concept total does not match its entries")
+if data.get("totals", {}).get("flat_svg") != count or data.get("totals", {}).get("dimensional_svg") != count:
+    fail("manifest 2D/3D file totals do not match the entries")
+html = GALLERY.read_text(encoding="utf-8")
+for required in ("app-collections.json", "2d", "3d", "search", "aria-pressed"):
+    if required not in html:
+        fail(f"gallery is missing required feature: {required}")
+print(f"ROYAL Design app gallery passed: {len(versions)} collections, {count} concepts, {count * 2} paired SVG files.")

@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "version": "V12",
+  "slug": "royal-plus",
+  "application": "ROYAL+ Launcher",
+  "name_ar": "ROYAL+",
+  "description_ar": "الواجهة والطقس والخلفيات والقرآن ومواقيت الصلاة",
+  "dimension_styles": [
+    "2d",
+    "3d"
+  ],
+  "collection_path": "icons/v12/royal-plus",
+  "status": "original_batch_authored_pending_visual_review",
+  "accent_policy": "application-specific ROYAL palette",
+  "icons": [
+    {
+      "key": "apps",
+      "label_ar": "التطبيقات",
+      "label_en": "Apps",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/apps.svg",
+        "3d": "icons/v12/royal-plus/3d/apps.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "weather",
+      "label_ar": "الطقس المشمس",
+      "label_en": "Sunny weather",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/weather.svg",
+        "3d": "icons/v12/royal-plus/3d/weather.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "rain",
+      "label_ar": "المطر",
+      "label_en": "Rain",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/rain.svg",
+        "3d": "icons/v12/royal-plus/3d/rain.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "fireplace",
+      "label_ar": "المدفأة",
+      "label_en": "Fireplace",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/fireplace.svg",
+        "3d": "icons/v12/royal-plus/3d/fireplace.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "birds",
+      "label_ar": "أصوات الطيور",
+      "label_en": "Bird ambience",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/birds.svg",
+        "3d": "icons/v12/royal-plus/3d/birds.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "quran",
+      "label_ar": "القرآن الكريم",
+      "label_en": "Quran",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/quran.svg",
+        "3d": "icons/v12/royal-plus/3d/quran.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "prayer",
+      "label_ar": "مواقيت الصلاة",
+      "label_en": "Prayer times",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/prayer.svg",
+        "3d": "icons/v12/royal-plus/3d/prayer.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "wallpaper",
+      "label_ar": "الخلفيات",
+      "label_en": "Wallpapers",
+      "variants": {
+        "2d": "icons/v12/royal-plus/2d/wallpaper.svg",
+        "3d": "icons/v12/royal-plus/3d/wallpaper.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    }
+  ],
+  "rights": {
+    "owner": "ROYAL Design",
+    "license": "ROYAL_ORIGINAL",
+    "policy": "Original geometric SVG artwork authored for ROYAL projects. No third-party icon files, marketplace artwork, traced paths, brand logos, or copied compositions are included.",
+    "commercial_use": "Internal use in ROYAL applications is permitted. External redistribution must retain this provenance notice."
+  }
+}

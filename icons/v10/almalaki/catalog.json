@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "version": "V10",
+  "slug": "almalaki",
+  "application": "Almalaki",
+  "name_ar": "الملكي",
+  "description_ar": "المقهى والمطعم والطلبات والمبيعات",
+  "dimension_styles": [
+    "2d",
+    "3d"
+  ],
+  "collection_path": "icons/v10/almalaki",
+  "status": "original_batch_authored_pending_visual_review",
+  "accent_policy": "application-specific ROYAL palette",
+  "icons": [
+    {
+      "key": "coffee",
+      "label_ar": "قهوة",
+      "label_en": "Coffee",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/coffee.svg",
+        "3d": "icons/v10/almalaki/3d/coffee.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "restaurant",
+      "label_ar": "المطعم",
+      "label_en": "Restaurant",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/restaurant.svg",
+        "3d": "icons/v10/almalaki/3d/restaurant.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "menu",
+      "label_ar": "قائمة الطعام",
+      "label_en": "Menu",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/menu.svg",
+        "3d": "icons/v10/almalaki/3d/menu.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "cart",
+      "label_ar": "سلة التسوق",
+      "label_en": "Shopping cart",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/cart.svg",
+        "3d": "icons/v10/almalaki/3d/cart.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "order",
+      "label_ar": "الطلبات",
+      "label_en": "Orders",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/order.svg",
+        "3d": "icons/v10/almalaki/3d/order.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "table",
+      "label_ar": "الطاولات والحجوزات",
+      "label_en": "Tables & bookings",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/table.svg",
+        "3d": "icons/v10/almalaki/3d/table.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "delivery",
+      "label_ar": "التوصيل",
+      "label_en": "Delivery",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/delivery.svg",
+        "3d": "icons/v10/almalaki/3d/delivery.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    },
+    {
+      "key": "payment",
+      "label_ar": "الدفع",
+      "label_en": "Payment",
+      "variants": {
+        "2d": "icons/v10/almalaki/2d/payment.svg",
+        "3d": "icons/v10/almalaki/3d/payment.svg"
+      },
+      "rights": {
+        "origin": "original_royal",
+        "license": "ROYAL_ORIGINAL",
+        "authoring_note": "Independently authored geometric SVG artwork for ROYAL Design; no third-party source artwork copied or traced."
+      },
+      "status": "authored_pending_visual_review"
+    }
+  ],
+  "rights": {
+    "owner": "ROYAL Design",
+    "license": "ROYAL_ORIGINAL",
+    "policy": "Original geometric SVG artwork authored for ROYAL projects. No third-party icon files, marketplace artwork, traced paths, brand logos, or copied compositions are included.",
+    "commercial_use": "Internal use in ROYAL applications is permitted. External redistribution must retain this provenance notice."
+  }
+}

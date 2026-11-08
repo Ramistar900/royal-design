@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11110f">
+<meta name="description" content="معرض ROYAL Design الخاص: أيقونات أصلية لكل تطبيق بنسختين 2D و3D.">
+<title>ROYAL Design — مكتبة أيقونات التطبيقات</title>
+<style>
+:root{color-scheme:dark;--bg:#11110f;--panel:#1b1b18;--line:#39362d;--gold:#dfbd65;--text:#f4f0e5;--muted:#b0aa9c;--green:#168b72}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#2a251b 0,#11110f 55%);color:var(--text);font:15px system-ui,-apple-system,"Segoe UI",sans-serif}
+header,main,footer{max-width:1180px;margin:auto;padding-left:18px;padding-right:18px}
+header{padding-top:26px;padding-bottom:18px}h1{margin:0;color:var(--gold);font-size:clamp(27px,5vw,40px)}header p{color:var(--muted);line-height:1.7;margin:9px 0 18px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.stat{border:1px solid #51452b;background:#201e18;color:#dfc77f;border-radius:11px;padding:8px 11px;font-size:13px}
+.toolbar{display:grid;grid-template-columns:minmax(190px,1fr) minmax(150px,220px);gap:9px}
+input,select{width:100%;border:1px solid var(--line);background:#191917;color:white;border-radius:12px;padding:12px;font:inherit}
+.apps{display:flex;gap:8px;overflow-x:auto;padding:14px 0 8px}
+.app{white-space:nowrap;border:1px solid var(--line);background:#24231f;color:#eee;border-radius:999px;padding:10px 15px;font:inherit;cursor:pointer}
+.app[aria-pressed=true]{border-color:var(--gold);color:var(--gold);background:#302a1d}
+.note{padding:12px 14px;border:1px solid #57492a;background:#211f19;border-radius:13px;color:#d7cca9;font-size:13px;line-height:1.75;margin-top:10px}
+main{padding-top:12px;padding-bottom:40px}.collection-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin:14px 0 18px}
+h2{font-size:21px;color:var(--gold);margin:0 0 5px}.sub{color:var(--muted);font-size:13px}.status{font-size:12px;border:1px solid #65552b;color:#ecd28a;border-radius:30px;padding:6px 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:13px}
+.card{border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#25241f,#181816);padding:12px;min-width:0}
+.card-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}.label{font-weight:750}.key{font:12px ui-monospace,monospace;color:#e7c96f;direction:ltr;text-align:left;overflow-wrap:anywhere}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.variant{min-width:0;border:1px solid #34332d;background:#11110f;border-radius:12px;padding:7px;text-align:center}
+.variant img{width:100%;height:104px;object-fit:contain;display:block}.variant-name{font-size:12px;color:var(--muted);margin-top:3px}
+.variant a{display:block;color:inherit;text-decoration:none}.variant a:focus,.app:focus,input:focus,select:focus,button:focus{outline:2px solid var(--gold);outline-offset:2px}
+.actions{display:flex;gap:7px;margin-top:10px}.actions a,.actions button{flex:1;text-align:center;border:1px solid #51452b;background:#302b1d;color:#f3df9d;padding:8px 5px;border-radius:9px;text-decoration:none;font:12px system-ui;cursor:pointer}
+.empty{text-align:center;padding:40px 12px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:16px;padding-bottom:28px;color:var(--muted);font-size:12px;line-height:1.8}
+@media(max-width:520px){header,main,footer{padding-left:13px;padding-right:13px}.toolbar{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{padding:8px}.variant img{height:84px}.card-title{display:block}.key{margin-top:5px;font-size:10px}.actions{gap:5px}.actions a,.actions button{font-size:11px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<h1>ROYAL Design</h1>
+<p>مكتبة أيقونات موحّدة لتطبيقات ROYAL. كل مفهوم له نسختان متجاورتان: 2D و3D، بالاسم العربي والإنجليزي ومفتاح استخدام ثابت.</p>
+<div class="stats" id="stats"><span class="stat">تحميل الفهرس…</span></div>
+<div class="toolbar">
+<input id="search" type="search" placeholder="ابحث بالاسم أو المفتاح…" aria-label="البحث عن أيقونة">
+<select id="styleFilter" aria-label="تصفية النمط"><option value="all">عرض 2D و3D معاً</option><option value="2d">2D فقط</option><option value="3d">3D فقط</option></select>
+</div>
+<nav class="apps" id="apps" aria-label="اختيار التطبيق"></nav>
+<div class="note">الأعمال الجديدة مرسومة خصيصاً لمكتبة ROYAL Design بأشكال هندسية أصلية. لا تتضمن ملفات IconScout أو شعارات علامات تجارية منسوخة. الحالة الحالية: ملفات أُنشئت وفُهرست؛ الاعتماد البصري النهائي يتطلب مراجعتها داخل كل تطبيق وعلى أجهزته المستهدفة.</div>
+</header>
+<main>
+<section class="collection-head">
+<div><h2 id="collectionTitle">مكتبة التطبيقات</h2><div class="sub" id="collectionDescription"></div></div>
+<div class="status" id="collectionStatus">ROYAL ORIGINAL</div>
+</section>
+<section class="grid" id="grid" aria-live="polite"></section>
+<div class="empty" id="empty" hidden>لا توجد أيقونات مطابقة للبحث.</div>
+</main>
+<footer>
+<strong>ROYAL ORIGINAL · ROYAL Design</strong><br>
+مسارات 2D و3D محفوظة كملفات SVG مستقلة وقابلة للتكبير. ترخيص الأصول الداخلية: ROYAL_ORIGINAL. احتفظ ببيانات المنشأ عند نقل الأيقونات إلى تطبيقات ROYAL.
+</footer>
+<script>
+const manifestUrl='../../icons/app-collections.json';
+const rootPrefix='../../';
+const appNav=document.getElementById('apps');
+const grid=document.getElementById('grid');
+const search=document.getElementById('search');
+const styleFilter=document.getElementById('styleFilter');
+const stats=document.getElementById('stats');
+const title=document.getElementById('collectionTitle');
+const description=document.getElementById('collectionDescription');
+const status=document.getElementById('collectionStatus');
+const empty=document.getElementById('empty');
+let collections=[],active=0;
+function el(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node}
+function assetUrl(path){return rootPrefix+path}
+function copyText(value,button){const prior=button.textContent;const done=()=>{button.textContent='تم النسخ ✓';setTimeout(()=>button.textContent=prior,1000)};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(value).then(done).catch(()=>fallback())}else fallback();function fallback(){const t=document.createElement('textarea');t.value=value;document.body.append(t);t.select();try{document.execCommand('copy');done()}finally{t.remove()}}}
+function renderNav(){appNav.innerHTML='';collections.forEach((app,i)=>{const b=el('button','app',app.version+' · '+app.name_ar);b.type='button';b.setAttribute('aria-pressed',String(i===active));b.addEventListener('click',()=>{active=i;renderNav();render()});appNav.append(b)})}
+function makeVariant(icon,style){const path=icon.variants[style];const box=el('div','variant');const link=el('a');link.href=assetUrl(path);link.target='_blank';link.rel='noopener';const img=el('img');img.src=assetUrl(path);img.alt=icon.label_ar+' — '+style.toUpperCase();img.loading='lazy';img.onerror=()=>{img.alt='تعذرت معاينة الأصل';img.style.opacity='.25'};link.append(img);link.append(el('div','variant-name',style==='2d'?'2D · مسطّح':'3D · عمق'));box.append(link);return box}
+function render(){const app=collections[active];if(!app)return;title.textContent=app.version+' · '+app.name_ar;description.textContent=app.application+' — '+app.description_ar;status.textContent='ROYAL ORIGINAL · '+app.icons.length+' مفاهيم';grid.innerHTML='';let count=0;const q=search.value.trim().toLocaleLowerCase();for(const icon of app.icons){const searchable=(icon.key+' '+icon.label_ar+' '+icon.label_en).toLocaleLowerCase();if(q&&!searchable.includes(q))continue;count++;const card=el('article','card');const heading=el('div','card-title');heading.append(el('div','label',icon.label_ar+' · '+icon.label_en));heading.append(el('div','key',icon.key));card.append(heading);const pair=el('div','pair');if(styleFilter.value!=='3d')pair.append(makeVariant(icon,'2d'));if(styleFilter.value!=='2d')pair.append(makeVariant(icon,'3d'));card.append(pair);const actions=el('div','actions');const copy=el('button','', 'نسخ المفتاح');copy.type='button';copy.addEventListener('click',()=>copyText(icon.key,copy));actions.append(copy);const details=el('a','','ملف الفهرس');details.href=assetUrl(app.collection_path+'/catalog.json');details.target='_blank';details.rel='noopener';actions.append(details);card.append(actions);grid.append(card)}empty.hidden=count!==0}
+async function init(){try{const r=await fetch(manifestUrl,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const data=await r.json();collections=data.versions||[];const total=collections.reduce((n,a)=>n+a.icons.length,0);stats.innerHTML='';[collections.length+' تطبيقات',total+' مفهوماً',total+' نسخة 2D',total+' نسخة 3D'].forEach(v=>stats.append(el('span','stat',v)));renderNav();render()}catch(e){stats.textContent='تعذر تحميل الفهرس. افتح المجلد من داخل المستودع أو بعد تنزيل حزمة المعرض كاملة.';grid.innerHTML='';empty.hidden=false;empty.textContent='لم يتم العثور على icons/app-collections.json: '+e.message}}
+search.addEventListener('input',render);styleFilter.addEventListener('change',render);init();
+</script>
+</body>
+</html>
