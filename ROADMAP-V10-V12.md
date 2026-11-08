@@ -99,3 +99,8 @@
 ## قاعدة مهمة
 
 المكتبة الكبيرة لا تعني استيراد كل شيء بلا تمييز. الأولوية لأصول كثيرة مفيدة، واضحة المعنى، متناسقة، قانونية الاستخدام، وقابلة للصيانة والتصدير.
+
+
+## V13–V14 extension
+
+The next two tracks are documented in [ROADMAP-V13-V14-ICONSCOUT-SAFE.md](ROADMAP-V13-V14-ICONSCOUT-SAFE.md). V13 is original 2D; V14 is original 3D. IconScout is inspiration/reference only: no marketplace source files are copied into the reusable library. Motion remains the independent V12 track. Existing V2–V12 assets remain untouched pending review and explicit approval.
