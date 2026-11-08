@@ -1,0 +1,39 @@
+name: Validate ROYAL Design V10–V14 gallery
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "preview/v9-icon-catalog/**"
+      - "gallery/**"
+      - "README.md"
+      - "icons/README.md"
+      - "icons/v10/**"
+      - "icons/v13/**"
+      - "scripts/validate-royal-design-gallery.py"
+      - ".github/workflows/validate-royal-design-gallery.yml"
+  push:
+    branches: [main]
+    paths:
+      - "preview/v9-icon-catalog/**"
+      - "gallery/**"
+      - "README.md"
+      - "icons/README.md"
+      - "icons/v10/**"
+      - "icons/v13/**"
+      - "scripts/validate-royal-design-gallery.py"
+      - ".github/workflows/validate-royal-design-gallery.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-gallery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate gallery data, paths, and SVG XML
+        run: python scripts/validate-royal-design-gallery.py
