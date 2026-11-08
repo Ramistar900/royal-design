@@ -4,79 +4,91 @@
   "approval": "User approved all candidates in review/first-batch-v10-v11.md",
   "updated": "2026-11-08",
   "v10_2d": {
-    "status": "approved_pending_packaging",
+    "status": "imported_source_copy_on_main",
     "assets": [
       {
         "key": "account_circle",
         "label": "حساب المستخدم",
         "source": "icons/v2/svg/account_circle.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/account_circle.svg"
       },
       {
         "key": "apps",
         "label": "التطبيقات",
         "source": "icons/v2/svg/apps.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/apps.svg"
       },
       {
         "key": "folder",
         "label": "مجلد",
         "source": "icons/v2/svg/folder.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/folder.svg"
       },
       {
         "key": "wifi",
         "label": "واي فاي",
         "source": "icons/v2/svg/wifi.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/wifi.svg"
       },
       {
         "key": "coffee",
         "label": "قهوة",
         "source": "icons/v3/svg/royal_coffee.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/coffee.svg"
       },
       {
         "key": "wallet",
         "label": "محفظة",
         "source": "icons/v5/finance-shopping/svg/royal_wallet.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/wallet.svg"
       },
       {
         "key": "cart",
         "label": "عربة التسوق",
         "source": "icons/v5/finance-shopping/svg/royal_cart.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/cart.svg"
       },
       {
         "key": "gift_box",
         "label": "هدية",
         "source": "icons/v6/colorful-finance-shopping/svg/royal_gift_box.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/gift_box.svg"
       },
       {
         "key": "settings",
         "label": "الإعدادات",
         "source": "icons/v7/colorful-controls-media/svg/royal_settings.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/settings.svg"
       },
       {
         "key": "search",
         "label": "بحث",
         "source": "icons/v7/colorful-controls-media/svg/royal_search.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/search.svg"
       },
       {
         "key": "delivery_truck",
         "label": "شاحنة توصيل",
         "source": "icons/v6/colorful-finance-shopping/svg/royal_delivery_truck.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/delivery_truck.svg"
       },
       {
         "key": "cafe_coffee",
         "label": "قهوة المقهى",
         "source": "icons/v9/cafe-orders/svg/royal_coffee.svg",
-        "status": "approved_existing_source"
+        "status": "imported_source_copy",
+        "imported_path": "icons/v10/2d/cafe_coffee.svg"
       }
     ]
   },
@@ -361,7 +373,8 @@
           }
         ]
       }
-    ]
+    ],
+    "note": "All 36 V1 render URLs remain approved, but source PNG binaries have not been imported; CDN access could not be verified in this session."
   },
   "v12_motion": {
     "status": "separate_branch_not_included"
