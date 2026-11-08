@@ -8,7 +8,7 @@ on:
       - "audio/assets/ogg/**"
       - ".github/workflows/deploy-royal-audio-pages.yml"
   push:
-    branches: [main]
+    branches: [main, fix/royal-audio-public-host-validation]
     paths:
       - "audio/player.html"
       - "audio/assets/ogg/**"
