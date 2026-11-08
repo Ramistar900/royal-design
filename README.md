@@ -10,6 +10,12 @@ Private shared design and icon library for ROYAL projects.
 
 الإجمالي: **162 أيقونة أساسية**، و162 مورداً ثابتاً لـAndroid، إضافة إلى 37 نسخة SVG متحركة و37 مورداً Android متحركاً في V9.
 
+## ROYAL DESIGN V13 — Original 2D icons
+
+- Guide: [icons/v13/2d/README.md](./icons/v13/2d/README.md)
+- Catalog: [icons/v13/2d/catalog.json](./icons/v13/2d/catalog.json)
+- First batch: 8 original concepts with separate Flat and Glass SVGs (16 files). Visual approval is still pending; no IconScout artwork is included.
+
 ## ROYAL AUDIO — Shared Audio Library
 
 - Guide: [audio/README.md](./audio/README.md)
