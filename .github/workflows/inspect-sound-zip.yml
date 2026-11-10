@@ -40,4 +40,8 @@ jobs:
               print(f"AUDIO_FILES_TOTAL={len(audio)}")
               for i in entries:
                   print(f"{i.file_size}\t{i.filename}")
+              for name in ("sound_manifest.json", "SOUND_LIBRARY.md"):
+                  if name in z.namelist():
+                      print(f"\n===== {name} =====")
+                      print(z.read(name).decode("utf-8", errors="replace"))
           PY
