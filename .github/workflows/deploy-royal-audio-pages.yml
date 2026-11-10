@@ -59,8 +59,10 @@ jobs:
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           find _site -type f -print
 
-      - name: Configure GitHub Pages
+      - name: Configure and enable GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
