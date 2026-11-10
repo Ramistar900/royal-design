@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b18">
+<title>ROYAL UI SOUNDS — معرض الأصوات</title>
+<style>
+:root{color-scheme:dark;--bg:#071b18;--panel:#102923;--line:#285347;--gold:#d8b66a;--muted:#b8c9c2;--text:#f4f5ef}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#173d32 0,#071b18 55%);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:28px 18px 20px;text-align:center;border-bottom:1px solid var(--line)}.brand{color:var(--gold);letter-spacing:.18em;font-weight:800;font-size:13px}
+h1{margin:9px 0 5px;font-size:clamp(25px,5vw,38px)}header p{margin:0;color:var(--muted)}
+main{max-width:1050px;margin:auto;padding:20px 16px 48px}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0 0 18px}.pill{border:1px solid var(--line);background:#102923;border-radius:99px;padding:8px 14px;color:var(--gold);font-size:14px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}input{flex:1;min-width:210px;background:#102923;border:1px solid var(--line);border-radius:12px;padding:13px;color:var(--text);font:inherit}
+button{background:#173d32;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font:inherit;cursor:pointer}button:hover{border-color:var(--gold)}
+section{margin:25px 0}h2{font-size:20px;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:9px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:12px}
+.item{background:linear-gradient(145deg,#123128,#0d241f);border:1px solid var(--line);border-radius:14px;padding:14px;min-width:0}
+.item h3{font-size:16px;margin:0 0 5px;direction:ltr;text-align:left;overflow-wrap:anywhere}
+.path{font-size:12px;color:var(--muted);direction:ltr;text-align:left;overflow-wrap:anywhere;margin:0 0 10px}
+audio{width:100%;height:38px;accent-color:var(--gold)}
+#status{color:var(--muted);text-align:center;padding:18px}.error{color:#ffb4a9}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:24px}
+</style>
+</head>
+<body>
+<header><div class="brand">ROYAL DESIGN • AUDIO LIBRARY</div><h1>ROYAL UI SOUNDS</h1><p>معرض أصوات الواجهة والتنقل والتلفاز — استمع إلى كل صوت قبل اعتماده</p></header>
+<main>
+<div class="stats"><span class="pill" id="count">جارٍ فحص المكتبة…</span><span class="pill">WAV • 44.1 kHz • Mono • 16-bit</span><span class="pill">مستقل عن أصوات الطبيعة والطقس</span></div>
+<div class="tools"><input id="search" type="search" placeholder="ابحث عن صوت أو مسار…" aria-label="بحث عن صوت"><button id="stop" type="button">إيقاف كل الأصوات</button></div>
+<div id="gallery"><p id="status">تحميل البيان والتحقق من الملفات…</p></div>
+</main>
+<footer>ROYAL UI SOUNDS — مكتبة مؤثرات واجهة غير ناطقة، دون أصوات بشرية أو موسيقى.</footer>
+<script>
+const labels={nav:"التنقل والتركيز",select:"الاختيارات والمفاتيح",action:"الإجراءات والتنبيهات",media:"مشغل الوسائط",tv:"التلفاز والقنوات",system:"النظام"};
+const names={
+"focus_move":"تحريك التركيز","select":"اختيار عنصر","back":"رجوع","open_menu":"فتح القائمة","close_menu":"إغلاق القائمة","home":"الرئيسية","tv_focus":"تركيز ريموت التلفاز","scroll_tick":"نقرة التمرير","swipe":"السحب","error":"رفض أو خطأ",
+"toggle_on":"تشغيل خيار","toggle_off":"إيقاف خيار","check":"مربع اختيار","radio":"اختيار واحد","search_start":"بدء البحث",
+"confirm":"تأكيد","success":"نجاح","warning":"تحذير","add_to_cart":"إضافة إلى السلة","add":"إضافة","remove":"إزالة","delete":"حذف","favorite":"المفضلة","share":"مشاركة","download":"تنزيل","check_done":"اكتمال المهمة","toggle_warning":"تحذير تغيير الحالة",
+"play":"تشغيل","pause":"إيقاف مؤقت","stop":"إيقاف","next":"التالي","prev":"السابق","seek":"تقديم أو ترجيع","volume_tick":"تغيير مستوى الصوت","mute":"كتم الصوت","unmute":"إلغاء الكتم","fullscreen_enter":"دخول ملء الشاشة","fullscreen_exit":"الخروج من ملء الشاشة","record_start":"بدء التسجيل","record_stop":"إيقاف التسجيل","subtitle_on":"تشغيل الترجمة",
+"channel_change":"تغيير القناة","power_on":"تشغيل التلفاز","power_off":"إطفاء التلفاز","notification":"إشعار","loading_tick":"تحميل","lock":"قفل","keypad_tap":"ضغط لوحة المفاتيح"};
+let audioEls=[];
+function stopAll(){audioEls.forEach(a=>{a.pause();a.currentTime=0})}
+document.getElementById("stop").addEventListener("click",stopAll);
+function render(sounds){
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ const groups={};
+ for(const [id,path] of Object.entries(sounds)){
+  const [category,key]=id.split("/");
+  const label=names[key]||key.replaceAll("_"," ");
+  if(q&&!id.toLowerCase().includes(q)&&!path.toLowerCase().includes(q)&&!label.includes(q))continue;
+  (groups[category]??=[]).push({id,path,label});
+ }
+ const root=document.getElementById("gallery");root.replaceChildren();audioEls=[];
+ for(const [category,items] of Object.entries(groups)){
+  const section=document.createElement("section"),heading=document.createElement("h2"),grid=document.createElement("div");
+  heading.textContent=(labels[category]||category)+" — "+items.length+" صوت";grid.className="grid";
+  for(const item of items){
+   const card=document.createElement("article"),title=document.createElement("h3"),path=document.createElement("p"),audio=document.createElement("audio");
+   card.className="item";title.textContent=item.label+" · "+item.id;path.className="path";path.textContent=item.path;
+   audio.controls=true;audio.preload="none";audio.src="./"+item.path;audio.setAttribute("aria-label","تشغيل "+item.label);
+   audio.addEventListener("play",()=>audioEls.forEach(other=>{if(other!==audio){other.pause();other.currentTime=0}}));
+   audioEls.push(audio);card.append(title,path,audio);grid.append(card);
+  }
+  section.append(heading,grid);root.append(section);
+ }
+ if(!root.children.length){const p=document.createElement("p");p.id="status";p.textContent="لا توجد نتائج مطابقة.";root.append(p)}
+}
+async function init(){
+ try{
+  const response=await fetch("./manifest.json",{cache:"no-store"});if(!response.ok)throw new Error("تعذر تحميل manifest.json");
+  const manifest=await response.json(),sounds=manifest.sounds||{},paths=Object.values(sounds);
+  if(paths.length!==49)throw new Error("عدد البيان ليس 49: "+paths.length);
+  const unique=new Set(paths);if(unique.size!==49)throw new Error("يوجد مسار صوت مكرر في البيان");
+  document.getElementById("count").textContent="49 من 49 صوتاً في البيان";
+  document.getElementById("gallery").replaceChildren();render(sounds);
+  document.getElementById("search").addEventListener("input",()=>render(sounds));
+ }catch(error){document.getElementById("status").textContent=error.message;document.getElementById("status").className="error"}
+}
+init();
+</script>
+</body>
+</html>
