@@ -1,0 +1,43 @@
+name: Inspect sound library ZIP
+
+on:
+  push:
+    paths:
+      - ".github/workflows/inspect-sound-zip.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate and inventory ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, pathlib, zipfile
+          p = pathlib.Path("restaurant_tv_sound_library.zip")
+          if not p.is_file():
+              raise SystemExit("ZIP file not found in repository root")
+          print(f"ZIP_SIZE_BYTES={p.stat().st_size}")
+          print(f"ZIP_SHA256={hashlib.sha256(p.read_bytes()).hexdigest()}")
+          with zipfile.ZipFile(p) as z:
+              bad = z.testzip()
+              if bad:
+                  raise SystemExit(f"CRC_ERROR={bad}")
+              entries = [i for i in z.infolist() if not i.is_dir()]
+              total = sum(i.file_size for i in entries)
+              if total > 200 * 1024 * 1024:
+                  raise SystemExit(f"EXPANDED_SIZE_LIMIT_EXCEEDED={total}")
+              print(f"FILES_TOTAL={len(entries)}")
+              print(f"EXPANDED_SIZE_BYTES={total}")
+              audio = [i for i in entries if pathlib.PurePosixPath(i.filename).suffix.lower() in {".wav",".ogg",".mp3",".m4a",".aac",".flac",".opus"}]
+              print(f"AUDIO_FILES_TOTAL={len(audio)}")
+              for i in entries:
+                  print(f"{i.file_size}\t{i.filename}")
+          PY
