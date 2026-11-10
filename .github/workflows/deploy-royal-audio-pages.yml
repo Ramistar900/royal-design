@@ -2,7 +2,7 @@ name: Deploy ROYAL AUDIO and UI Sounds Gallery
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/royal-ui-sounds]
     paths:
       - "audio/player.html"
       - "audio/assets/ogg/**"
