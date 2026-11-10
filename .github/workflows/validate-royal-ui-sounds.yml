@@ -1,0 +1,37 @@
+name: Validate ROYAL UI Sounds
+
+on:
+  pull_request:
+    paths:
+      - "audio/ui-sounds/**"
+      - ".github/workflows/validate-royal-ui-sounds.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify complete sound set and WAV format
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, pathlib, wave
+          root = pathlib.Path("audio/ui-sounds")
+          manifest = json.loads((root / "manifest.json").read_text())
+          sounds = manifest["sounds"]
+          assert len(sounds) == 49, f"expected 49 manifest entries, found {len(sounds)}"
+          assert len(set(sounds.values())) == 49, "duplicate manifest paths"
+          for rel in sounds.values():
+              path = root / rel
+              assert path.is_file(), f"missing: {rel}"
+              with wave.open(str(path), "rb") as wav:
+                  assert (wav.getnchannels(), wav.getframerate(), wav.getsampwidth()) == (1, 44100, 2), f"invalid WAV format: {rel}"
+          actual = {p.relative_to(root).as_posix() for p in (root / "sounds").rglob("*.wav")}
+          expected = set(sounds.values())
+          assert actual == expected, f"file mismatch: {actual ^ expected}"
+          print(f"PASS: all {len(sounds)} listed WAVs exist; no extras or duplicates; all are 44.1 kHz mono 16-bit PCM.")
+          PY
