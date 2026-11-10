@@ -2,7 +2,7 @@ name: Deploy ROYAL AUDIO and UI Sounds Gallery
 
 on:
   push:
-    branches: [main, feature/royal-ui-sounds]
+    branches: [main]
     paths:
       - "audio/player.html"
       - "audio/assets/ogg/**"
@@ -59,10 +59,8 @@ jobs:
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           find _site -type f -print
 
-      - name: Configure and enable GitHub Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
