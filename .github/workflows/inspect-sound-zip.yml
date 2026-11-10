@@ -1,0 +1,83 @@
+name: Inspect restaurant sound library ZIP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "restaurant_tv_sound_library.zip"
+      - ".github/workflows/inspect-sound-zip.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract safely and inspect archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, zipfile, pathlib, hashlib
+          archive = pathlib.Path("restaurant_tv_sound_library.zip")
+          target = pathlib.Path(os.environ["RUNNER_TEMP"]) / "restaurant-sound-library"
+          target.mkdir(parents=True, exist_ok=True)
+          if not archive.is_file():
+              raise SystemExit("ERROR: ZIP archive not found at repository root")
+          total = 0
+          rows = []
+          with zipfile.ZipFile(archive) as z:
+              bad = z.testzip()
+              if bad:
+                  raise SystemExit(f"ERROR: CRC check failed for {bad}")
+              for info in z.infolist():
+                  name = info.filename
+                  p = pathlib.PurePosixPath(name)
+                  if p.is_absolute() or ".." in p.parts:
+                      raise SystemExit(f"ERROR: Unsafe archive path: {name}")
+                  if info.is_dir():
+                      continue
+                  total += info.file_size
+                  if total > 209715200:
+                      raise SystemExit("ERROR: Uncompressed archive exceeds 200 MiB safety limit")
+                  out = target.joinpath(*p.parts)
+                  out.parent.mkdir(parents=True, exist_ok=True)
+                  with z.open(info) as src, open(out, "wb") as dst:
+                      while True:
+                          chunk = src.read(1048576)
+                          if not chunk:
+                              break
+                          dst.write(chunk)
+                  rows.append((name, info.file_size, hashlib.sha256(out.read_bytes()).hexdigest()))
+          audio_ext = {".wav", ".ogg", ".mp3", ".m4a", ".aac", ".flac", ".opus", ".aiff", ".wma"}
+          audio = [r for r in rows if pathlib.PurePosixPath(r[0]).suffix.lower() in audio_ext]
+          lines = [
+              "# ZIP inspection report",
+              f"- Archive: {archive.name}",
+              "- ZIP integrity: PASS (CRC)",
+              f"- Extracted files: {len(rows)}",
+              f"- Total extracted size: {total} bytes",
+              f"- Audio files detected: {len(audio)}",
+              "",
+              "## Extracted file inventory",
+              "| File | Size (bytes) | SHA-256 |",
+              "|---|---:|---|",
+          ]
+          for name, size, digest in rows:
+              safe = name.replace("|", "\\|")
+              lines.append(f"| {safe} | {size} | `{digest}` |")
+          lines += ["", "## Audio files", "| File | Size (bytes) |", "|---|---:|"]
+          for name, size, _ in audio:
+              safe = name.replace("|", "\\|")
+              lines.append(f"| {safe} | {size} |")
+          report = "\n".join(lines) + "\n"
+          print(report)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write(report)
+          PY
