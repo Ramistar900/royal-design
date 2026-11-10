@@ -18,6 +18,8 @@ Private shared design and icon library for ROYAL projects.
 
 ## ROYAL AUDIO — Shared Audio Library
 
+- **[ROYAL UI SOUNDS listening gallery](./audio/ui-sounds/player.html)** — 49 interface and TV effects with direct playback, kept separate from nature/weather audio.
+
 - Guide: [audio/README.md](./audio/README.md)
 - Catalog: [audio/catalog.json](./audio/catalog.json)
 - Recording guide: [audio/recording-guidelines.md](./audio/recording-guidelines.md)
