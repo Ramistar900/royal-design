@@ -2,6 +2,10 @@
 
 First independently authored batch: **8 concepts × 2 separate visual styles = 16 SVG assets**.
 
+## Visual preview
+
+[Open the responsive V13 preview gallery](preview.html) to compare Flat and Glass on mobile and desktop. The gallery links directly to each original SVG and is for review only.
+
 ## Styles
 - **Flat:** solid, high-contrast shapes with a restrained ROYAL emerald/gold palette.
 - **Glass:** separate translucent panel treatment, layered gradients, bright edge highlights, and a glass-like surface.
