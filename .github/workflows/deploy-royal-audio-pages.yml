@@ -1,4 +1,4 @@
-name: Deploy ROYAL AUDIO Player
+name: Deploy ROYAL AUDIO and UI Sounds Gallery
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
     paths:
       - "audio/player.html"
       - "audio/assets/ogg/**"
+      - "audio/ui-sounds/**"
       - ".github/workflows/deploy-royal-audio-pages.yml"
   workflow_dispatch:
 
@@ -28,12 +29,34 @@ jobs:
       - name: Prepare isolated Pages site
         run: |
           set -euo pipefail
-          mkdir -p _site/audio
+          mkdir -p _site/audio _site/audio/ui-sounds
           cp audio/player.html _site/audio/player.html
           cp -R audio/assets/ogg _site/audio/assets-ogg-temp
           mkdir -p _site/audio/assets
           mv _site/audio/assets-ogg-temp _site/audio/assets/ogg
+          cp audio/ui-sounds/manifest.json _site/audio/ui-sounds/manifest.json
+          cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
           test "$(find _site/audio/assets/ogg -maxdepth 1 -type f -name '*.ogg' | wc -l)" -eq 33
+          python - <<'PY'
+          import json, pathlib, wave
+          root = pathlib.Path("_site/audio/ui-sounds")
+          manifest = json.loads((root / "manifest.json").read_text())
+          sounds = manifest["sounds"]
+          assert len(sounds) == 49, f"manifest count: {len(sounds)}"
+          assert len(set(sounds.values())) == 49, "duplicate paths in manifest"
+          for rel in sounds.values():
+              path = root / rel
+              assert path.is_file(), f"missing audio file: {rel}"
+              with wave.open(str(path), "rb") as wav:
+                  assert wav.getnchannels() == 1, f"not mono: {rel}"
+                  assert wav.getframerate() == 44100, f"wrong sample rate: {rel}"
+                  assert wav.getsampwidth() == 2, f"not 16-bit PCM: {rel}"
+          actual = {p.relative_to(root).as_posix() for p in (root / "sounds").rglob("*.wav")}
+          assert actual == set(sounds.values()), f"unlisted or missing WAVs: {actual ^ set(sounds.values())}"
+          assert (root / "player.html").is_file() is False
+          print(f"Validated {len(sounds)} WAV files; no missing, extra, or duplicate assets.")
+          PY
+          cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           find _site -type f -print
 
       - name: Configure GitHub Pages
