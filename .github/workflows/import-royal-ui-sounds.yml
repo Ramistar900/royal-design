@@ -1,0 +1,102 @@
+name: Import ROYAL UI SOUNDS
+
+on:
+  push:
+    branches:
+      - feature/royal-ui-sounds
+    paths:
+      - ".github/workflows/import-royal-ui-sounds.yml"
+      - "restaurant_tv_sound_library.zip"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-ui-sounds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/royal-ui-sounds
+          fetch-depth: 0
+
+      - name: Validate and extract UI sound assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, pathlib, wave, zipfile
+          archive = pathlib.Path("restaurant_tv_sound_library.zip")
+          target = pathlib.Path("audio/ui-sounds")
+          if not archive.is_file():
+              raise SystemExit("Source ZIP is missing")
+          with zipfile.ZipFile(archive) as z:
+              bad = z.testzip()
+              if bad:
+                  raise SystemExit(f"ZIP CRC check failed: {bad}")
+              names = z.namelist()
+              for name in names:
+                  p = pathlib.PurePosixPath(name)
+                  if p.is_absolute() or ".." in p.parts:
+                      raise SystemExit(f"Unsafe archive path: {name}")
+              wavs = [n for n in names if n.startswith("sounds/") and n.lower().endswith(".wav")]
+              if len(wavs) != 49:
+                  raise SystemExit(f"Expected 49 WAV files, found {len(wavs)}")
+              manifest = json.loads(z.read("sound_manifest.json"))
+              if len(manifest.get("sounds", {})) != 49:
+                  raise SystemExit("Manifest does not contain exactly 49 sound entries")
+              target.mkdir(parents=True, exist_ok=True)
+              for name in wavs:
+                  info = z.getinfo(name)
+                  if info.file_size > 10 * 1024 * 1024:
+                      raise SystemExit(f"Unexpectedly large WAV: {name}")
+                  with z.open(name) as src:
+                      rel = pathlib.PurePosixPath(name).relative_to("sounds")
+                      dest = target / "sounds" / pathlib.Path(*rel.parts)
+                      dest.parent.mkdir(parents=True, exist_ok=True)
+                      dest.write_bytes(src.read())
+                  with wave.open(str(dest), "rb") as wav:
+                      if wav.getframerate() != 44100 or wav.getnchannels() != 1 or wav.getsampwidth() != 2:
+                          raise SystemExit(f"Unsupported WAV format: {name}")
+              (target / "manifest.json").write_bytes(z.read("sound_manifest.json"))
+              (target / "SOUND_LIBRARY.md").write_bytes(z.read("SOUND_LIBRARY.md"))
+          readme = """# ROYAL UI SOUNDS
+
+          مكتبة مستقلة لمؤثرات واجهة المستخدم والتنقل والتحكم والوسائط. تحتوي على 49 مؤثراً قصيراً بصيغة WAV، بمعدل 44.1 kHz، قناة واحدة، و16-bit PCM.
+
+          ## الفصل عن ROYAL AUDIO
+
+          هذه المكتبة مخصصة لأصوات الواجهة فقط، ولا تضاف إلى كتالوج أصوات الطبيعة أو الطقس في `audio/catalog.json`. تبقى مكتبة الطبيعة والطقس مستقلة دون تغيير.
+
+          ## التصنيفات
+
+          - `sounds/nav/`: التنقل والتركيز والرجوع والقوائم
+          - `sounds/select/`: الاختيارات ومفاتيح التبديل
+          - `sounds/action/`: التأكيد والنجاح والإضافة والحذف
+          - `sounds/media/`: تشغيل الوسائط والتحكم بها
+          - `sounds/tv/`: القنوات وتشغيل/إطفاء التلفاز
+          - `sounds/system/`: الإشعارات والقفل ولوحة المفاتيح
+
+          ## المصدر والتحقق
+
+          تم استخراج الملفات من `restaurant_tv_sound_library.zip` مع الاحتفاظ بالبيان والتوثيق الأصليين. يصف التوثيق الأصلي الأصوات بأنها مولّدة برمجياً ولا تستخدم عينات صوتية خارجية. يجب إجراء اختبار استماع فعلي قبل اعتمادها داخل أي تطبيق.
+
+          **مهم:** هذه إضافة إلى مكتبة التصميم فقط؛ لا يتم تفعيل الأصوات تلقائياً داخل التطبيقات.
+          """
+          (target / "README.md").write_text(readme, encoding="utf-8")
+          print(f"IMPORTED_WAV_COUNT={len(wavs)}")
+          print("WAV_FORMAT=44100Hz, mono, 16-bit PCM")
+          PY
+
+      - name: Commit extracted library to feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio/ui-sounds
+          git diff --cached --quiet && { echo "No changes to import"; exit 0; }
+          git commit -m "feat(audio): add separate ROYAL UI SOUNDS library"
+          git push origin HEAD:feature/royal-ui-sounds
