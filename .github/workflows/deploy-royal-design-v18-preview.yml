@@ -1,6 +1,7 @@
 name: Deploy ROYAL Design V18 Preview
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
