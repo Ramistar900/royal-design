@@ -84,7 +84,7 @@ jobs:
               })
           for item in sorted(Path('.').glob('*.zip')):
               if 'icon' in item.name.lower():
-                  match = __import__('re').search(r'v(\\d+)', item.name, __import__('re').I)
+                  match = __import__('re').search(r'v(\d+)', item.name, __import__('re').I)
                   archives.append({
                       'path': item.name,
                       'name': item.name,
