@@ -5,7 +5,6 @@ on:
       - feature/royal-design-v18-meaningful-motion
     paths:
       - 'tools/animate_royal_v18.py'
-      - '.github/workflows/animate-royal-v18-motion.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -21,6 +20,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Restore original V18 motion assets from main
+        run: |
+          git fetch origin main
+          git restore --source=origin/main -- 'preview/royal-design/v18/'*/animated/*.svg
       - name: Animate all V18 icons and validate preservation
         run: python tools/animate_royal_v18.py
       - name: Check patch formatting
