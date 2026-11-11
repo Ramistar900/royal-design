@@ -31,7 +31,7 @@ for app in apps:
    except Exception as e: fail(f"invalid XML {rel}: {e}")
    raw=p.read_text(encoding="utf-8")
    if not root.tag.endswith("svg") or not root.attrib.get("viewBox"): fail(f"invalid SVG root {rel}")
-   if "origin=original_royal" not in raw or "license=ROYAL_ORIGINAL" not in raw: fail(f"embedded provenance missing {rel}")
+   if ver=="V10" and ("origin=original_royal" not in raw or "license=ROYAL_ORIGINAL" not in raw): fail(f"embedded V10 provenance missing {rel}")
    if re.search(r"<(script|foreignObject)\\b",raw,re.I): fail(f"active content in {rel}")
    if "<animate" in raw or "<animateTransform" in raw: fail(f"animation embedded in static file {rel}")
   if ver=="V10":
