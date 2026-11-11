@@ -83,6 +83,9 @@ jobs:
           import json as json_module
           v16_catalog = json.loads((root / 'icons/v16/uploaded-royal-icon-package/catalog.json').read_text(encoding='utf-8'))
           v17_catalog = json.loads((root / 'icons/v17/royal-library/catalog.json').read_text(encoding='utf-8'))
+          v18_archive = Path('icons/v18/restaurant-tv-glossy/restaurant_tv_icons_v3_glossy.zip')
+          if v18_archive.is_file():
+              archives.append({'path': v18_archive.as_posix(), 'name': v18_archive.name, 'version': 'V18'})
           counts = {
               'v16_svg': sum(1 for x in files if x['version'] == 'V16' and x['path'].endswith('.svg')),
               'v17_svg': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.svg')),
@@ -93,7 +96,9 @@ jobs:
               'v16_catalog_entries': len(v16_catalog.get('icons', [])),
               'v17_catalog_entries': len(v17_catalog.get('icons', [])),
               'v17_catalog_source_svg': v17_catalog.get('asset_totals', {}).get('source_archive_svg_files', 0),
-              'v17_unique_source_svg_contents': v17_catalog.get('asset_totals', {}).get('unique_source_svg_contents', 0)
+              'v17_unique_source_svg_contents': v17_catalog.get('asset_totals', {}).get('unique_source_svg_contents', 0),
+              'v17_motion_previews': v17_catalog.get('asset_totals', {}).get('motion_previews_total', 0),
+              'v17_focused_states': v17_catalog.get('asset_totals', {}).get('focused_states', 0)
           }
           assert counts['v16_svg'] == 262, counts
           assert counts['v17_archive_svg'] == 550, counts
@@ -104,6 +109,8 @@ jobs:
           assert counts['v17_catalog_entries'] == 413, counts
           assert counts['v17_catalog_source_svg'] == 524, counts
           assert counts['v17_unique_source_svg_contents'] == 212, counts
+          assert counts['v17_motion_previews'] == 261, counts
+          assert counts['v17_focused_states'] == 16, counts
           Path('_site/source-assets.json').write_text(
               json.dumps({'files': files, 'archives': archives, 'counts': counts}, ensure_ascii=False, indent=2) + '\n',
               encoding='utf-8'
