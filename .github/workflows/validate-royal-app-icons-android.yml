@@ -1,0 +1,80 @@
+name: Validate ROYAL V10-V15 Android Icons
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "icons/v10/**"
+      - "icons/v11/**"
+      - "icons/v12/**"
+      - "icons/v13/rs-tv/**"
+      - "icons/v14/rami-developer/**"
+      - "icons/v15/royal-audio/**"
+      - "scripts/export-royal-app-icons.py"
+      - "app-icon-validation/**"
+      - "settings.gradle.kts"
+      - ".github/workflows/validate-royal-app-icons-android.yml"
+  push:
+    branches: [main]
+    paths:
+      - "icons/v10/**"
+      - "icons/v11/**"
+      - "icons/v12/**"
+      - "icons/v13/rs-tv/**"
+      - "icons/v14/rami-developer/**"
+      - "icons/v15/royal-audio/**"
+      - "scripts/export-royal-app-icons.py"
+      - "app-icon-validation/**"
+      - "settings.gradle.kts"
+      - ".github/workflows/validate-royal-app-icons-android.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  android-resource-build:
+    name: Export and compile V10-V15 Android icons
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install pinned SVG to VectorDrawable converter
+        run: cargo install --git https://github.com/c5inco/vdtoolkit --tag v0.5.0 --locked
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Export static SVG pairs to Android VectorDrawable XML
+        run: python3 scripts/export-royal-app-icons.py
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.10.2"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: "platforms;android-35 build-tools;35.0.0"
+
+      - name: Compile all six app icon collections
+        run: >-
+          gradle --no-daemon
+          :app-icon-validation:assembleAlmalakiDebug
+          :app-icon-validation:assembleRoyalTvDebug
+          :app-icon-validation:assembleRoyalPlusDebug
+          :app-icon-validation:assembleRsTvDebug
+          :app-icon-validation:assembleRamiDeveloperDebug
+          :app-icon-validation:assembleRoyalAudioDebug
