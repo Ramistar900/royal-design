@@ -56,7 +56,7 @@ jobs:
               for item in sorted(path.rglob('*')):
                   if item.is_file() and item.suffix.lower() in {'.svg', '.xml', '.png', '.webp', '.gif'}:
                       files.append({
-                          'path': 'royal-design-gallery/' + item.relative_to(root).as_posix(),
+                          'path': ('royal-design-gallery/' + item.relative_to(root).as_posix()) if item.is_relative_to(root) else item.as_posix(),
                           'version': version,
                           'group': group,
                           'motion': 'motion' in item.parts or 'animated' in item.parts
