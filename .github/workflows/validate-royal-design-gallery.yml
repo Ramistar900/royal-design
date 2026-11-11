@@ -7,7 +7,6 @@ on:
       - "icons/**"
       - "gallery/**"
       - "preview/royal-design/**"
-      - "preview/v9-icon-catalog/**"
       - "README.md"
       - "scripts/validate-royal-design-gallery.py"
       - ".github/workflows/validate-royal-design-gallery.yml"

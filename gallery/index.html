@@ -28,7 +28,7 @@ footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--mute
 <body>
 <header>
 <h1>ROYAL DESIGN</h1>
-<p>المعرض الكامل لمكتبة ROYAL من V2 إلى V18 — يعرض البطاقات المفهرسة وكل ملفات المصدر الأصلية، بما فيها النسخ 2D و3D والحركة والتركيز وAndroid XML والأرشيفات الأصلية. لا تُحذف الملفات لمجرد عدم وجود بطاقة لها.</p>
+<p>المعرض الحالي لمكتبة ROYAL — يعرض الإصدارات المعتمدة V16 وV17 وV18 وملفات المصدر الأصلية والنسخ الثابتة والمتحركة وAndroid XML والأرشيفات المرتبطة بها.</p>
 <div class="stats" id="stats"><span class="pill">جارٍ تحميل فهرس المكتبة…</span></div>
 <div class="toolbar">
 <input id="search" type="search" placeholder="ابحث باسم الأيقونة أو وظيفتها…" aria-label="بحث">
@@ -124,7 +124,7 @@ async function load(){
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_motion_previews||0)+' معاينة حركة</span>'+
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_focused_states||0)+' حالة تركيز</span>'+
   '<span class="pill">V18: '+(source.counts&&source.counts.v18_svg||0)+' SVG مصدر</span>'+
-  '<span class="pill">V2–V15: '+(source.files||[]).filter(f=>/^V([2-9]|1[0-5])$/.test(f.version)).length+' ملف مصدر</span>';
+  '<span class="pill">الإصدارات النشطة: V16 · V17 · V18</span>';
  render();
 }
 function render(){
