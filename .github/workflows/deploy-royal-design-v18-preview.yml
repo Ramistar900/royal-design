@@ -1,0 +1,65 @@
+name: Deploy ROYAL Design V18 Preview
+
+on:
+  push:
+    branches:
+      - feature/royal-design-app-icons-refresh
+    paths:
+      - "preview/royal-design/v18/**"
+      - ".github/workflows/deploy-royal-design-v18-preview.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: royal-design-pages-preview
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preview branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/royal-design-app-icons-refresh
+
+      - name: Prepare Pages site and preserve current ROYAL AUDIO pages
+        run: |
+          set -euo pipefail
+          mkdir -p _site/audio _site/audio/ui-sounds _site/icons/v13 _site/preview/royal-design
+          cp -R icons/v13/2d _site/icons/v13/2d
+          cp audio/player.html _site/audio/player.html
+          mkdir -p _site/audio/assets
+          cp -R audio/assets/ogg _site/audio/assets/ogg
+          cp audio/ui-sounds/manifest.json _site/audio/ui-sounds/manifest.json
+          cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
+          cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
+          cp -R preview/royal-design/v18 _site/preview/royal-design/v18
+          test "$(find _site/audio/assets/ogg -maxdepth 1 -type f -name '*.ogg' | wc -l)" -eq 33
+          test "$(find _site/audio/ui-sounds/sounds -type f -name '*.wav' | wc -l)" -eq 49
+          test "$(find _site/preview/royal-design/v18 -type f -name '*.svg' | wc -l)" -eq 451
+          test -f _site/preview/royal-design/v18/index.html
+          echo "Prepared existing audio pages plus the complete V18 preview."
+          find _site -type f | wc -l
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy preview to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
