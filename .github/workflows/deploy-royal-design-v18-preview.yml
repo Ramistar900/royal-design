@@ -126,6 +126,36 @@ jobs:
           cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           cp -R preview/royal-design/v18 _site/preview/royal-design/v18
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          site = Path('_site')
+          inventory = json.loads((site / 'source-assets.json').read_text(encoding='utf-8'))
+          for entry in inventory['files'] + inventory['archives']:
+              target = site / entry['path']
+              assert target.is_file(), f"Missing published source asset: {entry['path']}"
+          for rel in [
+              'icons/v16/uploaded-royal-icon-package/catalog.json',
+              'icons/v17/royal-library/catalog.json'
+          ]:
+              catalog = json.loads((site / 'royal-design-gallery' / rel).read_text(encoding='utf-8'))
+              for icon in catalog.get('icons', []):
+                  refs = list((icon.get('variants') or {}).values())
+                  if icon.get('motion'):
+                      refs.append(icon['motion'])
+                  for ref in refs:
+                      assert (site / 'royal-design-gallery' / ref).is_file(), f"Broken catalog reference: {ref}"
+          print('Verified every listed source file, archive, and V16/V17 catalog variant.')
+          PY
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          html = Path('_site/index.html').read_text(encoding='utf-8')
+          scripts = re.findall(r'<script>(.*?)</script>', html, re.S)
+          assert scripts, 'Gallery JavaScript block is missing'
+          Path('/tmp/royal-gallery.js').write_text(scripts[-1], encoding='utf-8')
+          PY
+          node --check /tmp/royal-gallery.js
           test -f _site/source-assets.json
           test -f _site/royal-design-gallery/icons/v16/uploaded-royal-icon-package/catalog.json
           test -f _site/royal-design-gallery/icons/v17/royal-library/catalog.json
