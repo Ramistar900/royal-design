@@ -8,6 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 GALLERY = ROOT / "gallery/index.html"
 V18 = ROOT / "preview/royal-design/v18"
+CODE_BUILDER = ROOT / "scripts/build-icon-code-index.py"
+CODE_STANDARD = ROOT / "icons/color-code-standard.json"
 LEGACY_DIRS = [ROOT / "icons" / f"v{n}" for n in range(2, 16)]
 LEGACY_FILES = [
     ROOT / "ROYAL_Android_Icons_v2.zip",
@@ -39,9 +41,20 @@ for path in svg_files:
     if not root.tag.endswith("svg") or not root.attrib.get("viewBox"):
         fail(f"invalid V18 SVG root/viewBox: {path.relative_to(ROOT)}")
 
+if not CODE_BUILDER.is_file():
+    fail("color-code generator is missing")
+if not CODE_STANDARD.is_file():
+    fail("color-code standard is missing")
+standard = json.loads(CODE_STANDARD.read_text(encoding="utf-8"))
+if standard.get("total_length") != 6 or standard.get("code_format") != r"^[A-Z][0-9]{5}$":
+    fail("icon codes must have one letter followed by five digits")
+if standard.get("prefixes", {}).get("R", {}).get("name_ar") != "ذهبي":
+    fail("R must remain the prefix for gold icons")
+
 page = GALLERY.read_text(encoding="utf-8")
 for required in ("source-assets.json", "icons/v16/uploaded-royal-icon-package/catalog.json",
-                 "icons/v17/royal-library/catalog.json", "V16", "V17", "V18"):
+                 "icons/v17/royal-library/catalog.json", "icon-codes.json", "copy-code",
+                 "registryKey", "color-legend", "V16", "V17", "V18"):
     if required not in page:
         fail(f"current gallery is missing {required}")
 if "V2–V15" in page or "من V2 إلى V18" in page:
@@ -53,4 +66,4 @@ if not script_blocks:
 if "source.files" not in script_blocks[-1] or "source.archives" not in script_blocks[-1]:
     fail("gallery no longer renders source inventory and archives")
 
-print(f"ROYAL Design gallery passed: legacy V2-V15 absent; V18 {len(svg_files)} SVGs validated; V16/V17 source loading retained.")
+print(f"ROYAL Design gallery passed: legacy V2-V15 absent; V18 {len(svg_files)} SVGs validated; V16/V17 source loading and six-character color codes enabled.")

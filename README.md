@@ -17,6 +17,11 @@
 - [كتالوج الأيقونات الحالي](./icons/catalog.json)
 - [فهرس مجموعات التطبيقات الحالي](./icons/app-collections.json)
 - [واجهة المعرض](./gallery/index.html)
+- [معيار رموز الألوان](./icons/ICON-COLOR-CODE-STANDARD.md)
+
+## رموز الأيقونات
+
+لكل بطاقة أيقونة رمز ثابت من ست خانات: حرف واحد يحدد اللون الأساسي وخمس خانات رقمية، مثل `R12345` للذهبي. المعرض المنشور يوفر [فهرس JSON](https://ramistar900.github.io/royal-design/icon-codes.json) و[فهرس CSV](https://ramistar900.github.io/royal-design/icon-codes.csv) قابلين للبحث والاستخدام البرمجي، ويعرض زر نسخ الرمز على كل بطاقة.
 
 ## تنظيف الإصدارات القديمة
 

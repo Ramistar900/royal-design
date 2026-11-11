@@ -5,12 +5,12 @@
 <meta name="theme-color" content="#080b18">
 <title>ROYAL DESIGN — المعرض الكامل</title>
 <style>
-:root{color-scheme:dark;--bg:#080b18;--panel:#111a2b;--line:#293851;--gold:#f8d56c;--blue:#236bff;--violet:#8b35e8;--muted:#aebbd0}
+:root{color-scheme:dark;--bg:#080b18;--panel:#111a2b;--line:#293851;--gold:#f8d56c;--muted:#aebbd0}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#202b50,var(--bg) 60%);color:#fff;font:15px system-ui,-apple-system,"Segoe UI",sans-serif}
 header,main,footer{max-width:1440px;margin:auto;padding-inline:18px}header{padding-top:28px;padding-bottom:14px}
 h1{margin:0;color:var(--gold);font-size:clamp(28px,5vw,44px)}header p{color:var(--muted);line-height:1.9;margin:8px 0}
 .stats{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.pill{border:1px solid #67552b;background:#211e16;color:#f8df9a;border-radius:999px;padding:7px 12px;font-size:13px}
-.toolbar{display:grid;grid-template-columns:1fr 240px 190px;gap:10px;margin:16px 0}
+.toolbar{display:grid;grid-template-columns:minmax(220px,1fr) 220px 170px 150px;gap:10px;margin:16px 0}
 input,select{width:100%;min-width:0;border:1px solid var(--line);background:#111a2b;color:#fff;border-radius:12px;padding:12px;font:inherit}
 main{padding-top:12px;padding-bottom:40px}.section{margin:22px 0}.section h2{color:var(--gold);font-size:22px;margin:0 0 12px}
 .section p{color:var(--muted);margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
@@ -21,20 +21,34 @@ main{padding-top:12px;padding-bottom:40px}.section{margin:22px 0}.section h2{col
 .variant img{display:block;width:100%;height:118px;object-fit:contain}.variant span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
 .variant a{color:inherit;text-decoration:none}.empty{padding:36px;text-align:center;color:var(--muted)}
 .notice{border:1px solid #4b432d;background:#1c1b17;color:#e8d9aa;border-radius:12px;padding:12px;line-height:1.8;font-size:13px}
+.code-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px}
+.code{direction:ltr;font:700 16px ui-monospace,monospace;letter-spacing:1px;color:#ffe18a;background:#282315;border:1px solid #8a7135;border-radius:8px;padding:5px 9px}
+.code-color{font-size:12px;color:var(--muted)}
+.copy-code{border:1px solid #536684;background:#192944;color:#fff;border-radius:8px;padding:6px 9px;font:inherit;font-size:12px;cursor:pointer}
+.color-legend{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
+.color-pill{display:inline-flex;align-items:center;gap:6px}
+.color-pill b{font:700 12px ui-monospace,monospace;color:#fff;background:#24344d;border-radius:5px;padding:2px 5px}
+.registry-links{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0 14px;font-size:13px}
+.registry-links a{color:#f8d56c;text-decoration:underline;text-underline-offset:3px}
 footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--muted);font-size:12px}
-@media(max-width:720px){.toolbar{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{padding:8px}.variant img{height:88px}.variants{gap:5px}}
+@media(max-width:720px){.toolbar{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{padding:8px}.variant img{height:88px}.variants{gap:5px}.code{font-size:14px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
-</style></head>
+</style>
+</head>
 <body>
 <header>
 <h1>ROYAL DESIGN</h1>
-<p>المعرض الحالي لمكتبة ROYAL — يعرض الإصدارات المعتمدة V16 وV17 وV18 وملفات المصدر الأصلية والنسخ الثابتة والمتحركة وAndroid XML والأرشيفات المرتبطة بها.</p>
+<p>المعرض الحالي لمكتبة ROYAL — يعرض الإصدارات المعتمدة V16 وV17 وV18، مع رمز ثابت من ست خانات لكل أيقونة: حرف اللون وخمسة أرقام. ابحث بالاسم أو الرمز، ثم انسخ الرمز مباشرة من البطاقة.</p>
 <div class="stats" id="stats"><span class="pill">جارٍ تحميل فهرس المكتبة…</span></div>
 <div class="toolbar">
-<input id="search" type="search" placeholder="ابحث باسم الأيقونة أو وظيفتها…" aria-label="بحث">
+<input id="search" type="search" placeholder="ابحث باسم الأيقونة أو وظيفتها أو رمزها…" aria-label="بحث">
 <select id="group"><option value="all">كل الإصدارات والتطبيقات</option></select>
 <select id="kind"><option value="all">كل الأنواع</option><option value="static">ثابتة</option><option value="motion">تحتوي على حركة</option><option value="2d">2D</option><option value="3d">3D</option><option value="xml">Android XML</option><option value="archive">أرشيفات ZIP</option></select>
+<select id="color"><option value="all">كل الألوان</option></select>
 </div>
+<div class="registry-links"><a href="icon-codes.json" target="_blank" rel="noopener">فهرس الرموز JSON</a><a href="icon-codes.csv" download>تنزيل CSV</a><a href="icons/ICON-COLOR-CODE-STANDARD.md" target="_blank" rel="noopener">شرح بادئات الألوان</a></div>
+<div class="color-legend" id="color-legend"></div>
+<div class="notice">كل رمز يتكون من حرف يحدد اللون وخمسة أرقام؛ بادئة R للذهبي، B للأزرق، وبقية الألوان موضحة هنا. الرمز ثابت لكل بطاقة ومناسب لإرساله نصيًا عند طلب أيقونة.</div>
 <div class="notice">المعرض يجمع الفهارس مع الجرد الفعلي للملفات المستخرجة من الحزم؛ قد تظهر بعض الأصول مرتين إذا كانت محفوظة في أكثر من نسخة أو إصدار، ولا يعني ذلك حذف النسخ المتطابقة. وجود ملف في المعرض لا يعني بالضرورة اعتماده النهائي أو دمجه داخل التطبيقات؛ حالات المراجعة والاعتماد تبقى حسب حالة كل مجموعة.</div>
 </header>
 <main id="content"><div class="empty">تحميل الفهارس…</div></main>
@@ -42,25 +56,33 @@ footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--mute
 <script>
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let items=[];
-function add(item){items.push(item)}
+let items=[],codeByKey=new Map(),codeIndex=null;
+function add(item){
+ const match=item.registryKey?codeByKey.get(item.registryKey):null;
+ if(item.registryKey&&!match)throw Error("رمز الأيقونة مفقود: "+item.registryKey);
+ items.push({...item,code:match?.code||"",colorPrefix:match?.color_prefix||"",colorAr:match?.color_ar||""});
+}
 function card(x){
  const vars=x.variants.filter(v=>v.path);
  const variants=vars.map(v=>{
   const visual=/\.(svg|png|webp|gif)(?:$|\?)/i.test(v.path);
-  const body=visual
-   ? '<img loading="lazy" src="'+esc(v.path)+'" alt="'+esc(x.name)+'">'
-   : '<span>فتح / تنزيل الملف</span>';
+  const body=visual?'<img loading="lazy" src="'+esc(v.path)+'" alt="'+esc(x.name)+'">':'<span>فتح / تنزيل الملف</span>';
   return '<div class="variant"><a href="'+esc(v.path)+'" target="_blank" rel="noopener">'+body+'</a><span>'+esc(v.label)+'</span></div>';
  }).join("");
- return '<article class="card" data-search="'+esc((x.name+" "+x.key+" "+x.group+" "+x.version).toLowerCase())+'" data-group="'+esc(x.groupId)+'" data-kinds="'+esc(x.kinds.join(","))+'"><h3>'+esc(x.name)+'</h3><div class="meta">'+esc(x.version)+" · "+esc(x.key)+'</div><div class="variants">'+variants+'</div></article>';
+ const codeRow=x.code?'<div class="code-row"><span class="code">'+esc(x.code)+'</span><button type="button" class="copy-code" data-code="'+esc(x.code)+'">نسخ الرمز</button><span class="code-color">'+esc(x.colorAr)+'</span></div>':'';
+ return '<article class="card" data-search="'+esc((x.name+" "+x.key+" "+x.group+" "+x.version+" "+x.code).toLowerCase())+'" data-group="'+esc(x.groupId)+'" data-color="'+esc(x.colorPrefix)+'" data-kinds="'+esc(x.kinds.join(","))+'"><h3>'+esc(x.name)+'</h3><div class="meta">'+esc(x.version)+" · "+esc(x.key)+'</div>'+codeRow+'<div class="variants">'+variants+'</div></article>';
 }
 async function load(){
- const [oldRes,newRes,sourceRes]=await Promise.all([
-  fetch("icons/catalog.json"),fetch("icons/app-collections.json"),fetch("source-assets.json")
+ const [oldRes,newRes,sourceRes,codeRes]=await Promise.all([
+  fetch("icons/catalog.json"),fetch("icons/app-collections.json"),fetch("source-assets.json"),fetch("icon-codes.json")
  ]);
- if(!oldRes.ok||!newRes.ok||!sourceRes.ok)throw Error("تعذر تحميل أحد فهارس المكتبة الكاملة");
- const old=await oldRes.json(), newer=await newRes.json(), source=await sourceRes.json();
+ if(!oldRes.ok||!newRes.ok||!sourceRes.ok||!codeRes.ok)throw Error("تعذر تحميل أحد فهارس المكتبة أو رموز الألوان");
+ const old=await oldRes.json(),newer=await newRes.json(),source=await sourceRes.json();
+ codeIndex=await codeRes.json();
+ codeByKey=new Map((codeIndex.icons||[]).map(x=>[x.registry_key,x]));
+ if(codeByKey.size!==codeIndex.total_icons)throw Error("فهرس رموز الأيقونات يحتوي على مفاتيح مكررة");
+ $("#color").innerHTML='<option value="all">كل الألوان</option>'+Object.entries(codeIndex.color_prefixes||{}).map(([prefix,meta])=>'<option value="'+esc(prefix)+'">'+esc(prefix+" · "+meta.ar)+'</option>').join("");
+ $("#color-legend").innerHTML=Object.entries(codeIndex.color_prefixes||{}).map(([prefix,meta])=>'<span class="pill color-pill"><b>'+esc(prefix)+'</b>'+esc(meta.ar)+' · '+(codeIndex.color_totals?.[prefix]||0)+'</span>').join("");
  const root="royal-design-gallery/";
  const [v16Res,v17Res]=await Promise.all([
   fetch(root+"icons/v16/uploaded-royal-icon-package/catalog.json"),
@@ -71,8 +93,7 @@ async function load(){
  function addCatalog(data,version){
   for(const x of data.icons||[]){
    const vars=[];
-   const two=x.variants&&x.variants["2d"];
-   const three=x.variants&&x.variants["3d"];
+   const two=x.variants&&x.variants["2d"],three=x.variants&&x.variants["3d"];
    const motion=x.motion||(x.variants&&x.variants.motion);
    const xml=x.android_xml||(x.variants&&x.variants.android_xml);
    if(two)vars.push({label:"2D ثابت",path:root+two});
@@ -81,31 +102,29 @@ async function load(){
    if(focused)vars.push({label:"حالة التركيز",path:root+focused});
    if(motion)vars.push({label:"حركة",path:root+motion});
    if(xml)vars.push({label:"Android XML",path:root+xml});
-   add({name:x.label_ar||x.label_en||x.key,key:x.key,group:data.name_ar||data.application||version,groupId:version,version,variants:vars,kinds:[...(two?["static","2d"]:[]),...(three?["static","3d"]:[]),...(focused?["focused"]:[]),...(motion?["motion"]:[]),...(xml?["xml"]:[])]});
+   add({name:x.label_ar||x.label_en||x.key,key:x.key,registryKey:version+":"+x.key,group:data.name_ar||data.application||version,groupId:version,version,variants:vars,kinds:[...(two?["static","2d"]:[]),...(three?["static","3d"]:[]),...(focused?["focused"]:[]),...(motion?["motion"]:[]),...(xml?["xml"]:[])]});
   }
  }
  for(const x of old.icons||[]){
   const vars=[];
   if(x.svg)vars.push({label:"ثابتة SVG",path:x.svg});
   if(x.animated_svg)vars.push({label:"حركة SVG",path:x.animated_svg});
-  add({name:x.label_ar||x.key,key:x.key,group:x.collection||x.version,groupId:x.version,version:String(x.version).toUpperCase(),variants:vars,kinds:[...(x.svg?["static"]:[]),...(x.animated_svg?["motion"]:[])]});
+  add({name:x.label_ar||x.key,key:x.key,registryKey:"catalog:"+x.key,group:x.collection||x.version,groupId:x.version,version:String(x.version).toUpperCase(),variants:vars,kinds:[...(x.svg?["static"]:[]),...(x.animated_svg?["motion"]:[])]});
  }
  for(const v of newer.versions||[])for(const x of v.icons||[]){
   const vars=[];
   if(x.variants&&x.variants["2d"])vars.push({label:"2D ثابت",path:x.variants["2d"]});
   if(x.variants&&x.variants["3d"])vars.push({label:"3D ثابت",path:x.variants["3d"]});
   if(x.motion)vars.push({label:"حركة",path:x.motion});
-  add({name:x.label_ar||x.label_en||x.key,key:x.key,group:v.name_ar||v.application,groupId:v.version,version:v.version,variants:vars,kinds:[...(x.variants&&x.variants["2d"]?["static","2d"]:[]),...(x.variants&&x.variants["3d"]?["static","3d"]:[]),...(x.motion?["motion"]:[])]});
+  add({name:x.label_ar||x.label_en||x.key,key:x.key,registryKey:"collection:"+v.version+":"+x.key,group:v.name_ar||v.application,groupId:v.version,version:v.version,variants:vars,kinds:[...(x.variants&&x.variants["2d"]?["static","2d"]:[]),...(x.variants&&x.variants["3d"]?["static","3d"]:[]),...(x.motion?["motion"]:[])]});
  }
  addCatalog(v16,"V16");
  addCatalog(v17,"V17");
- // Add only source files not already represented by a catalog variant; this preserves every file without duplicating catalog cards.
  const representedPaths=new Set(items.flatMap(x=>x.variants.map(v=>v.path)));
  for(const f of source.files||[]){
-  if(representedPaths.has(f.path)) continue;
-  const ext=f.path.split(".").pop().toLowerCase();
-  const visual=["svg","png","webp","gif"].includes(ext);
-  add({name:f.path.split("/").pop()+" · أصل كامل",key:f.path,group:f.group,groupId:f.version,version:f.version,variants:[{label:visual?"معاينة الأصل":"فتح الملف الأصلي",path:f.path}],kinds:[...(visual?["static"]:[]),...(ext==="xml"?["xml"]:[]),...(f.motion?["motion"]:[])]});
+  if(representedPaths.has(f.path))continue;
+  const ext=f.path.split(".").pop().toLowerCase(),visual=["svg","png","webp","gif"].includes(ext);
+  add({name:f.path.split("/").pop()+" · أصل كامل",key:f.path,registryKey:"asset:"+f.path,group:f.group,groupId:f.version,version:f.version,variants:[{label:visual?"معاينة الأصل":"فتح الملف الأصلي",path:f.path}],kinds:[...(visual?["static"]:[]),...(ext==="xml"?["xml"]:[]),...(f.motion?["motion"]:[])]});
   representedPaths.add(f.path);
  }
  for(const a of source.archives||[]){
@@ -124,16 +143,32 @@ async function load(){
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_motion_previews||0)+' معاينة حركة</span>'+
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_focused_states||0)+' حالة تركيز</span>'+
   '<span class="pill">V18: '+(source.counts&&source.counts.v18_svg||0)+' SVG مصدر</span>'+
-  '<span class="pill">الإصدارات النشطة: V16 · V17 · V18</span>';
+  '<span class="pill">الإصدارات النشطة: V16 · V17 · V18</span>'+
+  '<span class="pill">رموز الأيقونات: '+codeIndex.total_icons+' رمزًا فريدًا</span>';
  render();
 }
 function render(){
- const q=$("#search").value.trim().toLowerCase(),g=$("#group").value,k=$("#kind").value;
- const filtered=items.filter(x=>(g==="all"||x.groupId===g)&&(!q||(x.name+" "+x.key+" "+x.group+" "+x.version).toLowerCase().includes(q))&&(k==="all"||x.kinds.includes(k)));
+ const q=$("#search").value.trim().toLowerCase(),g=$("#group").value,k=$("#kind").value,c=$("#color").value;
+ const filtered=items.filter(x=>(g==="all"||x.groupId===g)&&(c==="all"||x.colorPrefix===c)&&(!q||(x.name+" "+x.key+" "+x.group+" "+x.version+" "+x.code).toLowerCase().includes(q))&&(k==="all"||x.kinds.includes(k)));
  const grouped=new Map();
  for(const x of filtered){const key=x.version+" — "+x.group;if(!grouped.has(key))grouped.set(key,[]);grouped.get(key).push(x)}
  $("#content").innerHTML=filtered.length?[...grouped].map(([name,arr])=>'<section class="section"><h2>'+esc(name)+' <span class="meta">('+arr.length+')</span></h2><div class="grid">'+arr.map(card).join("")+'</div></section>').join(""):'<div class="empty">لا توجد أيقونات مطابقة للبحث.</div>';
 }
-$("#search").addEventListener("input",render);$("#group").addEventListener("change",render);$("#kind").addEventListener("change",render);
-load().catch(e=>{$("#content").innerHTML='<div class="empty">تعذر تحميل فهرس المعرض: '+esc(e.message)+'</div>'});
-</script></body></html>
+$("#search").addEventListener("input",render);
+$("#group").addEventListener("change",render);
+$("#kind").addEventListener("change",render);
+$("#color").addEventListener("change",render);
+document.addEventListener("click",async event=>{
+ const button=event.target.closest(".copy-code");
+ if(!button)return;
+ const code=button.dataset.code;
+ try{
+  if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(code);
+  else{const field=document.createElement("textarea");field.value=code;document.body.appendChild(field);field.select();document.execCommand("copy");field.remove()}
+  button.textContent="تم النسخ";
+ }catch(error){button.textContent="انسخ يدويًا"}
+});
+load().catch(error=>{$("#content").innerHTML='<div class="empty">تعذر تحميل فهرس المعرض: '+esc(error.message)+'</div>'});
+</script>
+</body>
+</html>

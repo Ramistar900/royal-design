@@ -9,6 +9,9 @@ on:
       - "preview/royal-design/**"
       - "README.md"
       - "scripts/validate-royal-design-gallery.py"
+      - "scripts/build-icon-code-index.py"
+      - "icons/color-code-standard.json"
+      - "icons/ICON-COLOR-CODE-STANDARD.md"
       - ".github/workflows/validate-royal-design-gallery.yml"
   push:
     branches: [main]

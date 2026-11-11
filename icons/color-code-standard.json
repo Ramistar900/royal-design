@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "code_format": "^[A-Z][0-9]{5}$",
+  "total_length": 6,
+  "assignment": "SHA-256-derived deterministic five-digit suffix from each stable registry key; first letter derives from the icon's primary palette",
+  "prefixes": {
+    "R": {
+      "name_ar": "ذهبي",
+      "name_en": "Gold",
+      "sample": "R12345"
+    },
+    "O": {
+      "name_ar": "برتقالي",
+      "name_en": "Orange",
+      "sample": "O12345"
+    },
+    "D": {
+      "name_ar": "أحمر",
+      "name_en": "Red",
+      "sample": "D12345"
+    },
+    "Y": {
+      "name_ar": "أصفر",
+      "name_en": "Yellow",
+      "sample": "Y12345"
+    },
+    "G": {
+      "name_ar": "أخضر",
+      "name_en": "Green",
+      "sample": "G12345"
+    },
+    "T": {
+      "name_ar": "فيروزي",
+      "name_en": "Turquoise",
+      "sample": "T12345"
+    },
+    "C": {
+      "name_ar": "سماوي",
+      "name_en": "Cyan",
+      "sample": "C12345"
+    },
+    "B": {
+      "name_ar": "أزرق",
+      "name_en": "Blue",
+      "sample": "B12345"
+    },
+    "P": {
+      "name_ar": "بنفسجي",
+      "name_en": "Purple",
+      "sample": "P12345"
+    },
+    "H": {
+      "name_ar": "وردي",
+      "name_en": "Pink",
+      "sample": "H12345"
+    },
+    "W": {
+      "name_ar": "أبيض",
+      "name_en": "White",
+      "sample": "W12345"
+    },
+    "S": {
+      "name_ar": "فضي / رمادي",
+      "name_en": "Silver / Gray",
+      "sample": "S12345"
+    },
+    "K": {
+      "name_ar": "أسود",
+      "name_en": "Black",
+      "sample": "K12345"
+    },
+    "X": {
+      "name_ar": "متعدد / غير محدد",
+      "name_en": "Mixed / Unspecified",
+      "sample": "X12345"
+    }
+  }
+}
