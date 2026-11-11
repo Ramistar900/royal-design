@@ -1,0 +1,41 @@
+name: Build ROYAL Design V18 Semantic Motion
+on:
+  push:
+    branches:
+      - feature/royal-design-v18-meaningful-motion
+    paths:
+      - 'tools/animate_royal_v18.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  animate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout experimental branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/royal-design-v18-meaningful-motion
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restore original V18 motion assets from main
+        run: |
+          git fetch origin main
+          git restore --source=origin/main -- 'preview/royal-design/v18/'*/animated/*.svg
+      - name: Animate all V18 icons and validate preservation
+        run: python tools/animate_royal_v18.py
+      - name: Check patch formatting
+        run: git diff --check
+      - name: Commit updated motion assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'preview/royal-design/v18/'*/animated/*.svg preview/royal-design/v18/MOTION-REPORT.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "feat(royal-design): add semantic motion to all V18 icons"
+            git push origin HEAD:feature/royal-design-v18-meaningful-motion
+          fi
