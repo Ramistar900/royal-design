@@ -92,3 +92,10 @@ The v9 starter set contains 37 food/drink, purchase/order/delivery, booking, and
 Motion includes coffee steam, juice bubbles, purchase and order pulses, delivery movement, food-icon micro-motion, booking indicators, and payment states. Static assets remain available for fallback and reduced-motion settings. The Android resource validator includes v9; a successful CI build must be confirmed before calling the collection build-verified.
 
 Existing v2–v8 assets are retained. This repository is separate from the Almalaki, ROYAL TV, and ROYAL+ application repositories.
+
+
+## ALMALAKI — 48 app icons
+
+- 48 original concepts with glossy static 2D/3D assets and 48 independent motion SVGs.
+- [V10 guide](./icons/v10/almalaki/README.md) · [Catalog](./icons/v10/almalaki/catalog.json) · [App collections](./icons/app-collections.json)
+- Static gloss does not animate; reduced-motion users use the static equivalents.

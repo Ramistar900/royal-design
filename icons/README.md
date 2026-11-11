@@ -247,3 +247,8 @@
 3. الحركة في V9 اختيارية؛ استخدم المورد الثابت كبديل واحترم إعدادات تقليل الحركة.
 4. أسماء الملفات محايدة لغوياً؛ الأسماء العربية هنا للتعريف فقط.
 5. الفهرسة لا تعني دمج الأيقونات تلقائياً في Almalaki أو ROYAL TV أو ROYAL+.
+
+
+## ALMALAKI — 48 concepts
+
+[Guide](./v10/almalaki/README.md) · [Catalog](./v10/almalaki/catalog.json). Each icon has static 2D/3D SVGs and separate motion SVG. Palette: saturated royal blue, violet, metallic gold, deep black and white.
