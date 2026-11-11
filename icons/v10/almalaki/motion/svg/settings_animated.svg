@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="الإعدادات متحركة">
-  <metadata>origin=original_royal;license=ROYAL_ORIGINAL;created=2026-11-11;key=settings;motion=gear_turn_pause_resume;static_fallback=../../2d/settings.svg;reduced_motion=use_static_fallback;trigger=on_visibility_or_settings_action</metadata>
-  <g>
-    <animateTransform attributeName="transform" type="rotate" values="0 64 64;110 64 64;110 64 64;360 64 64" keyTimes="0;.36;.53;1" dur="3.4s" repeatCount="indefinite"/>
-    <image href="../../2d/settings.svg" x="0" y="0" width="128" height="128"/>
-  </g>
-</svg>
