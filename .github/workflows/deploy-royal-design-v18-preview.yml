@@ -2,6 +2,14 @@ name: Deploy ROYAL Design V18 Preview
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-royal-design-v18-preview.yml"
+      - "gallery/index.html"
+      - "icons/**"
+      - "preview/royal-design/v18/**"
   push:
     branches:
       - main
@@ -27,12 +35,88 @@ jobs:
       - name: Checkout complete library from main
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Checkout complete V16/V17 source library
+        uses: actions/checkout@v4
+        with:
+          repository: Ramistar900/royal-design-gallery
           ref: main
+          path: royal-design-gallery
 
       - name: Prepare complete ROYAL Design gallery and preserve audio pages
         run: |
           set -euo pipefail
-          mkdir -p _site/audio _site/audio/ui-sounds _site/icons _site/preview/royal-design
+          mkdir -p _site/audio _site/audio/ui-sounds _site/icons _site/preview/royal-design _site/royal-design-gallery/icons
+          cp -R royal-design-gallery/icons/v16 _site/royal-design-gallery/icons/
+          cp -R royal-design-gallery/icons/v17 _site/royal-design-gallery/icons/
+          cp -R royal-design-gallery/packages _site/royal-design-gallery/
+          cp -R royal-design-gallery/sources _site/royal-design-gallery/
+          find royal-design-gallery -maxdepth 1 -type f -name '*.zip' -exec cp {} _site/royal-design-gallery/ \;
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('royal-design-gallery')
+          files = []
+          def collect(path, version, group):
+              if not path.exists():
+                  return
+              for item in sorted(path.rglob('*')):
+                  if item.is_file() and item.suffix.lower() in {'.svg', '.xml', '.png', '.webp', '.gif'}:
+                      files.append({
+                          'path': ('royal-design-gallery/' + item.relative_to(root).as_posix()) if item.is_relative_to(root) else item.as_posix(),
+                          'version': version,
+                          'group': group,
+                          'motion': 'motion' in item.parts or 'animated' in item.parts
+                      })
+          collect(root / 'packages/royal-design-shared-icon-package', 'V16', 'V16 · حزمة ROYAL الأصلية')
+          collect(root / 'packages/restaurant-tv-icons-v2-transparent', 'V17', 'V17 · المطاعم والتلفاز')
+          collect(root / 'icons/v17', 'V17', 'V17 · مكتبة Android وROYAL')
+          collect(Path('preview/royal-design/v18'), 'V18', 'V18 · المطاعم والتلفاز')
+          archives = []
+          for item in sorted(root.rglob('*.zip')):
+              archives.append({
+                  'path': 'royal-design-gallery/' + item.relative_to(root).as_posix(),
+                  'name': item.name,
+                  'version': 'V16/V17'
+              })
+          import json as json_module
+          v16_catalog = json.loads((root / 'icons/v16/uploaded-royal-icon-package/catalog.json').read_text(encoding='utf-8'))
+          v17_catalog = json.loads((root / 'icons/v17/royal-library/catalog.json').read_text(encoding='utf-8'))
+          v18_archive = Path('icons/v18/restaurant-tv-glossy/restaurant_tv_icons_v3_glossy.zip')
+          if v18_archive.is_file():
+              archives.append({'path': v18_archive.as_posix(), 'name': v18_archive.name, 'version': 'V18'})
+          counts = {
+              'v16_svg': sum(1 for x in files if x['version'] == 'V16' and x['path'].endswith('.svg')),
+              'v17_svg': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.svg')),
+              'v17_archive_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/packages/') and x['path'].endswith('.svg')),
+              'v17_extra_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/icons/v17/') and x['path'].endswith('.svg')),
+              'v17_xml': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.xml')),
+              'v18_svg': sum(1 for x in files if x['version'] == 'V18' and x['path'].endswith('.svg')),
+              'v16_catalog_entries': len(v16_catalog.get('icons', [])),
+              'v17_catalog_entries': len(v17_catalog.get('icons', [])),
+              'v17_catalog_source_svg': v17_catalog.get('asset_totals', {}).get('source_archive_svg_files', 0),
+              'v17_unique_source_svg_contents': v17_catalog.get('asset_totals', {}).get('unique_source_svg_contents', 0),
+              'v17_motion_previews': v17_catalog.get('asset_totals', {}).get('motion_previews_total', 0),
+              'v17_focused_states': v17_catalog.get('asset_totals', {}).get('focused_states', 0)
+          }
+          assert counts['v16_svg'] == 262, counts
+          assert counts['v17_archive_svg'] == 550, counts
+          assert counts['v17_extra_svg'] == 52, counts
+          assert counts['v17_xml'] == 22, counts
+          assert counts['v18_svg'] == 451, counts
+          assert counts['v16_catalog_entries'] == 99, counts
+          assert counts['v17_catalog_entries'] == 413, counts
+          assert counts['v17_catalog_source_svg'] == 524, counts
+          assert counts['v17_unique_source_svg_contents'] == 212, counts
+          assert counts['v17_motion_previews'] == 261, counts
+          assert counts['v17_focused_states'] == 16, counts
+          Path('_site/source-assets.json').write_text(
+              json.dumps({'files': files, 'archives': archives, 'counts': counts}, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8'
+          )
+          print('Complete source inventory validated:', counts, 'archives:', len(archives))
+          PY
           cp -R icons/. _site/icons/
           cp gallery/index.html _site/index.html
           cp audio/player.html _site/audio/player.html
@@ -42,6 +126,39 @@ jobs:
           cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           cp -R preview/royal-design/v18 _site/preview/royal-design/v18
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          site = Path('_site')
+          inventory = json.loads((site / 'source-assets.json').read_text(encoding='utf-8'))
+          for entry in inventory['files'] + inventory['archives']:
+              target = site / entry['path']
+              assert target.is_file(), f"Missing published source asset: {entry['path']}"
+          for rel in [
+              'icons/v16/uploaded-royal-icon-package/catalog.json',
+              'icons/v17/royal-library/catalog.json'
+          ]:
+              catalog = json.loads((site / 'royal-design-gallery' / rel).read_text(encoding='utf-8'))
+              for icon in catalog.get('icons', []):
+                  refs = list((icon.get('variants') or {}).values())
+                  if icon.get('motion'):
+                      refs.append(icon['motion'])
+                  for ref in refs:
+                      assert (site / 'royal-design-gallery' / ref).is_file(), f"Broken catalog reference: {ref}"
+          print('Verified every listed source file, archive, and V16/V17 catalog variant.')
+          PY
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          html = Path('_site/index.html').read_text(encoding='utf-8')
+          scripts = re.findall(r'<script>(.*?)</script>', html, re.S)
+          assert scripts, 'Gallery JavaScript block is missing'
+          Path('/tmp/royal-gallery.js').write_text(scripts[-1], encoding='utf-8')
+          PY
+          node --check /tmp/royal-gallery.js
+          test -f _site/source-assets.json
+          test -f _site/royal-design-gallery/icons/v16/uploaded-royal-icon-package/catalog.json
+          test -f _site/royal-design-gallery/icons/v17/royal-library/catalog.json
           test -f _site/index.html
           test -f _site/icons/catalog.json
           test -f _site/icons/app-collections.json
@@ -62,6 +179,7 @@ jobs:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
