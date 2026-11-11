@@ -29,10 +29,65 @@ jobs:
         with:
           ref: main
 
+      - name: Checkout complete V16/V17 source library
+        uses: actions/checkout@v4
+        with:
+          repository: Ramistar900/royal-design-gallery
+          ref: main
+          path: royal-design-gallery
+
       - name: Prepare complete ROYAL Design gallery and preserve audio pages
         run: |
           set -euo pipefail
-          mkdir -p _site/audio _site/audio/ui-sounds _site/icons _site/preview/royal-design
+          mkdir -p _site/audio _site/audio/ui-sounds _site/icons _site/preview/royal-design _site/royal-design-gallery/icons
+          cp -R royal-design-gallery/icons/v16 _site/royal-design-gallery/icons/
+          cp -R royal-design-gallery/icons/v17 _site/royal-design-gallery/icons/
+          cp -R royal-design-gallery/packages _site/royal-design-gallery/
+          cp -R royal-design-gallery/sources _site/royal-design-gallery/
+          find royal-design-gallery -maxdepth 1 -type f -name '*.zip' -exec cp {} _site/royal-design-gallery/ \;
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('royal-design-gallery')
+          files = []
+          def collect(path, version, group):
+              if not path.exists():
+                  return
+              for item in sorted(path.rglob('*')):
+                  if item.is_file() and item.suffix.lower() in {'.svg', '.xml', '.png', '.webp', '.gif'}:
+                      files.append({
+                          'path': 'royal-design-gallery/' + item.relative_to(root).as_posix(),
+                          'version': version,
+                          'group': group,
+                          'motion': 'motion' in item.parts or 'animated' in item.parts
+                      })
+          collect(root / 'packages/royal-design-shared-icon-package', 'V16', 'V16 · حزمة ROYAL الأصلية')
+          collect(root / 'packages/restaurant-tv-icons-v2-transparent', 'V17', 'V17 · المطاعم والتلفاز')
+          collect(root / 'icons/v17', 'V17', 'V17 · مكتبة Android وROYAL')
+          collect(Path('preview/royal-design/v18'), 'V18', 'V18 · المطاعم والتلفاز')
+          archives = []
+          for item in sorted(root.rglob('*.zip')):
+              archives.append({
+                  'path': 'royal-design-gallery/' + item.relative_to(root).as_posix(),
+                  'name': item.name,
+                  'version': 'V16/V17'
+              })
+          counts = {
+              'v16_svg': sum(1 for x in files if x['version'] == 'V16' and x['path'].endswith('.svg')),
+              'v17_svg': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.svg')),
+              'v17_xml': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.xml')),
+              'v18_svg': sum(1 for x in files if x['version'] == 'V18' and x['path'].endswith('.svg'))
+          }
+          assert counts['v16_svg'] == 262, counts
+          assert counts['v17_svg'] == 550, counts
+          assert counts['v17_xml'] == 22, counts
+          assert counts['v18_svg'] == 451, counts
+          Path('_site/source-assets.json').write_text(
+              json.dumps({'files': files, 'archives': archives, 'counts': counts}, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8'
+          )
+          print('Complete source inventory validated:', counts, 'archives:', len(archives))
+          PY
           cp -R icons/. _site/icons/
           cp gallery/index.html _site/index.html
           cp audio/player.html _site/audio/player.html
@@ -42,6 +97,9 @@ jobs:
           cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           cp -R preview/royal-design/v18 _site/preview/royal-design/v18
+          test -f _site/source-assets.json
+          test -f _site/royal-design-gallery/icons/v16/uploaded-royal-icon-package/catalog.json
+          test -f _site/royal-design-gallery/icons/v17/royal-library/catalog.json
           test -f _site/index.html
           test -f _site/icons/catalog.json
           test -f _site/icons/app-collections.json
