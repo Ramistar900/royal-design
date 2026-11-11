@@ -2,6 +2,14 @@ name: Deploy ROYAL Design V18 Preview
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-royal-design-v18-preview.yml"
+      - "gallery/index.html"
+      - "icons/**"
+      - "preview/royal-design/v18/**"
   push:
     branches:
       - main
@@ -27,7 +35,7 @@ jobs:
       - name: Checkout complete library from main
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Checkout complete V16/V17 source library
         uses: actions/checkout@v4
@@ -72,19 +80,30 @@ jobs:
                   'name': item.name,
                   'version': 'V16/V17'
               })
+          import json as json_module
+          v16_catalog = json.loads((root / 'icons/v16/uploaded-royal-icon-package/catalog.json').read_text(encoding='utf-8'))
+          v17_catalog = json.loads((root / 'icons/v17/royal-library/catalog.json').read_text(encoding='utf-8'))
           counts = {
               'v16_svg': sum(1 for x in files if x['version'] == 'V16' and x['path'].endswith('.svg')),
               'v17_svg': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.svg')),
               'v17_archive_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/packages/') and x['path'].endswith('.svg')),
               'v17_extra_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/icons/v17/') and x['path'].endswith('.svg')),
               'v17_xml': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.xml')),
-              'v18_svg': sum(1 for x in files if x['version'] == 'V18' and x['path'].endswith('.svg'))
+              'v18_svg': sum(1 for x in files if x['version'] == 'V18' and x['path'].endswith('.svg')),
+              'v16_catalog_entries': len(v16_catalog.get('icons', [])),
+              'v17_catalog_entries': len(v17_catalog.get('icons', [])),
+              'v17_catalog_source_svg': v17_catalog.get('asset_totals', {}).get('source_archive_svg_files', 0),
+              'v17_unique_source_svg_contents': v17_catalog.get('asset_totals', {}).get('unique_source_svg_contents', 0)
           }
           assert counts['v16_svg'] == 262, counts
           assert counts['v17_archive_svg'] == 550, counts
           assert counts['v17_extra_svg'] == 52, counts
           assert counts['v17_xml'] == 22, counts
           assert counts['v18_svg'] == 451, counts
+          assert counts['v16_catalog_entries'] == 99, counts
+          assert counts['v17_catalog_entries'] == 413, counts
+          assert counts['v17_catalog_source_svg'] == 524, counts
+          assert counts['v17_unique_source_svg_contents'] == 212, counts
           Path('_site/source-assets.json').write_text(
               json.dumps({'files': files, 'archives': archives, 'counts': counts}, ensure_ascii=False, indent=2) + '\n',
               encoding='utf-8'
@@ -123,6 +142,7 @@ jobs:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
