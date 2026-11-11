@@ -43,6 +43,7 @@ jobs:
           test "$(find _site/preview/royal-design/v18 -type f -name '*.svg' | wc -l)" -eq 451
           test -f _site/preview/royal-design/v18/index.html
           echo "Prepared existing audio pages plus the complete V18 preview."
+          echo "V18 static and animated assets are preserved without conversion."
           find _site -type f | wc -l
 
       - name: Configure GitHub Pages
