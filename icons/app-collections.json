@@ -47,7 +47,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/coffee.svg"
         },
         {
           "key": "restaurant",
@@ -66,7 +67,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/restaurant.svg"
         },
         {
           "key": "menu",
@@ -85,7 +87,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/menu.svg"
         },
         {
           "key": "cart",
@@ -104,7 +107,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/cart.svg"
         },
         {
           "key": "order",
@@ -123,7 +127,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/order.svg"
         },
         {
           "key": "table",
@@ -142,7 +147,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/table.svg"
         },
         {
           "key": "delivery",
@@ -161,7 +167,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/delivery.svg"
         },
         {
           "key": "payment",
@@ -180,7 +187,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/payment.svg"
         },
         {
           "key": "owner",
@@ -199,7 +207,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/owner.svg"
         },
         {
           "key": "customer",
@@ -218,7 +227,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/customer.svg"
         },
         {
           "key": "staff",
@@ -237,7 +247,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/staff.svg"
         },
         {
           "key": "branch",
@@ -256,7 +267,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/branch.svg"
         },
         {
           "key": "kitchen",
@@ -275,7 +287,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/kitchen.svg"
         },
         {
           "key": "chef",
@@ -294,7 +307,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/chef.svg"
         },
         {
           "key": "product",
@@ -313,7 +327,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/product.svg"
         },
         {
           "key": "category",
@@ -332,7 +347,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/category.svg"
         },
         {
           "key": "addon",
@@ -351,7 +367,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/addon.svg"
         },
         {
           "key": "qr_menu",
@@ -370,7 +387,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/qr_menu.svg"
         },
         {
           "key": "dine_in",
@@ -389,7 +407,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/dine_in.svg"
         },
         {
           "key": "takeaway",
@@ -408,7 +427,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/takeaway.svg"
         },
         {
           "key": "reservation",
@@ -427,7 +447,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/reservation.svg"
         },
         {
           "key": "queue",
@@ -446,7 +467,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/queue.svg"
         },
         {
           "key": "driver",
@@ -465,7 +487,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/driver.svg"
         },
         {
           "key": "pickup",
@@ -484,7 +507,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/pickup.svg"
         },
         {
           "key": "invoice",
@@ -503,7 +527,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/invoice.svg"
         },
         {
           "key": "receipt",
@@ -522,7 +547,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/receipt.svg"
         },
         {
           "key": "cash",
@@ -541,7 +567,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/cash.svg"
         },
         {
           "key": "wallet",
@@ -560,7 +587,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/wallet.svg"
         },
         {
           "key": "card",
@@ -579,7 +607,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/card.svg"
         },
         {
           "key": "refund",
@@ -598,7 +627,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/refund.svg"
         },
         {
           "key": "discount",
@@ -617,7 +647,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/discount.svg"
         },
         {
           "key": "coupon",
@@ -636,7 +667,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/coupon.svg"
         },
         {
           "key": "loyalty",
@@ -655,7 +687,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/loyalty.svg"
         },
         {
           "key": "review",
@@ -674,7 +707,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/review.svg"
         },
         {
           "key": "notification",
@@ -693,7 +727,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/notification.svg"
         },
         {
           "key": "sales",
@@ -712,7 +747,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/sales.svg"
         },
         {
           "key": "analytics",
@@ -731,7 +767,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/analytics.svg"
         },
         {
           "key": "inventory",
@@ -750,7 +787,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/inventory.svg"
         },
         {
           "key": "stock_alert",
@@ -769,7 +807,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/stock_alert.svg"
         },
         {
           "key": "printer",
@@ -788,7 +827,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/printer.svg"
         },
         {
           "key": "support",
@@ -807,7 +847,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/support.svg"
         },
         {
           "key": "settings",
@@ -826,7 +867,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/settings.svg"
         },
         {
           "key": "location",
@@ -845,7 +887,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/location.svg"
         },
         {
           "key": "address",
@@ -864,7 +907,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/address.svg"
         },
         {
           "key": "order_history",
@@ -883,7 +927,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/order_history.svg"
         },
         {
           "key": "delivery_fee",
@@ -902,7 +947,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/delivery_fee.svg"
         },
         {
           "key": "table_service",
@@ -921,7 +967,8 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/table_service.svg"
         },
         {
           "key": "language",
@@ -940,9 +987,17 @@
             "license": "ROYAL_ORIGINAL",
             "authoring_note": "Independently authored original geometric SVG for ROYAL Design. No third-party source artwork copied, traced, recolored, or modified."
           },
-          "status": "authored_pending_visual_review"
+          "status": "authored_pending_visual_review",
+          "motion_fallback": "icons/v10/almalaki/2d/language.svg"
         }
-      ]
+      ],
+      "motion_policy": {
+        "separate_from_static": true,
+        "trigger": "start only when icon is visible or the user invokes its action",
+        "reduced_motion": "always use the matching 2D static file",
+        "background_autoplay": false,
+        "renderer_note": "Motion SVGs reuse their matching 2D static SVG through a relative local image reference."
+      }
     },
     {
       "version": "V11",

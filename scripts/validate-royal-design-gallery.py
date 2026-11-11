@@ -42,7 +42,11 @@ for app in apps:
    try: root=ET.parse(p).getroot()
    except Exception as e: fail(f"invalid motion SVG {motion}: {e}")
    raw=p.read_text(encoding="utf-8")
-   if "static_fallback" not in raw or "reduced_motion=use_static_fallback" not in raw: fail(f"fallback metadata missing {motion}")
+   expected_fallback="../../2d/"+key+".svg"
+   if "static_fallback="+expected_fallback not in raw or "reduced_motion=use_static_fallback" not in raw: fail(f"fallback metadata path is invalid {motion}")
+   if 'href="'+expected_fallback+'"' not in raw: fail(f"motion art does not reuse its static counterpart {motion}")
+   fallback=(p.parent.parent.parent/"2d"/(key+".svg")).resolve()
+   if not fallback.is_file(): fail(f"motion fallback target missing {fallback}")
    if "<animate" not in raw and "<animateTransform" not in raw: fail(f"animation missing {motion}")
    motion_count+=1
   count+=1
