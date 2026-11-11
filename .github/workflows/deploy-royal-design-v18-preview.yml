@@ -75,11 +75,14 @@ jobs:
           counts = {
               'v16_svg': sum(1 for x in files if x['version'] == 'V16' and x['path'].endswith('.svg')),
               'v17_svg': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.svg')),
+              'v17_archive_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/packages/') and x['path'].endswith('.svg')),
+              'v17_extra_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/icons/v17/') and x['path'].endswith('.svg')),
               'v17_xml': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.xml')),
               'v18_svg': sum(1 for x in files if x['version'] == 'V18' and x['path'].endswith('.svg'))
           }
           assert counts['v16_svg'] == 262, counts
-          assert counts['v17_svg'] == 550, counts
+          assert counts['v17_archive_svg'] == 550, counts
+          assert counts['v17_extra_svg'] == 52, counts
           assert counts['v17_xml'] == 22, counts
           assert counts['v18_svg'] == 451, counts
           Path('_site/source-assets.json').write_text(
