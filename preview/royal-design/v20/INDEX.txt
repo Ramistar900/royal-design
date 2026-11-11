@@ -1,0 +1,31 @@
+ROYAL Design v20 — القسم الرياضي
+Concepts: 25
+Static SVG: 25
+Animated SVG: 25
+
+Icons:
+today_matches | مباريات اليوم
+live_scores | النتائج المباشرة
+match_results | نتائج المباريات
+fixtures | جدول المباريات
+standings | الترتيب
+football | كرة القدم
+basketball | كرة السلة
+tennis | التنس
+volleyball | الكرة الطائرة
+cricket | الكريكيت
+trophy | الكأس
+teams | الفرق
+players | اللاعبون
+stadium | الملعب
+goal | المرمى
+whistle | صافرة الحكم
+yellow_card | البطاقة الصفراء
+red_card | البطاقة الحمراء
+medal | الميدالية
+statistics | الإحصائيات
+bracket | جدول البطولة
+transfer | انتقالات اللاعبين
+sports_news | أخبار الرياضة
+replay | إعادة اللقطة
+stopwatch | ساعة المباراة

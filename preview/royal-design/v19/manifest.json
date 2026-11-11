@@ -1,0 +1,141 @@
+{
+  "version": "v19",
+  "category": "muslim",
+  "total": 22,
+  "static": 22,
+  "animated": 22,
+  "items": [
+    {
+      "id": "mosque",
+      "label": "المسجد",
+      "static": "muslim/static/mosque.svg",
+      "animated": "muslim/animated/mosque.svg"
+    },
+    {
+      "id": "dua_hands",
+      "label": "الدعاء",
+      "static": "muslim/static/dua_hands.svg",
+      "animated": "muslim/animated/dua_hands.svg"
+    },
+    {
+      "id": "quran",
+      "label": "القرآن الكريم",
+      "static": "muslim/static/quran.svg",
+      "animated": "muslim/animated/quran.svg"
+    },
+    {
+      "id": "qaris",
+      "label": "القرّاء",
+      "static": "muslim/static/qaris.svg",
+      "animated": "muslim/animated/qaris.svg"
+    },
+    {
+      "id": "hijri_calendar",
+      "label": "التقويم الهجري",
+      "static": "muslim/static/hijri_calendar.svg",
+      "animated": "muslim/animated/hijri_calendar.svg"
+    },
+    {
+      "id": "ramadan",
+      "label": "رمضان",
+      "static": "muslim/static/ramadan.svg",
+      "animated": "muslim/animated/ramadan.svg"
+    },
+    {
+      "id": "hadith",
+      "label": "أحاديث النبي",
+      "static": "muslim/static/hadith.svg",
+      "animated": "muslim/animated/hadith.svg"
+    },
+    {
+      "id": "prayer_times",
+      "label": "مواقيت الصلاة",
+      "static": "muslim/static/prayer_times.svg",
+      "animated": "muslim/animated/prayer_times.svg"
+    },
+    {
+      "id": "qibla",
+      "label": "اتجاه القبلة",
+      "static": "muslim/static/qibla.svg",
+      "animated": "muslim/animated/qibla.svg"
+    },
+    {
+      "id": "tasbih",
+      "label": "المسبحة",
+      "static": "muslim/static/tasbih.svg",
+      "animated": "muslim/animated/tasbih.svg"
+    },
+    {
+      "id": "morning_azkar",
+      "label": "أذكار الصباح",
+      "static": "muslim/static/morning_azkar.svg",
+      "animated": "muslim/animated/morning_azkar.svg"
+    },
+    {
+      "id": "evening_azkar",
+      "label": "أذكار المساء",
+      "static": "muslim/static/evening_azkar.svg",
+      "animated": "muslim/animated/evening_azkar.svg"
+    },
+    {
+      "id": "dhikr",
+      "label": "الذكر",
+      "static": "muslim/static/dhikr.svg",
+      "animated": "muslim/animated/dhikr.svg"
+    },
+    {
+      "id": "zakat",
+      "label": "الزكاة",
+      "static": "muslim/static/zakat.svg",
+      "animated": "muslim/animated/zakat.svg"
+    },
+    {
+      "id": "charity",
+      "label": "الصدقة",
+      "static": "muslim/static/charity.svg",
+      "animated": "muslim/animated/charity.svg"
+    },
+    {
+      "id": "fasting",
+      "label": "الإفطار والصيام",
+      "static": "muslim/static/fasting.svg",
+      "animated": "muslim/animated/fasting.svg"
+    },
+    {
+      "id": "salah",
+      "label": "الصلاة",
+      "static": "muslim/static/salah.svg",
+      "animated": "muslim/animated/salah.svg"
+    },
+    {
+      "id": "quran_audio",
+      "label": "استماع القرآن",
+      "static": "muslim/static/quran_audio.svg",
+      "animated": "muslim/animated/quran_audio.svg"
+    },
+    {
+      "id": "quran_bookmark",
+      "label": "علامة القرآن",
+      "static": "muslim/static/quran_bookmark.svg",
+      "animated": "muslim/animated/quran_bookmark.svg"
+    },
+    {
+      "id": "islamic_events",
+      "label": "المناسبات الإسلامية",
+      "static": "muslim/static/islamic_events.svg",
+      "animated": "muslim/animated/islamic_events.svg"
+    },
+    {
+      "id": "wudu",
+      "label": "الوضوء",
+      "static": "muslim/static/wudu.svg",
+      "animated": "muslim/animated/wudu.svg"
+    },
+    {
+      "id": "eid",
+      "label": "العيد",
+      "static": "muslim/static/eid.svg",
+      "animated": "muslim/animated/eid.svg"
+    }
+  ]
+}

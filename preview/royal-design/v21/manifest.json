@@ -1,0 +1,166 @@
+{
+  "version": "v21",
+  "category": "weather",
+  "title": "الطقس وحالات الجو",
+  "total": 26,
+  "static": 26,
+  "animated": 26,
+  "items": [
+    {
+      "id": "sunny",
+      "label": "مشمس",
+      "static": "weather/static/sunny.svg",
+      "animated": "weather/animated/sunny.svg"
+    },
+    {
+      "id": "partly_cloudy",
+      "label": "غائم جزئياً",
+      "static": "weather/static/partly_cloudy.svg",
+      "animated": "weather/animated/partly_cloudy.svg"
+    },
+    {
+      "id": "cloudy",
+      "label": "غائم",
+      "static": "weather/static/cloudy.svg",
+      "animated": "weather/animated/cloudy.svg"
+    },
+    {
+      "id": "rain",
+      "label": "مطر",
+      "static": "weather/static/rain.svg",
+      "animated": "weather/animated/rain.svg"
+    },
+    {
+      "id": "drizzle",
+      "label": "رذاذ",
+      "static": "weather/static/drizzle.svg",
+      "animated": "weather/animated/drizzle.svg"
+    },
+    {
+      "id": "heavy_rain",
+      "label": "أمطار غزيرة",
+      "static": "weather/static/heavy_rain.svg",
+      "animated": "weather/animated/heavy_rain.svg"
+    },
+    {
+      "id": "thunderstorm",
+      "label": "عاصفة رعدية",
+      "static": "weather/static/thunderstorm.svg",
+      "animated": "weather/animated/thunderstorm.svg"
+    },
+    {
+      "id": "lightning",
+      "label": "برق",
+      "static": "weather/static/lightning.svg",
+      "animated": "weather/animated/lightning.svg"
+    },
+    {
+      "id": "snow",
+      "label": "ثلج",
+      "static": "weather/static/snow.svg",
+      "animated": "weather/animated/snow.svg"
+    },
+    {
+      "id": "heavy_snow",
+      "label": "ثلوج كثيفة",
+      "static": "weather/static/heavy_snow.svg",
+      "animated": "weather/animated/heavy_snow.svg"
+    },
+    {
+      "id": "sleet",
+      "label": "مطر متجمد",
+      "static": "weather/static/sleet.svg",
+      "animated": "weather/animated/sleet.svg"
+    },
+    {
+      "id": "hail",
+      "label": "بَرَد",
+      "static": "weather/static/hail.svg",
+      "animated": "weather/animated/hail.svg"
+    },
+    {
+      "id": "wind",
+      "label": "رياح",
+      "static": "weather/static/wind.svg",
+      "animated": "weather/animated/wind.svg"
+    },
+    {
+      "id": "strong_wind",
+      "label": "رياح شديدة",
+      "static": "weather/static/strong_wind.svg",
+      "animated": "weather/animated/strong_wind.svg"
+    },
+    {
+      "id": "fog",
+      "label": "ضباب",
+      "static": "weather/static/fog.svg",
+      "animated": "weather/animated/fog.svg"
+    },
+    {
+      "id": "mist",
+      "label": "شبورة خفيفة",
+      "static": "weather/static/mist.svg",
+      "animated": "weather/animated/mist.svg"
+    },
+    {
+      "id": "dust",
+      "label": "غبار",
+      "static": "weather/static/dust.svg",
+      "animated": "weather/animated/dust.svg"
+    },
+    {
+      "id": "hot",
+      "label": "حرارة مرتفعة",
+      "static": "weather/static/hot.svg",
+      "animated": "weather/animated/hot.svg"
+    },
+    {
+      "id": "cold",
+      "label": "برودة",
+      "static": "weather/static/cold.svg",
+      "animated": "weather/animated/cold.svg"
+    },
+    {
+      "id": "sunrise",
+      "label": "شروق الشمس",
+      "static": "weather/static/sunrise.svg",
+      "animated": "weather/animated/sunrise.svg"
+    },
+    {
+      "id": "sunset",
+      "label": "غروب الشمس",
+      "static": "weather/static/sunset.svg",
+      "animated": "weather/animated/sunset.svg"
+    },
+    {
+      "id": "clear_night",
+      "label": "سماء صافية ليلاً",
+      "static": "weather/static/clear_night.svg",
+      "animated": "weather/animated/clear_night.svg"
+    },
+    {
+      "id": "tornado",
+      "label": "إعصار",
+      "static": "weather/static/tornado.svg",
+      "animated": "weather/animated/tornado.svg"
+    },
+    {
+      "id": "temperature",
+      "label": "درجة الحرارة",
+      "static": "weather/static/temperature.svg",
+      "animated": "weather/animated/temperature.svg"
+    },
+    {
+      "id": "humidity",
+      "label": "الرطوبة",
+      "static": "weather/static/humidity.svg",
+      "animated": "weather/animated/humidity.svg"
+    },
+    {
+      "id": "rainbow",
+      "label": "قوس قزح",
+      "static": "weather/static/rainbow.svg",
+      "animated": "weather/animated/rainbow.svg"
+    }
+  ]
+}

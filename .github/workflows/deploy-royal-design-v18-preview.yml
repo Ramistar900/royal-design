@@ -1,4 +1,4 @@
-name: Deploy ROYAL Design V18 Preview
+name: Deploy ROYAL Design V18–V21 Preview
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
       - ".github/workflows/deploy-royal-design-v18-preview.yml"
       - "gallery/index.html"
       - "icons/**"
-      - "preview/royal-design/v18/**"
+      - "preview/royal-design/**"
   push:
     branches:
       - main
@@ -17,7 +17,7 @@ on:
       - ".github/workflows/deploy-royal-design-v18-preview.yml"
       - "gallery/index.html"
       - "icons/**"
-      - "preview/royal-design/v18/**"
+      - "preview/royal-design/**"
 
 permissions:
   contents: read
@@ -44,7 +44,7 @@ jobs:
           ref: main
           path: royal-design-gallery
 
-      - name: Prepare complete ROYAL Design gallery and preserve audio pages
+      - name: Prepare V18–V21 ROYAL Design gallery and preserve audio pages
         run: |
           set -euo pipefail
           mkdir -p _site/audio _site/audio/ui-sounds _site/icons _site/preview/royal-design _site/royal-design-gallery/icons
@@ -133,7 +133,7 @@ jobs:
           cp audio/ui-sounds/manifest.json _site/audio/ui-sounds/manifest.json
           cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
-          cp -R preview/royal-design/v18 _site/preview/royal-design/v18
+          cp -R preview/royal-design/. _site/preview/royal-design/
           python - <<'PY'
           import json
           from pathlib import Path
@@ -173,7 +173,11 @@ jobs:
           test "$(find _site/audio/assets/ogg -maxdepth 1 -type f -name '*.ogg' | wc -l)" -eq 33
           test "$(find _site/audio/ui-sounds/sounds -type f -name '*.wav' | wc -l)" -eq 49
           test "$(find _site/preview/royal-design/v18 -type f -name '*.svg' | wc -l)" -eq 451
-          test -f _site/preview/royal-design/v18/index.html
+          test -f _site/preview/royal-design/index.html
+          test "$(find _site/preview/royal-design/v19 -type f -name "*.svg" | wc -l)" -eq 44
+          test "$(find _site/preview/royal-design/v20 -type f -name "*.svg" | wc -l)" -eq 50
+          test "$(find _site/preview/royal-design/v21 -type f -name "*.svg" | wc -l)" -eq 52
+          test "$(find _site/preview/royal-design -type f -name "*.svg" | wc -l)" -eq 597
           echo "Prepared the full indexed icon library, V18 preview, and existing audio pages."
           echo "All icon source files are published unchanged; animated SVG assets remain separate."
           find _site -type f | wc -l
