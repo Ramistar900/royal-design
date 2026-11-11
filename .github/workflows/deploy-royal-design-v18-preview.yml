@@ -69,6 +69,8 @@ jobs:
                           'group': group,
                           'motion': 'motion' in item.parts or 'animated' in item.parts
                       })
+          for number in range(2, 16):
+              collect(Path('icons') / f'v{number}', f'V{number}', f'V{number} · ملفات المصدر الأصلية')
           collect(root / 'packages/royal-design-shared-icon-package', 'V16', 'V16 · حزمة ROYAL الأصلية')
           collect(root / 'packages/restaurant-tv-icons-v2-transparent', 'V17', 'V17 · المطاعم والتلفاز')
           collect(root / 'icons/v17', 'V17', 'V17 · مكتبة Android وROYAL')
@@ -80,13 +82,43 @@ jobs:
                   'name': item.name,
                   'version': 'V16/V17'
               })
+          for item in sorted(Path('.').glob('*.zip')):
+              if 'icon' in item.name.lower():
+                  match = __import__('re').search(r'v(\\d+)', item.name, __import__('re').I)
+                  archives.append({
+                      'path': item.name,
+                      'name': item.name,
+                      'version': f'V{match.group(1)}' if match else 'V2-V18'
+                  })
           import json as json_module
           v16_catalog = json.loads((root / 'icons/v16/uploaded-royal-icon-package/catalog.json').read_text(encoding='utf-8'))
           v17_catalog = json.loads((root / 'icons/v17/royal-library/catalog.json').read_text(encoding='utf-8'))
           v18_archive = Path('icons/v18/restaurant-tv-glossy/restaurant_tv_icons_v3_glossy.zip')
           if v18_archive.is_file():
               archives.append({'path': v18_archive.as_posix(), 'name': v18_archive.name, 'version': 'V18'})
+          version_svg_counts = {
+              f'v{number}': sum(1 for x in files if x['version'] == f'V{number}' and x['path'].lower().endswith('.svg'))
+              for number in range(2, 16)
+          }
+          version_xml_counts = {
+              f'v{number}': sum(1 for x in files if x['version'] == f'V{number}' and x['path'].lower().endswith('.xml'))
+              for number in range(2, 16)
+          }
+          expected_svg_counts = {
+              'v2': 22, 'v3': 10, 'v4': 12, 'v5': 20, 'v6': 12, 'v7': 26,
+              'v8': 23, 'v9': 74, 'v10': 156, 'v11': 16, 'v12': 16,
+              'v13': 32, 'v14': 16, 'v15': 24
+          }
+          expected_xml_counts = {
+              'v2': 0, 'v3': 10, 'v4': 12, 'v5': 20, 'v6': 12, 'v7': 26,
+              'v8': 23, 'v9': 116, 'v10': 0, 'v11': 0, 'v12': 0,
+              'v13': 0, 'v14': 0, 'v15': 0
+          }
+          assert version_svg_counts == expected_svg_counts, version_svg_counts
+          assert version_xml_counts == expected_xml_counts, version_xml_counts
           counts = {
+              **{f'{version}_svg': count for version, count in version_svg_counts.items()},
+              **{f'{version}_xml': count for version, count in version_xml_counts.items()},
               'v16_svg': sum(1 for x in files if x['version'] == 'V16' and x['path'].endswith('.svg')),
               'v17_svg': sum(1 for x in files if x['version'] == 'V17' and x['path'].endswith('.svg')),
               'v17_archive_svg': sum(1 for x in files if x['path'].startswith('royal-design-gallery/packages/') and x['path'].endswith('.svg')),
@@ -118,6 +150,7 @@ jobs:
           print('Complete source inventory validated:', counts, 'archives:', len(archives))
           PY
           cp -R icons/. _site/icons/
+          find . -maxdepth 1 -type f -iname '*icon*.zip' -exec cp {} _site/ \;
           cp gallery/index.html _site/index.html
           cp audio/player.html _site/audio/player.html
           mkdir -p _site/audio/assets
