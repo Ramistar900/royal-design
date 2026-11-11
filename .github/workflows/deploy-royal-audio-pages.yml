@@ -7,6 +7,7 @@ on:
       - "audio/player.html"
       - "audio/assets/ogg/**"
       - "audio/ui-sounds/**"
+      - "icons/v13/2d/**"
       - ".github/workflows/deploy-royal-audio-pages.yml"
   workflow_dispatch:
 
@@ -29,7 +30,8 @@ jobs:
       - name: Prepare isolated Pages site
         run: |
           set -euo pipefail
-          mkdir -p _site/audio _site/audio/ui-sounds
+          mkdir -p _site/audio _site/audio/ui-sounds _site/icons/v13
+          cp -R icons/v13/2d _site/icons/v13/2d
           cp audio/player.html _site/audio/player.html
           cp -R audio/assets/ogg _site/audio/assets-ogg-temp
           mkdir -p _site/audio/assets
