@@ -1,11 +1,11 @@
 name: Deploy ROYAL Design V18 Preview
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - feature/royal-design-app-icons-refresh
+      - main
     paths:
-      - "preview/royal-design/v18/**"
       - ".github/workflows/deploy-royal-design-v18-preview.yml"
 
 permissions:
