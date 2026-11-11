@@ -7,6 +7,9 @@ on:
       - main
     paths:
       - ".github/workflows/deploy-royal-design-v18-preview.yml"
+      - "gallery/index.html"
+      - "icons/**"
+      - "preview/royal-design/v18/**"
 
 permissions:
   contents: read
@@ -21,16 +24,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout preview branch
+      - name: Checkout complete library from main
         uses: actions/checkout@v4
         with:
-          ref: feature/royal-design-app-icons-refresh
+          ref: main
 
-      - name: Prepare Pages site and preserve current ROYAL AUDIO pages
+      - name: Prepare complete ROYAL Design gallery and preserve audio pages
         run: |
           set -euo pipefail
-          mkdir -p _site/audio _site/audio/ui-sounds _site/icons/v13 _site/preview/royal-design
-          cp -R icons/v13/2d _site/icons/v13/2d
+          mkdir -p _site/audio _site/audio/ui-sounds _site/icons _site/preview/royal-design
+          cp -R icons/. _site/icons/
+          cp gallery/index.html _site/index.html
           cp audio/player.html _site/audio/player.html
           mkdir -p _site/audio/assets
           cp -R audio/assets/ogg _site/audio/assets/ogg
@@ -38,12 +42,15 @@ jobs:
           cp -R audio/ui-sounds/sounds _site/audio/ui-sounds/sounds
           cp audio/ui-sounds/player.html _site/audio/ui-sounds/player.html
           cp -R preview/royal-design/v18 _site/preview/royal-design/v18
+          test -f _site/index.html
+          test -f _site/icons/catalog.json
+          test -f _site/icons/app-collections.json
           test "$(find _site/audio/assets/ogg -maxdepth 1 -type f -name '*.ogg' | wc -l)" -eq 33
           test "$(find _site/audio/ui-sounds/sounds -type f -name '*.wav' | wc -l)" -eq 49
           test "$(find _site/preview/royal-design/v18 -type f -name '*.svg' | wc -l)" -eq 451
           test -f _site/preview/royal-design/v18/index.html
-          echo "Prepared existing audio pages plus the complete V18 preview."
-          echo "V18 static and animated assets are preserved without conversion."
+          echo "Prepared the full indexed icon library, V18 preview, and existing audio pages."
+          echo "All icon source files are published unchanged; animated SVG assets remain separate."
           find _site -type f | wc -l
 
       - name: Configure GitHub Pages
@@ -61,6 +68,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy preview to GitHub Pages
+      - name: Deploy complete gallery to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
