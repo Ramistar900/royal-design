@@ -28,14 +28,14 @@ footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--mute
 <body>
 <header>
 <h1>ROYAL DESIGN</h1>
-<p>المعرض الكامل لمكتبة الأيقونات الملكية — تصفّح الإصدارات القديمة ومجموعات التطبيقات، وشاهد النسخ الثابتة 2D و3D وملفات الحركة عند توفرها. اضغط على أي صورة لفتح ملف SVG الأصلي.</p>
+<p>المعرض الكامل لمكتبة ROYAL من V2 إلى V18 — يعرض البطاقات المفهرسة وكل ملفات المصدر الأصلية، بما فيها النسخ 2D و3D والحركة والتركيز وAndroid XML والأرشيفات الأصلية. لا تُحذف الملفات لمجرد عدم وجود بطاقة لها.</p>
 <div class="stats" id="stats"><span class="pill">جارٍ تحميل فهرس المكتبة…</span></div>
 <div class="toolbar">
 <input id="search" type="search" placeholder="ابحث باسم الأيقونة أو وظيفتها…" aria-label="بحث">
 <select id="group"><option value="all">كل الإصدارات والتطبيقات</option></select>
-<select id="kind"><option value="all">كل الأنواع</option><option value="static">ثابتة</option><option value="motion">تحتوي على حركة</option><option value="2d">2D</option><option value="3d">3D</option></select>
+<select id="kind"><option value="all">كل الأنواع</option><option value="static">ثابتة</option><option value="motion">تحتوي على حركة</option><option value="2d">2D</option><option value="3d">3D</option><option value="xml">Android XML</option><option value="archive">أرشيفات ZIP</option></select>
 </div>
-<div class="notice">المعرض يجمع الأصول الموجودة في فهرسي المكتبة. وجود ملف في المعرض لا يعني بالضرورة اعتماده النهائي أو دمجه داخل التطبيقات؛ حالات المراجعة والاعتماد تبقى حسب حالة كل مجموعة.</div>
+<div class="notice">المعرض يجمع الفهارس مع الجرد الفعلي للملفات المستخرجة من الحزم؛ قد تظهر بعض الأصول مرتين إذا كانت محفوظة في أكثر من نسخة أو إصدار، ولا يعني ذلك حذف النسخ المتطابقة. وجود ملف في المعرض لا يعني بالضرورة اعتماده النهائي أو دمجه داخل التطبيقات؛ حالات المراجعة والاعتماد تبقى حسب حالة كل مجموعة.</div>
 </header>
 <main id="content"><div class="empty">تحميل الفهارس…</div></main>
 <footer>ROYAL DESIGN · مكتبة أصول أصلية لمشاريع ROYAL · افتح SVG الأصلي من الصورة. بعض ملفات الحركة تعمل داخل المتصفح، وقد تختلف طريقة تشغيلها داخل Android بحسب طريقة دمجها.</footer>
@@ -77,9 +77,11 @@ async function load(){
    const xml=x.android_xml||(x.variants&&x.variants.android_xml);
    if(two)vars.push({label:"2D ثابت",path:root+two});
    if(three)vars.push({label:"3D ثابت",path:root+three});
+   const focused=x.variants&&x.variants.focused;
+   if(focused)vars.push({label:"حالة التركيز",path:root+focused});
    if(motion)vars.push({label:"حركة",path:root+motion});
    if(xml)vars.push({label:"Android XML",path:root+xml});
-   add({name:x.label_ar||x.label_en||x.key,key:x.key,group:data.name_ar||data.application||version,groupId:version,version,variants:vars,kinds:[...(two?["static","2d"]:[]),...(three?["static","3d"]:[]),...(motion?["motion"]:[]),...(xml?["xml"]:[])]});
+   add({name:x.label_ar||x.label_en||x.key,key:x.key,group:data.name_ar||data.application||version,groupId:version,version,variants:vars,kinds:[...(two?["static","2d"]:[]),...(three?["static","3d"]:[]),...(focused?["focused"]:[]),...(motion?["motion"]:[]),...(xml?["xml"]:[])]});
   }
  }
  for(const x of old.icons||[]){
@@ -110,10 +112,14 @@ async function load(){
  for(const g of groups){const o=document.createElement("option");o.value=g;o.textContent=g;$("#group").append(o)}
  $("#stats").innerHTML=
   '<span class="pill">'+items.length+' عنصرًا مفهرسًا</span>'+
-  '<span class="pill">V16: '+(source.counts&&source.counts.v16_svg||0)+' SVG مصدر</span>'+
-  '<span class="pill">V17: '+(source.counts&&source.counts.v17_archive_svg||0)+' SVG داخل الحزم</span>'+
-  '<span class="pill">V17: '+(source.counts&&source.counts.v17_extra_svg||0)+' SVG إضافية للعرض</span>'+
+  '<span class="pill">V16: '+(source.counts&&source.counts.v16_svg||0)+' SVG مصدر · '+(source.counts&&source.counts.v16_catalog_entries||0)+' بطاقة</span>'+
+  '<span class="pill">V16/V17: '+(source.counts&&source.counts.v17_archive_svg||0)+' SVG مستخرج</span>'+
+  '<span class="pill">V17: '+(source.counts&&source.counts.v17_catalog_source_svg||0)+' SVG حسب سجل الحزمة</span>'+
+  '<span class="pill">V17: '+(source.counts&&source.counts.v17_catalog_entries||0)+' بطاقة كاملة</span>'+
+  '<span class="pill">V17: '+(source.counts&&source.counts.v17_unique_source_svg_contents||0)+' محتوى SVG فريد</span>'+
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_xml||0)+' Android XML</span>'+
+  '<span class="pill">V17: '+(source.counts&&source.counts.v17_motion_previews||0)+' معاينة حركة</span>'+
+  '<span class="pill">V17: '+(source.counts&&source.counts.v17_focused_states||0)+' حالة تركيز</span>'+
   '<span class="pill">V18: '+(source.counts&&source.counts.v18_svg||0)+' SVG مصدر</span>'+
   '<span class="pill">V2–V15 محفوظة</span>';
  render();
