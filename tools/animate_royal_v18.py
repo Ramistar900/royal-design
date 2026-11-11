@@ -53,12 +53,12 @@ def semantic_motion(name: str, category: str) -> str:
         return motion("translate", "0 0;2 -1;0 0;-2 1;0 0", "5s", False)
     if name in {"weather_sun", "brightness", "sun"}:
         return motion("opacity", ".72;1;.84;1;.72", "3.2s", False)
-    if name in {"play", "live", "record"}:
+    if name in {"play", "live", "record", "live_tv"}:
         return motion("opacity", ".72;1;.84;1", "1.9s", False)
     if name in {"pause", "stop", "check", "success"}:
         return motion("opacity", ".8;1;.8", "2.8s")
-    if name in {"next", "forward", "seek_forward"}:
-        return motion("translate", "0 0;2.4 0;0 0", "1.7s")
+    if name in {"next", "forward", "seek_forward", "channels", "queue", "series", "ticker", "news"}:
+        return motion("translate", "0 0;2.4 0;0 0", "2.2s")
     if name in {"prev", "back", "rewind", "seek_back"}:
         return motion("translate", "0 0;-2.4 0;0 0", "1.7s")
     if name in {"volume_up", "volume_down", "mute", "audio_track"}:
@@ -69,9 +69,9 @@ def semantic_motion(name: str, category: str) -> str:
         return motion("translate", "0 0;0 -2.5;0 0", "1.8s")
     if name in {"qr", "barcode"}:
         return motion("opacity", ".72;1;.72", "2.2s")
-    if name in {"fullscreen", "aspect", "mirror"}:
+    if name in {"fullscreen", "aspect", "mirror", "pip"}:
         return motion("scale", "1;1.045;1", "2.6s")
-    if name in {"gift", "add", "remove", "close", "open"}:
+    if name in {"gift", "add", "remove", "close", "open", "playlist_add"}:
         return motion("translate", "0 0;0 -1.7;0 0", "2.2s")
     if name in {"lock", "parental"}:
         return motion("translate", "0 0;0 -1.1;0 0", "3.1s")
@@ -91,16 +91,36 @@ def semantic_motion(name: str, category: str) -> str:
         return motion("translate", "0 0;2 0;0 0", "2.2s")
     if name in {"phone", "call"}:
         return motion("rotate", "-2;2;0", "1.8s")
-    if name in {"price_tag", "ticket", "calendar"}:
-        return motion("rotate", "-1.4;1.4;0", "2.8s")
+    if name in {"price_tag", "ticket", "calendar", "offer"}:
+        return motion("rotate", "-1.8;1.8;0", "2.8s")
     if name in {"chat", "message", "queue_num", "receipt", "payment", "wallet"}:
         return motion("opacity", ".78;1;.78", "2.7s")
-    if name == "night":
+    if name in {"night", "sleep"}:
         return motion("opacity", ".65;1;.75;1", "4s", False)
     if name in {"language", "menu", "menu_board", "grid", "apps", "keyboard"}:
         return motion("opacity", ".78;1;.88;1", "3.1s", False)
     if name in {"home", "restaurant", "store_front", "table", "kitchen", "food", "drink", "dessert"}:
         return motion("translate", "0 0;0 -1.2;0 0", "3.3s")
+    if name in {"accessibility", "info", "profile", "remote", "subtitles", "temperature", "video"}:
+        return motion("opacity", ".68;1;.82;1", "2.5s", False)
+    if name in {"bookmark", "kids", "sports"}:
+        return motion("translate", "0 0;0 -2;0 0", "1.9s")
+    if name in {"edit", "offer"}:
+        return motion("rotate", "-2.2;2.2;0", "2.2s")
+    if name == "filter":
+        return motion("rotate", "-3;3;0", "2.4s")
+    if name == "game":
+        return motion("translate", "-1.3 0;1.3 0;-1.3 0", "1.3s", False)
+    if name == "movies":
+        return motion("rotate", "0;360", "22s", False)
+    if name == "recent":
+        return motion("rotate", "-2;2;0", "2s")
+    if name == "screensaver":
+        return motion("translate", "-1 -1;1 1;-1 -1", "7s", False)
+    if name == "speed":
+        return motion("rotate", "-5;5;0", "1.4s")
+    if name == "trash":
+        return motion("rotate", "-3;3;0", "1.5s")
     if category == "player_music":
         return motion("translate", "0 0;0 -1.4;0 0", "2.6s")
     if category == "player_video":
@@ -112,7 +132,6 @@ def semantic_motion(name: str, category: str) -> str:
     if category == "tv":
         return motion("opacity", ".82;1;.82", "3.4s")
     return motion("translate", "0 0;0 -1.2;0 0", "3.2s")
-
 def animate_equalizer(foreground: str) -> tuple[str, int]:
     count = 0
     def replace(match: re.Match[str]) -> str:
@@ -160,7 +179,7 @@ def animate_sun_rays(foreground: str) -> tuple[str, bool]:
         return foreground, False
     path = match.group(0)
     replacement = (
-        '<g><animateTransform attributeName="transform" type="rotate" values="0;360" '
+        '<g><animateTransform attributeName="transform" type="rotate" values="0 32 32;360 32 32" '
         'dur="24s" repeatCount="indefinite"/>' + path + '</g>')
     return foreground[:match.start()] + replacement + foreground[match.end():], True
 
