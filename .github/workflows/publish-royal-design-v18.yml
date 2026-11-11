@@ -1,0 +1,41 @@
+name: Publish ROYAL Design V18 Gallery Preview
+
+on:
+  push:
+    branches:
+      - feature/royal-design-app-icons-refresh
+    paths:
+      - "icons/v18/restaurant-tv-glossy/restaurant_tv_icons_v3_glossy.zip"
+      - "scripts/publish-royal-design-v18.py"
+      - ".github/workflows/publish-royal-design-v18.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: royal-design-v18-gallery
+  cancel-in-progress: false
+
+jobs:
+  extract-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/royal-design-app-icons-refresh
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate archive and extract gallery assets
+        run: python scripts/publish-royal-design-v18.py
+      - name: Commit generated V18 preview assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add preview/royal-design/v18
+          if git diff --cached --quiet; then
+            echo "V18 preview is already up to date"
+          else
+            git commit -m "feat(royal-design): publish V18 icon gallery preview"
+            git push origin HEAD:feature/royal-design-app-icons-refresh
+          fi
