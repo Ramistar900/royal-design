@@ -47,7 +47,7 @@ function add(item){items.push(item)}
 function card(x){
  const vars=x.variants.filter(v=>v.path);
  const variants=vars.map(v=>{
-  const visual=/\\.(svg|png|webp|gif)(?:$|\\?)/i.test(v.path);
+  const visual=/\.(svg|png|webp|gif)(?:$|\?)/i.test(v.path);
   const body=visual
    ? '<img loading="lazy" src="'+esc(v.path)+'" alt="'+esc(x.name)+'">'
    : '<span>فتح / تنزيل الملف</span>';
@@ -99,11 +99,14 @@ async function load(){
  }
  addCatalog(v16,"V16");
  addCatalog(v17,"V17");
- // Every extracted source asset is added separately, including files not represented in catalog.json.
+ // Add only source files not already represented by a catalog variant; this preserves every file without duplicating catalog cards.
+ const representedPaths=new Set(items.flatMap(x=>x.variants.map(v=>v.path)));
  for(const f of source.files||[]){
+  if(representedPaths.has(f.path)) continue;
   const ext=f.path.split(".").pop().toLowerCase();
   const visual=["svg","png","webp","gif"].includes(ext);
   add({name:f.path.split("/").pop()+" · أصل كامل",key:f.path,group:f.group,groupId:f.version,version:f.version,variants:[{label:visual?"معاينة الأصل":"فتح الملف الأصلي",path:f.path}],kinds:[...(visual?["static"]:[]),...(ext==="xml"?["xml"]:[]),...(f.motion?["motion"]:[])]});
+  representedPaths.add(f.path);
  }
  for(const a of source.archives||[]){
   add({name:a.name+" · ملف الحزمة الأصلي",key:a.path,group:"الأرشيفات الأصلية",groupId:"SOURCE_ARCHIVES",version:a.version,variants:[{label:"تنزيل ZIP الأصلي",path:a.path}],kinds:["archive"]});
@@ -121,7 +124,7 @@ async function load(){
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_motion_previews||0)+' معاينة حركة</span>'+
   '<span class="pill">V17: '+(source.counts&&source.counts.v17_focused_states||0)+' حالة تركيز</span>'+
   '<span class="pill">V18: '+(source.counts&&source.counts.v18_svg||0)+' SVG مصدر</span>'+
-  '<span class="pill">V2–V15 محفوظة</span>';
+  '<span class="pill">V2–V15: '+(source.files||[]).filter(f=>/^V([2-9]|1[0-5])$/.test(f.version)).length+' ملف مصدر</span>';
  render();
 }
 function render(){
