@@ -1,0 +1,31 @@
+ROYAL Design V21 — الطقس وحالات الجو
+Concepts: 26
+Static SVG: 26
+Animated SVG: 26
+
+sunny | مشمس
+partly_cloudy | غائم جزئياً
+cloudy | غائم
+rain | مطر
+drizzle | رذاذ
+heavy_rain | أمطار غزيرة
+thunderstorm | عاصفة رعدية
+lightning | برق
+snow | ثلج
+heavy_snow | ثلوج كثيفة
+sleet | مطر متجمد
+hail | بَرَد
+wind | رياح
+strong_wind | رياح شديدة
+fog | ضباب
+mist | شبورة خفيفة
+dust | غبار
+hot | حرارة مرتفعة
+cold | برودة
+sunrise | شروق الشمس
+sunset | غروب الشمس
+clear_night | سماء صافية ليلاً
+tornado | إعصار
+temperature | درجة الحرارة
+humidity | الرطوبة
+rainbow | قوس قزح

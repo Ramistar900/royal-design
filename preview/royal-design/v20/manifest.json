@@ -1,0 +1,159 @@
+{
+  "version": "v20",
+  "category": "sports",
+  "total": 25,
+  "static": 25,
+  "animated": 25,
+  "items": [
+    {
+      "id": "today_matches",
+      "label": "مباريات اليوم",
+      "static": "sports/static/today_matches.svg",
+      "animated": "sports/animated/today_matches.svg"
+    },
+    {
+      "id": "live_scores",
+      "label": "النتائج المباشرة",
+      "static": "sports/static/live_scores.svg",
+      "animated": "sports/animated/live_scores.svg"
+    },
+    {
+      "id": "match_results",
+      "label": "نتائج المباريات",
+      "static": "sports/static/match_results.svg",
+      "animated": "sports/animated/match_results.svg"
+    },
+    {
+      "id": "fixtures",
+      "label": "جدول المباريات",
+      "static": "sports/static/fixtures.svg",
+      "animated": "sports/animated/fixtures.svg"
+    },
+    {
+      "id": "standings",
+      "label": "الترتيب",
+      "static": "sports/static/standings.svg",
+      "animated": "sports/animated/standings.svg"
+    },
+    {
+      "id": "football",
+      "label": "كرة القدم",
+      "static": "sports/static/football.svg",
+      "animated": "sports/animated/football.svg"
+    },
+    {
+      "id": "basketball",
+      "label": "كرة السلة",
+      "static": "sports/static/basketball.svg",
+      "animated": "sports/animated/basketball.svg"
+    },
+    {
+      "id": "tennis",
+      "label": "التنس",
+      "static": "sports/static/tennis.svg",
+      "animated": "sports/animated/tennis.svg"
+    },
+    {
+      "id": "volleyball",
+      "label": "الكرة الطائرة",
+      "static": "sports/static/volleyball.svg",
+      "animated": "sports/animated/volleyball.svg"
+    },
+    {
+      "id": "cricket",
+      "label": "الكريكيت",
+      "static": "sports/static/cricket.svg",
+      "animated": "sports/animated/cricket.svg"
+    },
+    {
+      "id": "trophy",
+      "label": "الكأس",
+      "static": "sports/static/trophy.svg",
+      "animated": "sports/animated/trophy.svg"
+    },
+    {
+      "id": "teams",
+      "label": "الفرق",
+      "static": "sports/static/teams.svg",
+      "animated": "sports/animated/teams.svg"
+    },
+    {
+      "id": "players",
+      "label": "اللاعبون",
+      "static": "sports/static/players.svg",
+      "animated": "sports/animated/players.svg"
+    },
+    {
+      "id": "stadium",
+      "label": "الملعب",
+      "static": "sports/static/stadium.svg",
+      "animated": "sports/animated/stadium.svg"
+    },
+    {
+      "id": "goal",
+      "label": "المرمى",
+      "static": "sports/static/goal.svg",
+      "animated": "sports/animated/goal.svg"
+    },
+    {
+      "id": "whistle",
+      "label": "صافرة الحكم",
+      "static": "sports/static/whistle.svg",
+      "animated": "sports/animated/whistle.svg"
+    },
+    {
+      "id": "yellow_card",
+      "label": "البطاقة الصفراء",
+      "static": "sports/static/yellow_card.svg",
+      "animated": "sports/animated/yellow_card.svg"
+    },
+    {
+      "id": "red_card",
+      "label": "البطاقة الحمراء",
+      "static": "sports/static/red_card.svg",
+      "animated": "sports/animated/red_card.svg"
+    },
+    {
+      "id": "medal",
+      "label": "الميدالية",
+      "static": "sports/static/medal.svg",
+      "animated": "sports/animated/medal.svg"
+    },
+    {
+      "id": "statistics",
+      "label": "الإحصائيات",
+      "static": "sports/static/statistics.svg",
+      "animated": "sports/animated/statistics.svg"
+    },
+    {
+      "id": "bracket",
+      "label": "جدول البطولة",
+      "static": "sports/static/bracket.svg",
+      "animated": "sports/animated/bracket.svg"
+    },
+    {
+      "id": "transfer",
+      "label": "انتقالات اللاعبين",
+      "static": "sports/static/transfer.svg",
+      "animated": "sports/animated/transfer.svg"
+    },
+    {
+      "id": "sports_news",
+      "label": "أخبار الرياضة",
+      "static": "sports/static/sports_news.svg",
+      "animated": "sports/animated/sports_news.svg"
+    },
+    {
+      "id": "replay",
+      "label": "إعادة اللقطة",
+      "static": "sports/static/replay.svg",
+      "animated": "sports/animated/replay.svg"
+    },
+    {
+      "id": "stopwatch",
+      "label": "ساعة المباراة",
+      "static": "sports/static/stopwatch.svg",
+      "animated": "sports/animated/stopwatch.svg"
+    }
+  ]
+}

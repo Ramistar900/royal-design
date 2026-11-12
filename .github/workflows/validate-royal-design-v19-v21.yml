@@ -1,0 +1,33 @@
+name: Validate ROYAL Design V19-V21 Icon Packs
+on:
+  pull_request:
+    paths:
+      - 'preview/royal-design/v19/**'
+      - 'preview/royal-design/v20/**'
+      - 'preview/royal-design/v21/**'
+      - 'preview/royal-design/icon-codes.json'
+      - 'preview/royal-design/v18/**'
+      - 'gallery/index.html'
+      - 'tools/validate_royal_icon_codes.py'
+      - 'tools/validate_royal_v19_v21.py'
+      - '.github/workflows/validate-royal-design-v19-v21.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'preview/royal-design/v19/**'
+      - 'preview/royal-design/v20/**'
+      - 'preview/royal-design/v21/**'
+      - 'tools/validate_royal_v19_v21.py'
+      - '.github/workflows/validate-royal-design-v19-v21.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate stable icon codes across V16-V21
+        run: python tools/validate_royal_icon_codes.py
+      - name: Validate static and animated SVG pairs
+        run: python tools/validate_royal_v19_v21.py

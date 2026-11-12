@@ -1,0 +1,28 @@
+ROYAL Design v19 — القسم الإسلامي
+Concepts: 22
+Static SVG: 22
+Animated SVG: 22
+
+Icons:
+mosque | المسجد
+dua_hands | الدعاء
+quran | القرآن الكريم
+qaris | القرّاء
+hijri_calendar | التقويم الهجري
+ramadan | رمضان
+hadith | أحاديث النبي
+prayer_times | مواقيت الصلاة
+qibla | اتجاه القبلة
+tasbih | المسبحة
+morning_azkar | أذكار الصباح
+evening_azkar | أذكار المساء
+dhikr | الذكر
+zakat | الزكاة
+charity | الصدقة
+fasting | الإفطار والصيام
+salah | الصلاة
+quran_audio | استماع القرآن
+quran_bookmark | علامة القرآن
+islamic_events | المناسبات الإسلامية
+wudu | الوضوء
+eid | العيد
