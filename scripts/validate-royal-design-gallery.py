@@ -12,7 +12,6 @@ LEGACY_DIRS = [ROOT / "icons" / f"v{n}" for n in range(2, 16)]
 LEGACY_FILES = [
     ROOT / "ROYAL_Android_Icons_v2.zip",
     ROOT / "preview/v9-icon-catalog/index.html",
-    ROOT / "preview/royal-design/index.html",
 ]
 
 def fail(message):
