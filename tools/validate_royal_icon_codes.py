@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Validate stable ROYAL Design icon codes across V16-V21."""
-import json,re
+import json,re,shutil,subprocess,tempfile
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -30,4 +30,26 @@ if len(identity_to_code)!=data.get("counts",{}).get("unique_icons"): fail("uniqu
 v16={x["key"]:x["code"] for x in items if x["version"]=="V16"}
 v17={x["key"]:x["code"] for x in items if x["version"]=="V17"}
 if any(v17.get(k)!=v for k,v in v16.items()): fail("V16/V17 shared keys have different codes")
-print(f"ROYAL icon codes passed: {len(items)} edition records, {len(identity_to_code)} unique icons, V16-V21 covered.")
+# Verify that every web gallery actually loads the registry, exposes copy controls,
+# and has syntactically valid inline JavaScript.
+PAGES=[
+ ROOT/"gallery/index.html",
+ ROOT/"preview/royal-design/v18/index.html",
+ ROOT/"preview/royal-design/v19/index.html",
+ ROOT/"preview/royal-design/v20/index.html",
+ ROOT/"preview/royal-design/v21/index.html",
+]
+node=shutil.which("node")
+if not node: fail("Node.js is required to validate gallery scripts")
+for page in PAGES:
+ html=page.read_text(encoding="utf-8")
+ if "data-copy-code" not in html or "icon-codes.json" not in html:
+  fail(f"code search/copy UI missing from {page.relative_to(ROOT)}")
+ scripts=re.findall(r"<script>(.*?)</script>",html,re.S)
+ if not scripts: fail(f"missing inline JavaScript: {page.relative_to(ROOT)}")
+ for script in scripts:
+  with tempfile.NamedTemporaryFile("w",suffix=".js",encoding="utf-8") as temp:
+   temp.write(script);temp.flush()
+   result=subprocess.run([node,"--check",temp.name],capture_output=True,text=True)
+   if result.returncode: fail(f"JavaScript syntax error in {page.relative_to(ROOT)}: {result.stderr}")
+print(f"ROYAL icon codes passed: {len(items)} edition records, {len(identity_to_code)} unique icons, V16-V21 covered; all five gallery pages passed JavaScript checks.")
