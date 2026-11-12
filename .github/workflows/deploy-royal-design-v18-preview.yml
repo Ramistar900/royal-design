@@ -178,7 +178,8 @@ jobs:
           test "$(find _site/preview/royal-design/v20 -type f -name "*.svg" | wc -l)" -eq 50
           test "$(find _site/preview/royal-design/v21 -type f -name "*.svg" | wc -l)" -eq 52
           test "$(find _site/preview/royal-design -type f -name "*.svg" | wc -l)" -eq 597
-          echo "Prepared the full indexed icon library, V18 preview, and existing audio pages."
+          python tools/validate_royal_icon_codes.py
+          echo "Prepared the full indexed icon library, V18-V21 previews, stable icon codes, and existing audio pages."
           echo "All icon source files are published unchanged; animated SVG assets remain separate."
           find _site -type f | wc -l
 

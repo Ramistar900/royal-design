@@ -5,6 +5,10 @@ on:
       - 'preview/royal-design/v19/**'
       - 'preview/royal-design/v20/**'
       - 'preview/royal-design/v21/**'
+      - 'preview/royal-design/icon-codes.json'
+      - 'preview/royal-design/v18/**'
+      - 'gallery/index.html'
+      - 'tools/validate_royal_icon_codes.py'
       - 'tools/validate_royal_v19_v21.py'
       - '.github/workflows/validate-royal-design-v19-v21.yml'
   push:
@@ -23,5 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Validate stable icon codes across V16-V21
+        run: python tools/validate_royal_icon_codes.py
       - name: Validate static and animated SVG pairs
         run: python tools/validate_royal_v19_v21.py
