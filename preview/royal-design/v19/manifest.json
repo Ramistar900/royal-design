@@ -1,8 +1,8 @@
 {
   "version": "v19",
   "category": "muslim",
-  "total": 22,
-  "static": 22,
+  "total": 24,
+  "static": 24,
   "animated": 22,
   "items": [
     {
@@ -136,6 +136,16 @@
       "label": "العيد",
       "static": "muslim/static/eid.svg",
       "animated": "muslim/animated/eid.svg"
+    },
+    {
+      "id": "prayer_icon",
+      "label": "أيقونة الصلاة الأصلية",
+      "static": "muslim/static/file_000000001218820a8a39eaae196b66e0.png"
+    },
+    {
+      "id": "dua_icon",
+      "label": "أيقونة الدعاء الأصلية",
+      "static": "muslim/static/file_000000007dc0820aa6c0f334ad42bca4.png"
     }
   ]
 }
