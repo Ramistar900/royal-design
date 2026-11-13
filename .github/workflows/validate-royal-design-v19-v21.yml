@@ -17,6 +17,8 @@ on:
       - 'preview/royal-design/v19/**'
       - 'preview/royal-design/v20/**'
       - 'preview/royal-design/v21/**'
+      - 'preview/royal-design/icon-codes.json'
+      - 'tools/validate_royal_icon_codes.py'
       - 'tools/validate_royal_v19_v21.py'
       - '.github/workflows/validate-royal-design-v19-v21.yml'
 jobs:
