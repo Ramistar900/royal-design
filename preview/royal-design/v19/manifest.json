@@ -1,8 +1,8 @@
 {
   "version": "v19",
   "category": "muslim",
-  "total": 24,
-  "static": 24,
+  "total": 26,
+  "static": 26,
   "animated": 22,
   "items": [
     {
@@ -146,6 +146,16 @@
       "id": "dua_icon",
       "label": "أيقونة الدعاء الأصلية",
       "static": "muslim/static/file_000000007dc0820aa6c0f334ad42bca4.png"
+    },
+    {
+      "id": "quran_icon",
+      "label": "أيقونة القرآن الكريم الأصلية",
+      "static": "muslim/static/quran_icon.png"
+    },
+    {
+      "id": "qaris_icon",
+      "label": "أيقونة القرّاء الأصلية",
+      "static": "muslim/static/qaris_icon.png"
     }
   ]
 }
