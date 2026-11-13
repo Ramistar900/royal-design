@@ -21,15 +21,15 @@
       "V16": 99,
       "V17": 413,
       "V18": 213,
-      "V19": 22,
+      "V19": 26,
       "V20": 25,
       "V21": 26
     },
-    "version_records": 798,
-    "unique_icons": 699,
-    "unique_codes": 699,
+    "version_records": 802,
+    "unique_icons": 703,
+    "unique_codes": 703,
     "by_color": {
-      "gold": 648,
+      "gold": 652,
       "turquoise": 25,
       "cyan": 26
     }
@@ -11117,6 +11117,58 @@
         "animated": "preview/royal-design/v21/weather/animated/wind.svg"
       },
       "code": "C00026"
+    },
+    {
+      "version": "V19",
+      "key": "prayer_icon",
+      "identity": "v19:prayer_icon",
+      "label": "أيقونة الصلاة الأصلية",
+      "category": "muslim",
+      "color": "gold",
+      "color_letter": "R",
+      "assets": {
+        "static": "preview/royal-design/v19/muslim/static/file_000000001218820a8a39eaae196b66e0.png"
+      },
+      "code": "R00649"
+    },
+    {
+      "version": "V19",
+      "key": "dua_icon",
+      "identity": "v19:dua_icon",
+      "label": "أيقونة الدعاء الأصلية",
+      "category": "muslim",
+      "color": "gold",
+      "color_letter": "R",
+      "assets": {
+        "static": "preview/royal-design/v19/muslim/static/file_000000007dc0820aa6c0f334ad42bca4.png"
+      },
+      "code": "R00650"
+    },
+    {
+      "version": "V19",
+      "key": "quran_icon",
+      "identity": "v19:quran_icon",
+      "label": "أيقونة القرآن الكريم الأصلية",
+      "category": "muslim",
+      "color": "gold",
+      "color_letter": "R",
+      "assets": {
+        "static": "preview/royal-design/v19/muslim/static/quran_icon.png"
+      },
+      "code": "R00651"
+    },
+    {
+      "version": "V19",
+      "key": "qaris_icon",
+      "identity": "v19:qaris_icon",
+      "label": "أيقونة القرّاء الأصلية",
+      "category": "muslim",
+      "color": "gold",
+      "color_letter": "R",
+      "assets": {
+        "static": "preview/royal-design/v19/muslim/static/qaris_icon.png"
+      },
+      "code": "R00652"
     }
   ]
 }
