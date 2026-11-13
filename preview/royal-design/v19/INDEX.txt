@@ -26,7 +26,7 @@ quran_bookmark | علامة القرآن
 islamic_events | المناسبات الإسلامية
 wudu | الوضوء
 eid | العيد
-prayer_icon | أيقونة الصلاة الأصلية (PNG)
-dua_icon | أيقونة الدعاء الأصلية (PNG)
-quran_icon | أيقونة القرآن الكريم الأصلية (PNG)
-qaris_icon | أيقونة القرّاء الأصلية (PNG)
+prayer_icon | أيقونة الصلاة الأصلية (PNG) | R00649
+dua_icon | أيقونة الدعاء الأصلية (PNG) | R00650
+quran_icon | أيقونة القرآن الكريم الأصلية (PNG) | R00651
+qaris_icon | أيقونة القرّاء الأصلية (PNG) | R00652
