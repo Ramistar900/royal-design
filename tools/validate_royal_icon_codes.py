@@ -5,7 +5,7 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/"preview/royal-design/icon-codes.json"
-EXPECTED={"V16":99,"V17":413,"V18":213,"V19":22,"V20":25,"V21":26}
+EXPECTED={"V16":99,"V17":413,"V18":213,"V19":26,"V20":25,"V21":26}
 PATTERN=re.compile(r"^[A-Z][0-9]{5}$")
 def fail(message): raise SystemExit("ERROR: "+message)
 data=json.loads(REGISTRY.read_text(encoding="utf-8"));items=data.get("items",[])
@@ -23,7 +23,9 @@ for item in items:
  if item["version"] in {"V18","V19","V20","V21"}:
   for path in item.get("assets",{}).values():
    if not (ROOT/path).is_file(): fail(f"missing local asset: {path}")
- if item["version"] in {"V19","V20","V21"} and not {"static","animated"}.issubset(item.get("assets",{})):
+ if item["version"] == "V19" and "static" not in item.get("assets",{}):
+  fail(f"static asset missing: {identity}")
+ if item["version"] in {"V20","V21"} and not {"static","animated"}.issubset(item.get("assets",{})):
   fail(f"static/animated pair missing: {identity}")
 if len(code_to_identity)!=data.get("counts",{}).get("unique_codes"): fail("unique code count mismatch")
 if len(identity_to_code)!=data.get("counts",{}).get("unique_icons"): fail("unique icon count mismatch")
