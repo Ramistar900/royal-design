@@ -1,6 +1,6 @@
 ROYAL Design v19 — القسم الإسلامي
-Concepts: 24
-Static assets: 24
+Concepts: 26
+Static assets: 26
 Animated SVG: 22
 
 Icons:
@@ -28,3 +28,5 @@ wudu | الوضوء
 eid | العيد
 prayer_icon | أيقونة الصلاة الأصلية (PNG)
 dua_icon | أيقونة الدعاء الأصلية (PNG)
+quran_icon | أيقونة القرآن الكريم الأصلية (PNG)
+qaris_icon | أيقونة القرّاء الأصلية (PNG)
