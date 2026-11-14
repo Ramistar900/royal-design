@@ -5,7 +5,7 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/"preview/royal-design/icon-codes.json"
-EXPECTED={"V16":99,"V17":413,"V18":213,"V19":26,"V20":25,"V21":26}
+EXPECTED={"V16":99,"V17":413,"V18":213,"V19":22,"V20":25,"V21":26}
 PATTERN=re.compile(r"^[A-Z][0-9]{5}$")
 def fail(message): raise SystemExit("ERROR: "+message)
 data=json.loads(REGISTRY.read_text(encoding="utf-8"));items=data.get("items",[])
