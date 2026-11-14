@@ -5,9 +5,6 @@ Animated SVG: 22
 
 Icons:
 mosque | المسجد
-dua_hands | الدعاء
-quran | القرآن الكريم
-qaris | القرّاء
 hijri_calendar | التقويم الهجري
 ramadan | رمضان
 hadith | أحاديث النبي
@@ -20,7 +17,6 @@ dhikr | الذكر
 zakat | الزكاة
 charity | الصدقة
 fasting | الإفطار والصيام
-salah | الصلاة
 quran_audio | استماع القرآن
 quran_bookmark | علامة القرآن
 islamic_events | المناسبات الإسلامية

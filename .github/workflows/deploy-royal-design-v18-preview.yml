@@ -174,10 +174,10 @@ jobs:
           test "$(find _site/audio/ui-sounds/sounds -type f -name '*.wav' | wc -l)" -eq 49
           test "$(find _site/preview/royal-design/v18 -type f -name '*.svg' | wc -l)" -eq 451
           test -f _site/preview/royal-design/index.html
-          test "$(find _site/preview/royal-design/v19 -type f -name "*.svg" | wc -l)" -eq 44
+          test "$(find _site/preview/royal-design/v19 -type f -name "*.svg" | wc -l)" -eq 36
           test "$(find _site/preview/royal-design/v20 -type f -name "*.svg" | wc -l)" -eq 50
           test "$(find _site/preview/royal-design/v21 -type f -name "*.svg" | wc -l)" -eq 52
-          test "$(find _site/preview/royal-design -type f -name "*.svg" | wc -l)" -eq 597
+          test "$(find _site/preview/royal-design -type f -name "*.svg" | wc -l)" -eq 589
           python tools/validate_royal_icon_codes.py
           echo "Prepared the full indexed icon library, V18-V21 previews, stable icon codes, and existing audio pages."
           echo "All icon source files are published unchanged; animated SVG assets remain separate."
