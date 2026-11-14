@@ -1,33 +1,15 @@
 {
   "version": "v19",
   "category": "muslim",
-  "total": 26,
-  "static": 26,
-  "animated": 22,
+  "total": 22,
+  "static": 22,
+  "animated": 18,
   "items": [
     {
       "id": "mosque",
       "label": "المسجد",
       "static": "muslim/static/mosque.svg",
       "animated": "muslim/animated/mosque.svg"
-    },
-    {
-      "id": "dua_hands",
-      "label": "الدعاء",
-      "static": "muslim/static/dua_hands.svg",
-      "animated": "muslim/animated/dua_hands.svg"
-    },
-    {
-      "id": "quran",
-      "label": "القرآن الكريم",
-      "static": "muslim/static/quran.svg",
-      "animated": "muslim/animated/quran.svg"
-    },
-    {
-      "id": "qaris",
-      "label": "القرّاء",
-      "static": "muslim/static/qaris.svg",
-      "animated": "muslim/animated/qaris.svg"
     },
     {
       "id": "hijri_calendar",
@@ -100,12 +82,6 @@
       "label": "الإفطار والصيام",
       "static": "muslim/static/fasting.svg",
       "animated": "muslim/animated/fasting.svg"
-    },
-    {
-      "id": "salah",
-      "label": "الصلاة",
-      "static": "muslim/static/salah.svg",
-      "animated": "muslim/animated/salah.svg"
     },
     {
       "id": "quran_audio",
