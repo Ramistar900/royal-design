@@ -21,15 +21,15 @@
       "V16": 99,
       "V17": 413,
       "V18": 213,
-      "V19": 26,
+      "V19": 22,
       "V20": 25,
       "V21": 26
     },
-    "version_records": 802,
-    "unique_icons": 703,
-    "unique_codes": 703,
+    "version_records": 798,
+    "unique_icons": 699,
+    "unique_codes": 699,
     "by_color": {
-      "gold": 652,
+      "gold": 747,
       "turquoise": 25,
       "cyan": 26
     }
@@ -10126,20 +10126,6 @@
     },
     {
       "version": "V19",
-      "key": "dua_hands",
-      "identity": "v19:dua_hands",
-      "label": "الدعاء",
-      "category": "muslim",
-      "color": "gold",
-      "color_letter": "R",
-      "assets": {
-        "static": "preview/royal-design/v19/muslim/static/dua_hands.svg",
-        "animated": "preview/royal-design/v19/muslim/animated/dua_hands.svg"
-      },
-      "code": "R00629"
-    },
-    {
-      "version": "V19",
       "key": "eid",
       "identity": "v19:eid",
       "label": "العيد",
@@ -10266,20 +10252,6 @@
     },
     {
       "version": "V19",
-      "key": "qaris",
-      "identity": "v19:qaris",
-      "label": "القرّاء",
-      "category": "muslim",
-      "color": "gold",
-      "color_letter": "R",
-      "assets": {
-        "static": "preview/royal-design/v19/muslim/static/qaris.svg",
-        "animated": "preview/royal-design/v19/muslim/animated/qaris.svg"
-      },
-      "code": "R00639"
-    },
-    {
-      "version": "V19",
       "key": "qibla",
       "identity": "v19:qibla",
       "label": "اتجاه القبلة",
@@ -10291,20 +10263,6 @@
         "animated": "preview/royal-design/v19/muslim/animated/qibla.svg"
       },
       "code": "R00640"
-    },
-    {
-      "version": "V19",
-      "key": "quran",
-      "identity": "v19:quran",
-      "label": "القرآن الكريم",
-      "category": "muslim",
-      "color": "gold",
-      "color_letter": "R",
-      "assets": {
-        "static": "preview/royal-design/v19/muslim/static/quran.svg",
-        "animated": "preview/royal-design/v19/muslim/animated/quran.svg"
-      },
-      "code": "R00641"
     },
     {
       "version": "V19",
@@ -10347,20 +10305,6 @@
         "animated": "preview/royal-design/v19/muslim/animated/ramadan.svg"
       },
       "code": "R00644"
-    },
-    {
-      "version": "V19",
-      "key": "salah",
-      "identity": "v19:salah",
-      "label": "الصلاة",
-      "category": "muslim",
-      "color": "gold",
-      "color_letter": "R",
-      "assets": {
-        "static": "preview/royal-design/v19/muslim/static/salah.svg",
-        "animated": "preview/royal-design/v19/muslim/animated/salah.svg"
-      },
-      "code": "R00645"
     },
     {
       "version": "V19",
