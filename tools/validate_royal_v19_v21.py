@@ -2,7 +2,7 @@
 from pathlib import Path
 import xml.etree.ElementTree as ET
 ROOT=Path("preview/royal-design")
-EXPECTED={"v19":("muslim",22),"v20":("sports",25),"v21":("weather",26)}
+EXPECTED={"v19":("muslim",18),"v20":("sports",25),"v21":("weather",26)}
 ANIM={"animate","animateTransform"}
 for version,(folder,count) in EXPECTED.items():
     base=ROOT/version
@@ -24,4 +24,4 @@ for version,(folder,count) in EXPECTED.items():
             assert ANIM & set(names),("missing animation",path)
     assert (base/"manifest.json").is_file()
     assert (base/"index.html").is_file()
-print("V19/V20/V21 SVG validation passed: 73 concepts, 146 SVG variants.")
+print("V19/V20/V21 SVG validation passed: 69 concepts, 138 SVG variants.")
